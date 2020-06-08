@@ -1,0 +1,16 @@
+{
+  "name": "team-falcon-frontend",
+  "version": "1.0.0",
+  "main": "index.html",
+  "repository": "https://github.com/hngi/TEAM-FALCON-Frontend.git",
+  "author": "Samuel Onyijne <samuelord1@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
