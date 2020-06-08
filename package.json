@@ -1,16 +1,22 @@
 {
-  "name": "team-falcon-frontend",
+  "name": "teamfalcon-frontend",
   "version": "1.0.0",
-  "main": "index.html",
+  "main": "index.js",
   "repository": "https://github.com/hngi/TEAM-FALCON-Frontend.git",
   "author": "Samuel Onyijne <samuelord1@gmail.com>",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "parcel index.html",
+    "watch": "parcel watch index.html",
     "build": "parcel build index.html"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "prettier": "^2.0.5"
   }
 }
