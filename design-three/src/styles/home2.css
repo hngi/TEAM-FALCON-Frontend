@@ -1,0 +1,274 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "DM Sans", sans-serif;
+    color: #2a3a64b3;
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.row {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    max-width: 100%;
+    flex: 0 0 100%;
+}
+
+.col-8 {
+    max-width: 100%;
+    flex: 0 0 66.667%;
+}
+
+.text-primary {
+    color: #2a3a64;
+}
+
+.text-primary--light {
+    color: #2a3a64b3;
+}
+
+.text-secondary {
+    color: #f13054;
+}
+
+small,
+.small {
+    font-size: 0.8em;
+}
+
+.hero-block {
+    padding: 20px;
+}
+
+.hero-block h6 {
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+.w-90 {
+    max-width: 90%;
+}
+
+.hero {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.hero-description {
+    width: 80%;
+}
+
+.facilities-card {
+    box-shadow: 2px 4px 14px rgba(65, 82, 118, 0.1);
+    border: 0.5px solid rgba(65, 82, 118, 0.1);
+    border-radius: 10px;
+    padding: 10px 10px 30px 10px;
+    margin-bottom: 50px;
+    margin-right: 10px;
+}
+
+.facilities-card h6 {
+    font-size: 0.75rem;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-top: 20px;
+    height: 35px;
+}
+
+.facilities-card i {
+    color: #ff7b01;
+    font-size: 0.6em;
+}
+
+.facilities-card small {
+    font-size: 0.6em;
+}
+
+.star-half {
+    background: linear-gradient(to right, #ff7b01 50%, #2a3a64b3 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.img-fluid {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.responsive {
+    width: 0;
+    padding: 0 0 0 20px;
+    margin-top: -20px;
+}
+
+.slick-next:before {
+    display: none;
+}
+
+.video-play {
+    background-image: url("../images/image1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.video-play small {
+    margin-right: 10px;
+    font-weight: bolder;
+}
+
+.play-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #f13054;
+    box-shadow: 0px 0px 34px rgba(241, 48, 84, 0.65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.play-icon i {
+    font-size: 1rem;
+    z-index: 10;
+}
+
+@media screen and (min-width: 768px) {
+    html,
+    body {
+        font-size: 20px;
+    }
+    .hero-description {
+        width: 80%;
+    }
+    .facilities-card h6 {
+        font-size: 0.65em;
+    }
+    .video-play {
+        height: 70vh;
+        margin-top: 50px;
+        width: 25%;
+        position: absolute;
+        right: 0;
+        border-radius: 50% 0 0 50%;
+    }
+    .col-md-3 {
+        max-width: 100%;
+        flex: 0 0 25%;
+    }
+    .col-md-9 {
+        max-width: 100%;
+        flex: 0 0 75%;
+    }
+    .responsive {
+        width: 0;
+        z-index: 1;
+    }
+    .rel {
+        position: absolute;
+        height: 100%;
+        width: 25%;
+        right: 0;
+        background-color: gold;
+        border-top-left-radius: 0 60%;
+        background-image: url("../images/image1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 30px;
+    }
+    .rel:before {
+        content: "";
+        display: block;
+        position: absolute;
+        border-radius: 100% 90%;
+        width: 150%;
+        height: 40%;
+        transform: rotate(-45deg);
+        background-color: white;
+        right: 40px;
+    }
+    .rel:after {
+        content: "";
+        display: block;
+        position: absolute;
+        border-radius: 100% 90%;
+        width: 150%;
+        height: 40%;
+        transform: rotate(45deg);
+        background-color: white;
+        bottom: 5px;
+        right: 40px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    html,
+    body {
+        font-size: 24px;
+    }
+    .container {
+        width: 83.333%;
+        margin-left: 8.333%;
+    }
+    small,
+    .small {
+        font-size: 0.6em;
+    }
+    .slick-next:before {
+        border: 1px solid #283c63;
+        color: #191e51;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+    .hero-description {
+        width: 60%;
+    }
+    .responsive {
+        width: 0;
+    }
+    .video-play {
+        height: 80vh;
+    }
+    .play-icon {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    html,
+    body {
+        font-size: 28px;
+    }
+    .facilities-card h6 {
+        height: 45px;
+    }
+    .video-play {
+        height: 100vh;
+        margin-top: 70px;
+    }
+}
