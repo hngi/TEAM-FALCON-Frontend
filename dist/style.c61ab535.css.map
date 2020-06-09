@@ -1,0 +1,1 @@
+{"version":3,"sources":["src/style.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"style.c61ab535.css","sourceRoot":"..","sourcesContent":["/****************************************\n* default styling for the landing paage *\n*****************************************/\n\ndiv > p {\n    font-size: 2em;\n}\n"]}
