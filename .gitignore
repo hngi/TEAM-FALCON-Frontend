@@ -1,2 +1,6 @@
 node_modules
+<<<<<<< HEAD
 .cache/*
+=======
+.cache/*
+>>>>>>> 558cfc5496f9bd633da7781cb7a6e96d3fa1fdb6
