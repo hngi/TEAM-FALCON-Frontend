@@ -19,6 +19,7 @@
 	padding: 0;
 	letter-spacing: -0.090535px;
 	color: #000000;
+
 }
 
 .resort-header .header {
@@ -29,6 +30,7 @@
 	padding: 0;
 	letter-spacing: -0.186728px;
 	color: #000000;
+        text-transform: capitalize;
 }
 
 .resort-body {
