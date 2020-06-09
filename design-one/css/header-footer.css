@@ -146,13 +146,26 @@ body{
         color: black;
         text-decoration: none;
     }
+
+    #side .signup_button a{
+        color: white;
+        text-decoration: none;
+    }
+
     #side a:hover,
     #side a:active {
         color:   #71CE47
     }
+
+    #side .signup_button a:hover,
+    #side .signup_button a:active {
+        color:   white
+    }
+
     .toolbar_navigation-items {
         display: none;
     }
+
     .hamburger{
         display: flex;
         flex-direction: column;
