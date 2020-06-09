@@ -1,0 +1,82 @@
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+body {
+  min-width: 320px;
+  height: 100%;
+}
+
+.facilities_container {
+  position: relative;
+  top: 0;
+  left: -3px;
+  max-width: 100%;
+}
+
+.facilities_header {
+  display: flex;
+  background-image: url(./img/hotel-background.jpg);
+  width: 95vw;
+  background-repeat: no-repeat;
+  height: 245px;
+  background-size: cover;
+  position: relative;
+}
+
+.facilities_big {
+  color: #ffffff;
+  text-align: center;
+  position: absolute;
+  left: 30%;
+  top: 30%;
+}
+.facilities_services {
+  position: absolute;
+  top: 229px;
+  left: 25px;
+  display: flex;
+  width: 80vw;
+  justify-content: space-between;
+  flex-flow: column wrap;
+  z-index: 10;
+  background-color: #ffff;
+  border: 1px solid #ffffff;
+}
+li {
+  list-style-type: none;
+}
+.facilities_row-one,
+.facilities_row-two,
+.facilities_row-three {
+  width: 90%;
+  border: 1px solid #fff;
+  box-shadow: 10px 3px 5px #fff;
+}
+.facilities_row-one {
+  padding-top: 10px;
+}
+.facilities_grouping {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.facilities_item {
+  width: 50%;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.facilities_item img {
+  height: 32px;
+  margin-left: 50px;
+}
+.facilities_text {
+  display: block;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -0.15px;
+  text-transform: capitalize;
+}
