@@ -47,7 +47,13 @@ h1 {
     max-width: 100%;
   }
 }
-@media only screen and (min-width: 530px) and (max-width: 949px) {
+@media only screen and (min-width: 530px) and (max-width: 687px) {
+  .facilities-item {
+    flex-basis: 47%;
+    max-width: 47%;
+  }
+}
+@media only screen and (min-width: 688px) and (max-width: 949px) {
   .facilities-item {
     flex-basis: 48%;
     max-width: 48%;
