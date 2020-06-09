@@ -1,0 +1,85 @@
+#about-us{
+    background-color:#F2F2F2; ;
+}
+
+#about-us-intro{
+    background-color: rgba(238, 238, 238, 0.5);
+    height: 1126px;
+    width: 100%;
+    margin-bottom: 160px;
+}
+
+.about-us-intro-row{
+    display: flex;
+    flex-wrap: wrap;
+    height: 1126px;
+    width: 100%;
+}
+
+.about-us-intro-img{
+    width: 50%;
+    height: 563px;
+}
+
+.about-us-intro-des{
+    margin: auto;
+}
+
+.about-us-small{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.090535px;
+}
+
+.about-us-subcaption{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 33px;
+    line-height: 39px;
+    letter-spacing: -0.186728px;
+}
+.about-us-description{
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.101852px;
+    width: 374px;
+    height: 54;
+}
+
+
+#about-us-mid{
+    margin-bottom: 160px;
+}
+.about-us-cap{
+    
+    margin: 0 auto;
+    text-align: center;
+
+}
+#about-us-resort{
+    margin: auto;
+    width: 1160px;
+    height: 578px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.about-us-resort-img-row1{
+    height: 275px;
+    width: 380px;
+    
+}
+.about-us-resort-img-row2{
+    height: 283px;
+    width: 380px;
+
+}
+
+
+
+#about-us-suite-main{
+    width: 822px;
+    height: 573px;      
+}
