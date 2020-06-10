@@ -27,3 +27,7 @@ To create a production build:
 ```sh
 yarn build
 ```
+
+## Deploying
+
+The dist folder is the webroot directory
