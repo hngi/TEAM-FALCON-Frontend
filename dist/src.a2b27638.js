@@ -18265,7 +18265,7 @@ var page = {
     return page.mainNode.innerHTML = "".concat(html);
   },
   html: "<div class=\"landing-main\"><p>Welcome to falcon frontend landing page</p></div>",
-  init: function init() {
+  render: function render() {
     this.mainNode.classList.add("landing-wrap");
     this.display(this.html);
   }
@@ -18355,7 +18355,7 @@ require("./scss/style.scss");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_landing.default.init();
+_landing.default.render();
 },{"bootstrap":"node_modules/bootstrap/dist/js/bootstrap.js","./landing":"src/landing.js","./scss/style.scss":"src/scss/style.scss"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -18384,7 +18384,11 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
+<<<<<<< HEAD
   var ws = new WebSocket(protocol + '://' + hostname + ':' + "49745" + '/');
+=======
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33149" + '/');
+>>>>>>> 4b924b0a62ca8b845efb46e47a66cc86ae86930a
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -2,4 +2,4 @@ import "bootstrap";
 import page from "./landing";
 import "./scss/style.scss";
 
-page.init();
+page.render();
