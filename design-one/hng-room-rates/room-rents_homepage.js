@@ -1,20 +1,13 @@
-
-$('.post-wrapper').slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  infinite:true,
-  centerMode:false,
-  autoplay: false,
-  autoplaySpeed: 2000,
-  nextArrow:$('.next'),
-  prevArrow:$('.prev')
-});
 $('.post-wrapper').slick({
   dots: true,
   infinite: true,
   speed: 300,
-  slidesToShow: 4,
-  slidesToScroll: 4,
+  centerMode:true,
+  autoplay: false,
+  nextArrow:$('.next'),
+  prevArrow:$('.prev'),
+  slidesToShow: 3,
+  slidesToScroll: 3,
   responsive: [
     {
       breakpoint: 1024,
