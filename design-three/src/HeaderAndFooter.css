@@ -1,0 +1,307 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Dosis', sans-serif;
+  height: 100vh;
+  font-size: 17px;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  padding: 2.5%;
+  margin-top: 10px;
+}
+
+#h1-wrapper {
+  margin-top: 24px;
+}
+
+h1 {
+  color: #191e51;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 33px;
+}
+
+.h1-class {
+  color: #f13054;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+a:hover {
+  cursor: pointer;
+  color: #f13054;
+}
+.active {
+  color: #f13054;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: auto;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+/*STYLING THE HEADER */
+
+header {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 33px;
+}
+
+header a {
+  color: rgba(13, 36, 60, 0.75);
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+/*STYLING THE HEADER BUTTON */
+
+#button-class {
+  border: 1px solid grey;
+  background-color: white;
+  color: #0d243c;
+  height: 45px;
+  width: 140px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  border-radius: 9px 9px 9px 9px;
+  cursor: pointer;
+}
+
+/*STYLING THE FOOTER */
+footer {
+  font-size: 15px;
+  line-height: 20px;
+  position: absolute;
+  width: 100%;
+  height: 253px;
+  left: 0px;
+  top: 375px;
+  color: white;
+  background: #283c63;
+}
+
+footer div {
+  margin-bottom: 0px;
+
+  padding-left: 60px;
+  padding-right: 58px;
+  padding-top: 5px;
+}
+
+footer i {
+  padding-right: 30px;
+}
+
+footer h4 {
+  font-size: 19px;
+}
+
+/*STYLING THE DROPDOWN MENU*/
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a:hover {
+  color: #f13054;
+}
+
+.dropdown-content a {
+  color: rgba(13, 36, 60, 0.75);
+
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+/*----------------------------------
+    LARGE LAYOUT: 1920px
+-----------------------------------*/
+
+@media only screen and (min-width: 1201px) and (max-width: 1245px) {
+  footer div {
+    padding: 0px 30px 0px 30px;
+    margin-left: 40px;
+  }
+  footer i {
+    padding-right: 40px;
+  }
+  footer {
+    height: 250px;
+    top: 360px;
+  }
+}
+/*----------------------------------
+    MEDIUM LAYOUT: 1280px
+-----------------------------------*/
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  footer {
+    height: 250px;
+    top: 360px;
+  }
+
+  footer div {
+    padding: 0px 10px 0px 25px;
+    margin-left: 40px;
+  }
+
+  .container1 {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  footer i {
+    padding-right: 15px;
+  }
+}
+
+/*----------------------------------
+    TABLET LAYOUT: 768px
+------------------------------------*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+  footer {
+    height: 250px;
+    top: 360px;
+  }
+  footer div {
+    padding: 0px 0px 0px 23px;
+    margin-left: 7px;
+    margin-right: 0px;
+  }
+  footer p {
+    font-size: 12px;
+  }
+
+  footer h4 {
+    font-size: 21px;
+  }
+
+  header h1 {
+    margin-left: 20px;
+  }
+  footer i {
+    padding-right: 30px;
+  }
+}
+/*----------------------------------
+    MOBILE LAYOUT: 320px
+-----------------------------------*/
+
+@media only screen and (max-width: 767px) {
+  .container1 {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  header #h1-wrapper {
+    padding-top: 2px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .container {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+  }
+
+  footer {
+    height: 523px;
+    line-height: 14px;
+    width: 100%;
+  }
+
+  footer div {
+    margin-right: 0px;
+    padding: 10px 2px 2px 2px;
+  }
+  footer h4 {
+    font-size: 20px;
+  }
+
+  footer i {
+    padding-right: 40px;
+    margin-left: 20px;
+  }
+
+  header li a {
+    font-size: 20px;
+  }
+  nav {
+    margin-top: 0px;
+  }
+  nav li {
+    padding-right: 4px;
+    padding-left: 0px;
+  }
+  header h1 {
+    font-size: 37px;
+  }
+  nav button {
+    margin-top: 10px;
+  }
+  .container1 {
+    margin-top: 0px;
+  }
+
+  #h1-wrapper {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+}

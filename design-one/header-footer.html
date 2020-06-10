@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/header-footer.css">
+	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+	<title>DESIGN_ONE</title>
+</head>
+
+<body id="body">
+
+	<!-- So just to make things easier, I combined the header and footer into one html file. The fact is the html and css 
+		for this would be used on every other html page to ensure the header and footer appear on all pages. I added a bit of 
+		animation to the hamburger. Oh and I'm sure you know this but when using this template for other pages, don't 
+		forget to change the active class in the '.toolbar_navigation-items class' to the particular page. Happy coding :)-->
+
+	<header class="toolbar">
+		<nav class="toolbar_navigation">
+			<div></div>
+			<div class="toolbar_logo"><a href="index.html"><img src="img/logo.svg" alt="logo"></a></div>
+			<div class="spacer"></div>
+			<div class="toolbar_navigation-items">
+				<ul>
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="faciilties.html">Facilities</a></li>
+					<li><a href="rooms.html">Rooms</a></li>
+				</ul>
+				<div class="signup_button">
+					<a href="">Sign Up</a>
+				</div>
+			</div>
+			<button class="hamburger" id="hamturn" onclick="toggle(); backdrop(); hamturn()">
+				<div class="ham_line"></div>
+				<div class="ham_line"></div>
+				<div class="ham_line"></div>
+			</button>
+		</nav>
+	</header>
+	<div id="hidden">
+		<nav id="side">
+			<ul>
+				<li class="active"><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+				<li><a href="faciilties.html">Facilities</a></li>
+				<li><a href="rooms.html">Rooms</a></li>
+				<div class="signup_button">
+					<a href="">Sign Up</a>
+				</div>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="body">
+		<h1>This is where you add any other content</h1>
+
+	</div>
+<!-- FOOTER SECTION -->
+
+
+	<div class="footer">
+		
+        <div class="footer_content">
+            <div class="footer_navigation-items">
+				<div class="footer_logo"><a href="index.html"><img src="img/logo.svg" alt="logo" width="50px" height="50px"></a></div>
+                <ul>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="bookings.html">Book a room</a></li>
+                    <li><a href="agents.html">Our agents</a></li>
+                    <li><a href="connect.html">Connect with us</a></li>
+                </ul>
+            </div>
+            <div class="footer_navigation-items">
+                <ul>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="bookings.html">Book a room</a></li>
+                    <li><a href="agents.html">Our agents</a></li>
+                    <li><a href="connect.html">Connect with us</a></li>
+                </ul>
+            </div>
+            <div class="footer_navigation-items">
+                <ul>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="bookings.html">Book a room</a></li>
+                    <li><a href="agents.html">Our agents</a></li>
+                    <li><a href="connect.html">Connect with us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+	<script src="js/toggle.js"></script>
+</body>
+
+</html>
