@@ -1,0 +1,257 @@
+/* Executive-suite-CSS */
+.executiveTitle{
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    /*width: 251px;*/
+    height: 48px;
+    /*left: 151px;*/
+    /*top: 925px;*/
+    /*margin-right:5%;*/
+    text-align: center;
+    margin-top: 50px;
+}
+.executiveLeft{
+    float: none;
+    display: inline-block;
+    position: absolute;
+    margin-left: 89px;
+    z-index: 2;
+
+}
+.executivePic{
+    float: right;
+    z-index: -1;
+}
+.executiveContainer{
+    /*margin: 0 61px;*/
+    width: auto;
+    height: 800px;
+    display: flex;
+    /*justify-content: center;*/
+    margin: 0 auto;
+}
+.executivePic{
+    background-image: url("asset/executiveSuites.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*float: right;*/
+    /*position: relative;*/
+    width: 596px;
+    height: 457px;
+    /*control pic position*/
+    margin-left: 489px;
+    /*left: 489px;*/
+    /*top: 878px;*/
+    /*padding: 35px;*/
+}
+.executiveCard{
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.06);
+    width: 380px;
+    height: 350px;
+    margin-top: 20px;
+    padding: 15px 35px;
+    background-color: white;
+}
+.executiveDes{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.executiveContent{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    display: inline-block;
+    margin-left: 38px;
+
+}
+.executiveSubTitle{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 17px;
+
+}
+.executiveBtn{
+    color: white;
+    background-color: black;
+    border-radius: 8px;
+    margin-top: 45px;
+    width: 380px;
+    height: 46px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    border-color: transparent;
+}
+.executiveCard-spa{
+    background-image: url("asset/executiveSuites-spa.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 36px;
+    height: 41px;
+    transform: scale(0.5);
+    position: absolute;
+}
+.executiveCard-cham{
+    background-image: url("asset/executiveSuites-champagne.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 39px;
+    height: 41px;
+    transform: scale(0.5);
+    position: absolute;
+}
+
+.executiveCard-gym{
+    background-image: url("asset/executiveSuites-gym.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 39px;
+    height: 41px;
+    transform: scale(0.5);
+    position: absolute;
+}
+
+
+
+/* Facilities CSS */
+.facilities-wrapper{
+    width: 100%;
+    height: auto;
+}
+h1{
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 53px;
+    padding-left: 6.5rem;
+}
+.img-flex{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: wrap;
+    box-sizing: border-box;
+}
+.image-section{
+    width: 311px;
+    height: 245px;
+}
+.img-flex2{
+    width: 100%;
+    height: auto;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: wrap;
+    box-sizing: border-box;
+}
+.text{
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 24px;
+    line-height: 25rem;
+    color: #ffffff;
+    padding: 1rem;
+}
+.first-image{
+    background-image:url(./facilities-img/chelsea.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.second-image{
+    background-image: url(./facilities-img/jared.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.third-image{
+    background-image: url(./facilities-img/colorful.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.fourth-image{
+    background-image: url(./facilities-img/humphrey.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.fifth-image{
+    background-image: url(./facilities-img/q.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.sixth-image{
+    background-image: url(./facilities-img/robert.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Media Quaries for Facilities */
+@media only screen and (max-width: 600px) {
+    h1{
+        padding-left: 1rem;
+    }
+    .img-flex{
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .img-flex2{
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 1rem;
+    }
+    .marginTop{
+        margin-top: 1rem;
+    }
+
+}
+@media only screen and (max-width: 1200px) {
+    h1{
+        padding-left: 1rem;
+    }
+    .img-flex{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .img-flex2{
+        width: 40%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 1rem;
+    }
+    .marginTop{
+        margin-top: 1rem;
+    }
+}
