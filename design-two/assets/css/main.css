@@ -1,0 +1,9 @@
+/* This selector can be founded in facilities.html */
+.seperationfoot{
+  height: 100vh;
+}
+/*Made to temporarily move the footer downwards on facilities page*/
+a{
+  color: inherit;
+  text-decoration: none;
+}
