@@ -14,12 +14,12 @@ h2{
 	padding-bottom:10px;
 }
 
-.rectangular1{
+/* .rectangular1{
 	width:100%;
 	height:802px;
 	background-color:rgba(0, 0, 0, 0.5);
 	margin-bottom:80px;
-	
+
 }
 
 @media(max-width:800px){
@@ -37,7 +37,7 @@ h2{
 	  background-color:rgba(0, 0, 0, 0.5);
 	  margin-bottom:30px;
     }
-}
+} */
 
 .rectangles{
 	width:30%;
@@ -82,7 +82,7 @@ h2{
     }
 }
 
-.features{
+/* .features{
 	display:flex;
 	align-items:center;
 	justify-content:center;
@@ -157,7 +157,7 @@ h2{
 .reviewRow{
 	display:flex;
 	margin:25px;
-}
+} */
 
 .row{
 	display:flex;
