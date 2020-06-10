@@ -9,12 +9,12 @@ $(document).ready(function () {
             {
                 breakpoint: 2000,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 4,
                     slidesToScroll: 1
                 }
             },
             {
-                breakpoint: 1024,
+                breakpoint: 1050,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 1
@@ -35,5 +35,21 @@ $(document).ready(function () {
                 }
             }
         ]
+    });
+    $('.fade').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        speed: 1,
+        touchMove: false,
+        cssEase: 'linear',
+        nextArrow: '<i class="fas fa-long-arrow-alt-right nextArrowBtn"></i>',
+        prevArrow: '<i class="fas fa-long-arrow-alt-left prevArrowBtn"></i>',
+    });
+    $(document).on("click", ".smallnav img", function () {
+        var di = $(this).data("index");
+        $('.fade').slick('slickGoTo', di);
+
     });
 });
