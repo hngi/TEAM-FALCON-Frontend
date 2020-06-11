@@ -1,4 +1,5 @@
 .facilities-wrapper{
+    margin-top: 4rem;
     width: 100%;
     height: auto;
 }
@@ -76,6 +77,12 @@ h1{
 }
 
 @media only screen and (max-width: 600px) {
+    .facilities-wrapper{
+        margin-top: 3rem;
+        width: 100%;
+        height: auto;
+    }
+
     h1{
         padding-left: 1rem;
     }

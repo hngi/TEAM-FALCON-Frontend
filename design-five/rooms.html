@@ -11,21 +11,34 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
     <header>
-        <div class="fm">
-            <div class="logo">Tiptonhotels</div>
-            <div class="ab">About us</div>
-            <div class="room">Rooms</div>
-            <div class="fact">Faclities</div>
-            <div class="cont">Contact us</div>
-        </div>
-    
+        <nav class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <div class="fas fa-bars">☰</div>
+            </span>
+            <a href="#" class="logo">Tiptonhotels</a>
+            <ul class="main-nav" id="js-menu">
+                <li>
+                    <a href="#" class="nav-links">About us</a>
+                </li>
+                <li>
+                    <a href="rooms.html" class="nav-links">Rooms</a>
+                </li>
+                <li>
+                    <a href="facilities.html" class="nav-links">Facilities</a>
+                </li>
+                <li>
+                    <a href="contact-us.html" class="nav-links">Contact us</a>
+                </li>
+            </ul>
+        </nav>
+
     </header>
     <div class="executiveContainer">
         <div class="executiveLeft">
@@ -60,40 +73,45 @@
         </div>
         <div class="executivePic"></div>
     </div>
-<footer>
-    <div class="main-content">
-        <div class="left">
-            <div class="topic">Tiptonhotels</div>
-            <div class="rig">&copy2020 Tiptonhotels. All rights reserved </div>
-            <div class="social">
-                <div class="path1">
-                    <a class="icon-link" href="#"><i title="facebbok" class="fa fa-instagram"
-                            aria-hidden="true"></i></a>
-                </div>
-                <div class="path2">
-                    <a class="icon-link" href="#"><i title="facebbok" class="fa fa-twitter" aria-hidden="true"></i></a>
-                </div>
-                <div class="path3">
-                    <a class="icon-link" href="#"><i title="facebbok" class="fa fa-facebook" aria-hidden="true"></i></a>
+    <footer>
+        <div class="main-content">
+            <div class="left">
+                <div class="topic">Tiptonhotels</div>
+                <div class="rig">&copy2020 Tiptonhotels. All rights reserved </div>
+                <div class="social">
+                    <div class="path1">
+                        <a class="icon-link" href="#"><i title="facebbok" class="fa fa-instagram"
+                                aria-hidden="true"></i></a>
+                    </div>
+                    <div class="path2">
+                        <a class="icon-link" href="#"><i title="facebbok" class="fa fa-twitter"
+                                aria-hidden="true"></i></a>
+                    </div>
+                    <div class="path3">
+                        <a class="icon-link" href="#"><i title="facebbok" class="fa fa-facebook"
+                                aria-hidden="true"></i></a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="center">
-            <div class="tom">
-                Company
+            <div class="center">
+                <div class="tom">
+                    Company
+                </div>
+                <div class="about">About</div>
+                <div class="terms">Terms and Conditions</div>
+                <div class="privacy">Privacy Policy</div>
             </div>
-            <div class="about">About</div>
-            <div class="terms">Terms and Conditions</div>
-            <div class="privacy">Privacy Policy</div>
+            <div class="right">
+                <div class="contact">Contact</div>
+                <div class="email">Truv@gmail.com</div>
+                <div class="phn">081808028</div>
+                <div class="address">Lagos, Nigeria</div>
+            </div>
         </div>
-        <div class="right">
-            <div class="contact">Contact</div>
-            <div class="email">Truv@gmail.com</div>
-            <div class="phn">081808028</div>
-            <div class="address">Lagos, Nigeria</div>
-        </div>
-    </div>
-</footer>
+    </footer>
+
+    <script src="src/js/rooms.js"></script>
 </body>
+
 </html>
