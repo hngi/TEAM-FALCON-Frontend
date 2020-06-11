@@ -6,7 +6,7 @@
   "author": "Samuel Onyijne <samuelord1@gmail.com>",
   "license": "MIT",
   "private": false,
-  "scripts": {
+   "scripts": {
     "dev": "rm -rf dist/* && parcel index.html",
     "build": "rm -rf dist/* && parcel build index.html",
     "start": "node dist/bundle.js"
