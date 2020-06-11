@@ -218,3 +218,147 @@ body{
         height: 1000px;
     }
 }
+
+
+
+
+
+
+
+/* rule for mobile screen with small screens */
+ @media all and (min-width: 0px) { 
+ 	
+	.rooms-logo{
+		margin-left: 0em;
+	}
+	.rooms-drawer{
+		display: block;
+		margin-right: -1em;
+	}
+	
+	.rooms-nav{
+		display: none;
+	}
+	.rooms-ul{
+		list-style: none;
+		font-weight: bold;
+	}
+	.rooms-contact{
+		display: flex;
+		justify-content: space-evenly;
+	}
+	.rooms-footer{
+		display: flex;
+		flex-direction: column;
+		padding-left: 2em;
+	}
+	.rooms-footer h1{
+		color: whitesmoke;
+		margin-bottom: .3em;
+	}
+	.rooms-footer p{
+		color: #bbb;
+	}
+	.rooms-footerbox1{
+		margin: 1em;
+		line-height: 3em;	
+	}
+	.rooms-footerbox2{
+		 margin: 1em;
+		 line-height: 3em;
+	}
+	.rooms-footerbox3{
+		margin: 1em;
+		line-height: 3em;
+	}
+	.rooms-drawer-container{
+		right: 0em;
+		margin: 1em;
+		display: flex;
+		flex-direction: column;
+		display: block;
+	}
+	.rooms-box1{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}   
+
+/* rule for mobile screen with a little wider screen */
+ @media all and (min-width:560px){
+ 	
+	 .rooms-logo{
+		margin-left: 0em;
+	}
+	
+	.rooms-drawer{
+		display: block;
+		margin-right: -1em;
+	}
+	
+  }  
+
+ /* ----rule for tablet screen */
+ @media all and (min-width: 778px) { 
+ 	
+	.rooms-nav{
+		 display: block;
+	 }
+	  .rooms-drawer{
+		display: none;
+	}
+	.rooms-drawer-container{
+	display: flex;
+	flex-direction: column;
+	display: none;
+}
+.rooms-drawer{
+	background-color:#000000;
+	height: .2em;
+	width: 2.5em;
+	position: relative;
+	margin: .3em;
+	display: none;
+}
+.rooms-footer{
+		display: flex;
+		flex-direction: row;
+		padding-left: 2em;
+	}
+ } 
+
+/* -----rule for laptops with small screen */
+ @media all and (min-width: 992px) { 
+ 	
+	 .rooms-nav{
+		 display: block;
+	 }
+	 .rooms-drawer{
+		display: none;
+	}
+ }  
+
+/* ----rule for normal laptop screen */
+ @media all and (min-width: 1200px) {
+ 	
+	 .rooms-nav{
+		 display: block;
+	 }
+	  .rooms-drawer{
+		display: none;
+	}
+ }  
+
+/* ---- rule for larger screen and beyond */
+ @media all and (min-width: 1600px) {
+ 	
+	 .rooms-nav{
+		 display: block;
+	 }
+	  .rooms-drawer{
+		display: none;
+	}
+	
+ }  

@@ -8,7 +8,11 @@
   "private": false,
   "scripts": {
     "dev": "rm -rf dist/* && parcel index.html",
-    "build": "rm -rf dist/* && parcel build index.html"
+    "build": "rm -rf dist/* && parcel build index.html",
+    "start": "node dist/bundle.js"
+  },
+  "engines": {
+    "node": "12.10"
   },
   "devDependencies": {
     "airbnb": "^0.0.2",
