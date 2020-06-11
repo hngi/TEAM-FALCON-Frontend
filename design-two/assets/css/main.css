@@ -253,17 +253,11 @@ body {
 
 @media screen and (max-width: 1095px) {
 
-  #conferencess{
+  #dining{
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     /* flex-direction: column-reverse; */
-  }
-  
-  #conferencess > div:nth-child(2){
-    width: 720px;
-    height: 563px;
-    background: url("../img/aboutus/about-conference.png");
+    flex-wrap: wrap;
   }
 }
 
