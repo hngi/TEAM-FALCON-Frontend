@@ -87,6 +87,7 @@ body{
 }
 
 .page-topic{
+	margin-top: 3rem;
     font-weight: 900;
     font-size: 36px;
     padding-left: 50px;
