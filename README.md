@@ -22,20 +22,12 @@ To create a development build:
 yarn dev
 ```
 
-To run in hot module reloading mode:
-
-```sh
-yarn watch
-```
-
 To create a production build:
 
 ```sh
 yarn build
 ```
 
-## Running
+## Deploying
 
-```sh
-node dist/bundle.js
-```
+The dist folder is the webroot directory
