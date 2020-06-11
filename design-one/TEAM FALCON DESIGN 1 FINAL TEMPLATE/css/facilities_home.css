@@ -1,0 +1,125 @@
+
+    /* Title and the underline SVG */
+    .fcetitle {
+      position: relative;
+      /* border: 5px solid #71CE47; */
+      margin-left:2%; 
+      margin-top: 50px;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 37px;
+    }
+
+    .facilities-and-services-section  h4 {
+    text-align: center;
+    font-family: "Poppins";
+    font-style: normal;
+    }
+    
+    .facilities-and-services-section a {
+      text-decoration: none;
+      color: #71CE47;
+      margin: 70px;
+      /* bottom: 500px;  */
+      text-align: center;
+    }
+    
+    
+      /* Post Slider */
+    .page-wrapper{
+      background:  #F0FFEA;
+      justify-content: center;
+      
+    }
+      .post-slider{
+        position: relative;
+      
+      }
+    .post-slider .slider-title {
+      /* margin: 30px 115px;  */
+      text-align: left;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 37px;
+      color: #606060;
+    }
+    .post-slider .next {
+      position: absolute;
+      top: 30%;
+      right: 20px; 
+      font-size: 2em;
+      color: #71CE47;
+      cursor: pointer; 
+      
+    }
+    .post-slider .prev {
+      position: absolute;
+      top: 30%;
+      left: 20px; 
+      font-size: 2em;
+      color: #71CE47;
+      cursor: pointer;  
+    }
+    .post-slider .post-wrapper {
+        width: 84%;
+        height: 500px;
+        margin: 0px auto;
+        overflow: hidden;
+        padding: 10px 0px 10px 0px; 
+        /* border: 1px dashed red; */
+      }
+      
+      .post-slider .post-wrapper .post {
+        width: 260px;
+        height: 176px;
+        margin: 100px 10px;
+        display: flex;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 1rem 1rem 1rem --1rem #a0a0a033;
+        /* border: 1px solid #828282; */
+    /* box-sizing: border-box; */
+      }
+      .post-slider .post-wrapper .post .inner-post{
+        background: white;
+        width: 80px;
+        height: 80px;
+        margin: 5px 90px; 
+        border: 1px solid #828282;
+        border-radius: 50%; 
+      }
+      .post-slider .post-wrapper .post .inner-post .wifi {
+        font-size: 2em;
+        margin: 20px;
+        color: #71CE47;
+       
+      }
+       
+      .post-slider .post-wrapper .post .post-info{
+        height: 100px;
+        /* border: 1px solid green;  */
+        padding: 0px 2px; 
+        position: relative; 
+        text-align: center;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 12px;
+      }
+    .gym-svg{
+     margin: 30px 25px 20px 20px;
+    }
+    .airport-svg {
+        margin: 30px 25px 20px 15px;
+        position: absolute;
+      }
+    
+    .beauty-svg {
+        margin: 20px;
+      }
+    
