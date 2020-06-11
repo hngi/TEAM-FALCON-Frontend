@@ -1,17 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="keywords" content="HTML, CSS, meta tag examples">
-        <meta name="author" content="Samuel Onyijne">
-        <meta name="description" content="The home page for team falcon Frontend's task for HNGi7">
-        <meta http-equiv="refresh" content="1800">
-        <link rel="stylesheet" href="./src/style.css">
-        <title>Home page</title>
-    </head>
-<body>
-    <div data-design-one></div>
-  <script src="./src/index.js"></script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="keywords" content="HTML, CSS, meta tag examples" />
+    <meta name="author" content="Samuel Onyijne" />
+    <meta
+      name="description"
+      content="The home page for team falcon Frontend's task for HNGi7"
+    />
+    <meta http-equiv="refresh" content="1800" />
+    <link rel="stylesheet" href="./css/home-page.css" />
+    <title>Home page</title>
+  </head>
+  <body>
+    <section>
+      <div class="home-page-banner">
+        <div class="intro-text-box">
+          <h1>
+            <span class="text-green">Your </span>Comfort,<br />Our
+            <span class="text-green">Priority.</span>
+          </h1>
+          <p>
+            Welcome to MySuite Search through our variety of exotic rooms to
+            find one that matches your style and preference.
+          </p>
+          <!-- explore services -->
+          <a href="#" class="explore-services">
+            <button>Explore Services</button>
+          </a>
+        </div>
+
+        <!-- top sky view -->
+        <div class="top-sky-view">
+          <div class="hotel-view">
+            <img src="./images/banner-1.jpg" alt="Hotel front view" />
+          </div>
+
+          <!-- the green shadow that drops are the back 1 -->
+          <div class="backdrop-shadow-1"></div>
+          <!-- the green shadow that drops are the back 2 -->
+          <div class="backdrop-shadow-2"></div>
+        </div>
+      </div>
+      <!-- check in and reservations  -->
+      <div class="reservation">
+        <div class="reservation-order">
+          <form>
+            <span>
+              <label for="checkin-date">Check In</label><br />
+              <input type="date" name="checkin-date" id="checkin-date" />
+            </span>
+            <span>
+              <label for="checkout-date">Check Out</label><br />
+              <input type="date" name="checkout-date" id="checkout-date" />
+            </span>
+            <span>
+              <label for="adult">Adult</label><br />
+              <input
+                type="number"
+                name="adult"
+                id="adult"
+                min="0"
+                max="100"
+                value="0"
+              />
+            </span>
+            <span>
+              <label for="children">Children</label><br />
+              <input
+                type="number"
+                name="children"
+                id="children"
+                min="0"
+                max="100"
+                value="0"
+              />
+            </span>
+            <span>
+              <label style="visibility: hidden;">Submit</label><br />
+              <button type="submit" onclick="return false">Confirm</button>
+            </span>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="./src/index.js"></script>
+  </body>
 </html>
