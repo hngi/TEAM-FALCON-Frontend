@@ -1,5 +1,5 @@
 import "bootstrap";
 import page from "./landing";
-import "./scss/style.scss";
+import "./assets/scss/landing.scss";
 
-page.init();
+page.render();
