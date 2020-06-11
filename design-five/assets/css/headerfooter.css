@@ -10,14 +10,16 @@ header {
     z-index: 500;
 }
 
-.navbar {
+.navbar,
+navigation {
     font-size: 18px;
     background: content-box;
     background-color: #ffffff;
     /* border: 1px solid rgba(0, 0, 0, 0.2); */
 }
 
-.main-nav {
+.main-nav,
+main-navbar {
     list-style-type: none;
     padding: 10px 20px;
     transition: all 0.8s ease-out;
