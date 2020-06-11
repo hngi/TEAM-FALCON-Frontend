@@ -482,7 +482,72 @@ body {
 		height: 200px;
 	}
 }
+/*Suite section redone by babscode*/
+.suites{
+	position: relative;
+	width: 100%;
+	padding: 20px 0;
+	color: white;
+}
 
+.suites-row img{
+	height: 573px;
+	opacity: 0.9;
+	width: 100%
+}
+.row-img{
+
+}
+.suites-row .owl-dots{
+	text-align: center;
+}
+
+.suites-row .owl-dot{
+	display: inline-block;
+	height: 8px !important;
+	width: 8px !important;
+	background-color: #D8D8D8 !important;
+	opacity: 0.8;
+	border-radius: 50%;
+	margin: 50px 5px 0;
+}
+.suite-row .owl-dot.active{
+	background-color: #FD3D65 !important;
+}
+.suite-text{
+	position: absolute;
+	top: 300px;
+	left: 60px;
+}
+.suite-text, .suite-description{
+	font-weight: 200;
+}
+.suite-text{
+	font-size: 40px;
+	line-height: 0.8;
+}
+.suite-description{
+	font-size: 20px;
+	padding: 16px 0;
+	text-transform: capitalize;
+}
+.suite-btn{
+	background-color: #FD3D65;
+	padding: 11px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	text-transform: uppercase;
+	border: none;
+}
+@media only screen and (max-width: 375px) {
+  .suite-text{
+  	position: absolute;
+  	top: 200px;
+  	left: 60px;
+  }
+}
 
 /*Rooms and Rates Page  */
 
@@ -925,7 +990,7 @@ body {
   }
   .footer_logo {
     margin-left: 130px;
-	
+
   }
   .footer_navigation {
     margin-right: 150px;
