@@ -183,3 +183,27 @@ h2{
 	justify-content:center;
 	margin:25px 5% 50px 5%;
 }
+.rates-row{
+	display:flex;
+	margin-left:5%;
+	margin-right:5%;
+	margin-bottom:30px;
+}
+
+@media(max-width:700px){
+   .rates-row{
+	  display:flex;
+	  flex-direction:column;
+	  align-items:center;
+	  justify-content:center;
+	  margin:10px;
+    }
+}
+
+.rates-column{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	margin:25px 5% 50px 5%;
+}
