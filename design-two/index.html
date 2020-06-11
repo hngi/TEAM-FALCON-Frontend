@@ -1,104 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="about-us.css">
-    <link rel="stylesheet" href="normalise.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <!-- <link rel="stylesheet" href="about-us.css">
+  <link rel="stylesheet" href="./src/header__footer.css">
+  <link rel="stylesheet" href="./banner(homepage)/banner.css">
+  <link rel="stylesheet" type="text/css" href="./resort&spa/style.css"> -->
+  <title>Furen Hotels</title>
 </head>
 <body>
   <!--Header section-->
   <header class="header_main">
-      <div class="header_logo">
-          <img src="./img/furen.svg" alt="" class="">
-      </div>
-      <nav class="header_navigation">
-          <ul class="header_nav-area">
-              <li class="header_nav-area item">Offers</li>
-              <li class="header_nav-area item">Rooms</li>
-              <li class="header_nav-area item">Dinning</li>
-              <li class="header_nav-area item">Conferences</li>
-              <li class="header_nav-area item">Contact</li>
-          </ul>
-          <button type="submit" class="btn">book now</button>
-      </nav>
+    <div class="header_logo">
+      <a href="index.html"><img src="./assets/img/furen.svg" alt="Company logo"></a>
+    </div>
+    <nav class="header_navigation">
+      <ul class="header_nav-area">
+        <li class="header_nav-area item"><a href="facilities.html">Offers</a></li>
+        <li class="header_nav-area item"><a href="rooms.html">Rooms</a></li>
+        <li class="header_nav-area item"><a href="#dining">Dinning</a></li>
+        <li class="header_nav-area item"><a href="#conferences">Conferences</a></li>
+        <li class="header_nav-area item"><a href="contact.html">Contact</a></li>
+      </ul>
+      <button type="submit" class="btn">book now</button>
+    </nav>
   </header>
   <!--Header ends-->
   <!--Banner/sub banner section-->
-  
+  <div id="__mainbanner">
+    <h2 id="__bannerlabel">The best place to be <br> for rest and comfort.</h2>
+    <section id="__subbanner">
+      <div id="__subbanner_label">
+        <h2>Executive Suite</h2>
+        <p>25% off for our valued guest</p>
+        <span class="dots"></span>
+        <span class="dots"></span>
+        <span class="dots active"></span>
+        <span class="dots"></span>
+        <span class="dots"></span>
+        <span class="dots"></span>
+      </div>
+    </section>
+  </div>
   <!--Banner/sub banner ends-->
   <!--Dining/conference(aboutus)section-->
-  <!--Resort section-->
-  <!--Suites-->
-  <!--foooter-->
-<div id="about-us">
-
-    <section id="about-us-intro">
-        <div class="about-us-intro-row">
-            <img class="about-us-intro-img" src="about-us-img/about-dinning.png" alt="">
-            <div class="about-us-intro-des">
-                <div>
-                        <small class="about-us-small">Exquisite</small>
-                        <span class="about-us-subcaption">Dinning</span>
-                        <p class="about-us-description">The finest diner that serves you dishes in the most delicious way</p>
-                </div>
-
-            </div>
-            <div  class="about-us-intro-des">
-            <div>
-                <small class="about-us-small">Modern</small>
-                <span class="about-us-subcaption">Conference<span>
-                <p class="about-us-description">For your events, meetings, shows and conferences the best place to be.</p>
-            </div>
-            </div>
-            <img class="about-us-intro-img" src="about-us-img/about-conference.png" alt="">
-        </div>
-    </section>
-
-    <section id="about-us-mid">
+  <section id="about-us-intro" >
+    <div  id="dining" class="about-us-intro-row">
+      <img class="about-us-intro-img" src="./assets/img/aboutus/about-dinning.png" alt="services1">
+      <div class="about-us-intro-des">
         <div>
-
-            <div class="about-us-cap">
-                <div>
-                        <small class="about-us-small">Wellness</small>
-                        <span class="about-us-subcaption">Resort & Spa</span>
-                </div>
-
-            </div>
-
-            <div id="about-us-resort">
-                <img class="about-us-resort-img-row1"  src="about-us-img/resort-1.png" alt="">
-                <img class="about-us-resort-img-row1" src="about-us-img/resort-2.png" alt="">
-                <img class="about-us-resort-img-row1" src="about-us-img/resort-3.png" alt="">
-                <img class="about-us-resort-img-row2" src="about-us-img/resort-4.png" alt="">
-                <img class="about-us-resort-img-row2" src="about-us-img/resort-5.png" alt="">
-            </div>
+          <small class="about-us-small">Exquisite</small>
+          <span class="about-us-subcaption">Dinning</span>
+          <p class="about-us-description">The finest diner that serves you dishes in the most delicious way</p>
         </div>
-    </section>
-
-    <section id="about-us-suite">
-        <div >
-            <div class="about-us-cap">
-                <small class="about-us-small">Comfortable, unforgetable </small>
-                <span class="about-us-subcaption">Suite</span>
-            </div>
-            <div id="about-us-suite-frame">
-                <img id="about-us-suite-side-left" src="about-us-img/suit-left.png" alt="">
-                <div id="about-us-suite-main">
-
-                    <div id="cont">
-                        <p id="about-us-suite-main-p">Refined luxury with spectacular sea view</p>
-                        <span id="about-us-suite-main-span">Deluxe One Bedroom Suite</span>
-                        <input id="book-now-button" type="submit" value="BOOK NOW">
-                    </div>
-                </div>
-                <img id="about-us-suite-side-left" src="about-us-img/suit-right.png" alt="">
-            </div>
+      </div>
+      <div id="conferences" class="about-us-intro-des">
+        <div>
+          <small class="about-us-small">Modern</small>
+          <span class="about-us-subcaption">Conference<span>
+              <p class="about-us-description">For your events, meetings, shows and conferences the best place to be.</p>
         </div>
-    </section>
+      </div>
+      <img class="about-us-intro-img" src="./assets/img/aboutus/about-conference.png" alt="services2">
+    </div>
+  </section>
+  <!--Dining/conference(aboutus)section ends-->
+  <!--Resort section-->
+  <section class="resort-main">
+    <div class="resort-header">
+      <h6 class="subheader">
+        wellness
+      </h6>
+      <h4 class="header">
+        Resort & Spa
+      </h4>
+    </div>
+    <div class="resort-body">
+      <div class="box-one">
+      </div>
+      <div class="box-two">
+        <div class="resort-subbody">
+          <div class="boxlet-one">
+          </div>
+          <div class="boxlet-two">
+          </div>
+          <div class="boxlet-three">
+          </div>
+          <div class="boxlet-four">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Resort section ends-->
+  <!--Suites-->
+  <!-- <section id="about-us-suite">
+    <div>
+      <div class="about-us-cap">
+        <small class="about-us-small">Comfortable, unforgetable </small>
+        <span class="about-us-subcaption">Suite</span>
+      </div>
+      <div id="about-us-suite-frame">
+        <img id="about-us-suite-side-left" src="./assets/img/aboutus/suit-left.png" alt="">
+        <div id="about-us-suite-main">
 
-</div>
+          <div id="cont">
+            <p id="about-us-suite-main-p">Refined luxury with spectacular sea view</p>
+            <span id="about-us-suite-main-span">Deluxe One Bedroom Suite</span>
+            <input id="book-now-button" type="submit" value="BOOK NOW">
+          </div>
+        </div>
+        <img id="about-us-suite-side-left" src="./assets/img/aboutus/suit-right.png" alt="">
+      </div>
+    </div>
+  </section> -->
+  <!--Suites end--->
+  <!--foooter-->
+  <footer class="footer_main">
+    <div class="footer_logo">
+      <img src="./assets/img/furen.svg" alt="Company logo" class="responsive-logo">
+    </div>
+    <nav class="footer_navigation">
+      <ul class="footer_nav-area">
+        <li class="footer_nav-area item"><a href="">Offers</a></li>
+        <li class="footer_nav-area item"><a href="rooms.html">Rooms</a></li>
+        <li class="footer_nav-area item"><a href="index.html#dining">Dinning</a></li>
+        <li class="footer_nav-area item"><a href="index.html#conferences">Conferences</a></li>
+        <li class="footer_nav-area item"><a href="Contact.html">Contact</a></li>
+      </ul>
+      <button type="submit" class="btn">book now</button>
+  </footer>
+  <!--footer ends-->
 </body>
+
 </html>
