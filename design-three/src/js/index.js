@@ -1,3 +1,33 @@
+const open = document.querySelector('#open')
+const sidebar = document.querySelector('#sidebar')
+const close = document.querySelector('#close')
+const toggle = document.querySelector('#toggle')
+
+open.addEventListener('click', () => {
+    sidebar.style.marginLeft = '0', 3000
+})
+
+close.addEventListener('click', () => {
+    sidebar.style.marginLeft = '-65%'
+})
+
+toggle.addEventListener('click', () => {
+    document.querySelector("#myDropdown").classList.toggle("show");
+})
+
+window.onclick = function (event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName('dropdown-content');
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+};
+
 $(document).ready(function () {
     $('.responsive').slick({
         dots: false,

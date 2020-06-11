@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "dev": "rm -rf dist/* && parcel index.html",
+    "dev": "rm -rf dist/* && parcel design-three/facilities.html",
     "build": "rm -rf dist/* && parcel build index.html"
   },
   "devDependencies": {
