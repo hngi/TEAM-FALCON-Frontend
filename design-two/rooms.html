@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--Main css file-->
   <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/header.css">
   <!--Owl carousel files-->
   <link rel="stylesheet" type="text/css" href="./assets/css/owl.theme.default.css">
   <link rel="stylesheet" type="text/css" href="./assets/css/owl.carousel.css">
@@ -16,7 +17,25 @@
 </head>
 <body>
   <!--Header section-->
-  <header class="header_main">
+  <header>
+		<nav>
+			<input type="checkbox" id="check">
+			<label for="check" class="checkbtn">
+				<i class="fa fa-bars"></i>
+			</label>
+			<label class="logo"><img src="./assets/img/furen.svg"></label>
+			<ul>
+				<li><a href="facilities.html">Offers</a></li>
+				<li><a href="rooms.html">Rooms</a></li>
+				<li><a href="index.html#dining">Dining</a></li>
+				<li><a href="index.html#conferences">Conference</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<button class="headbutton">Book now</button>
+			</ul>
+		</nav>
+	</header>
+  <!--Header ends-->
+  <!-- <header class="header_main">
     <div class="header_logo">
       <a href="index.html"><img src="./assets/img/furen.svg" alt="Company logo"></a>
     </div>
@@ -30,8 +49,8 @@
       </ul>
       <button type="submit" class="btn">book now</button>
     </nav>
-  </header>
-  <!--Header ends-->
+  </header> -->
+
 
   <!--Rooms banner-->
   <section>
@@ -239,20 +258,19 @@
   <!--Featured ends-->
 
   <!--Footer-->
-  <footer class="footer_main">
-    <div class="footer_logo">
-      <img src="./assets/img/furen.svg" alt="company logo" class="responsive-logo">
-    </div>
-    <nav class="footer_navigation">
-      <ul class="footer_nav-area">
-        <li class="footer_nav-area item"><a href="">Offers</a></li>
-        <li class="footer_nav-area item"><a href="rooms.html">Rooms</a></li>
-        <li class="footer_nav-area item"><a href="index.html#dining">Dinning</a></li>
-        <li class="footer_nav-area item"><a href="index.html#conferences">Conferences</a></li>
-        <li class="footer_nav-area item"><a href="Contact.html">Contact</a></li>
-      </ul>
-      <button type="submit" class="btn">book now</button>
-  </footer>
+  <footer>
+        <div class="footer">
+          <div class="footer-row">
+          <img class="footerImg" src="./assets/img/footerImg.png" alt="FUREN"/>
+          <a href="#">Offers</a>
+          <a href="#">Rooms</a>
+          <a href="#">Dining</a>
+          <a href="#">Conferences</a>
+          <a href="#">Contacts</a>
+          <button class="footer-button">Book Now</button>
+        </div>
+      </div>
+    </footer>
   <!--Footer ends-->
 
   <!--Scripts-->
