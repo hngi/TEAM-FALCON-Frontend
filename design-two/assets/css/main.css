@@ -210,6 +210,10 @@ body {
   width: 720px;
   height: 563px;
   background: url("../img/aboutus/about-dinning.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 #conferencess{
@@ -221,7 +225,11 @@ body {
 #conferencess > div:nth-child(2){
   width: 720px;
   height: 563px;
-  background: url("../img/aboutus/about-dinning.png");
+  background: url("../img/aboutus/about-conference.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 .about-us-intro-des{
@@ -244,9 +252,8 @@ body {
   margin-top: 10px;
   display: block;
 }
-
 .about-us-description{
-
+  
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -259,10 +266,17 @@ body {
 
 @media screen and (max-width: 1095px) {
 
+  #conferencess > div:nth-child(2){
+    margin: 0px auto;
+  }
+
+  #dining > div:nth-child(1){
+    margin: 0px auto;
+  }
+
   #dining{
     width: 100%;
     display: flex;
-    /* flex-direction: column-reverse; */
     flex-wrap: wrap;
   }
 }
@@ -504,7 +518,8 @@ body {
 	grid-area: boxlet-four;
 	background-image: url('../img/resort/5.png');
 	background-repeat: no-repeat;
-	background-size: cover;
+  background-size: cover;
+  
 }
 
 /* Resorts and spa section(Home page) Responsivess by @Deola*/
