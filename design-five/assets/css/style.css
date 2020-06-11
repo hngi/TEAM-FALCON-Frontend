@@ -799,8 +799,8 @@ h1{
 	border-bottom: 1px solid silver;
 	display: flex;
 	justify-content: space-between;
-	padding-left: 2rem;
-	padding-right: 2rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
 	line-height: 1.5rem;
 }
 .contact-us-logo{
