@@ -139,10 +139,34 @@
 	.contact-us-nav{
 		display: none;
 	}
+
+	.contact-us-nav.active{
+		display: block;
+	}
+	
 	.contact-us-ul{
 		list-style: none;
 		font-weight: bold;
 	}
+
+	.contact-us-ul.active{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		margin-top: 28px;
+	}
+
+	.contact-us-ul.active li{
+	margin: 0.5em;
+	}
+
+	.contact-us-ul.active li:hover{
+		scale: 1.1;
+		}
+
+
 	.contact-us-contact{
 		display: flex;
 		justify-content: space-evenly;
