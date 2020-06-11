@@ -1,6 +1,9 @@
-let mainNav = document.getElementById("js-menu");
-let navBarToggle = document.getElementById("js-navbar-toggle");
+// Contact Page Navbar 
+let navBar = document.getElementById("contact-us-nav");
+let navUl = document.getElementById("contact-us-ul");
+let hamburgerMenu = document.getElementById("hamburger");
 
-navBarToggle.addEventListener("click", function() {
-  mainNav.classList.toggle("active");
+hamburgerMenu.addEventListener("click", function() {
+  navBar.classList.toggle("active");
+  navUl.classList.toggle("active");
 });

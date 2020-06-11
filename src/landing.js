@@ -1,9 +1,9 @@
 const page = {
-  mainNode: document.querySelector('div[data-app]'),
+  header: document.querySelector('header[data-header]'),
   display: (html) => page.mainNode.innerHTML = `${html}`,
-  html: `<div class="landing-main"><p>Welcome to falcon frontend landing page</p></div>`,
+  html: `<h1>Discover our Demos</h1>`,
   render: function() {
-    this.mainNode.classList.add("landing-wrap");
+    this.header.classList.add("header");
     this.display(this.html)
   }
 };

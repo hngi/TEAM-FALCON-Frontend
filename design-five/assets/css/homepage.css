@@ -1,16 +1,16 @@
 * {
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-o-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     list-style: none;
     text-decoration: none;
-  }
+}
 
-  /* 
+/* 
   main{
 	  display: grid;
 	  grid-template-areas: "section-a section-b";
@@ -39,106 +39,104 @@ main {
     height: 100vh;
     grid-template-areas: "header";
     grid-template-columns: 100%;
-  }
-  #background{
-    background: url("./images/landingpage.png");
+}
+#background {
+    background: url(../images/landingpage.png);
     background-repeat: no-repeat;
     background-size: cover;
     grid-area: header;
     display: flex;
     flex-direction: column;
-  }
-  .navbar {
+}
+.navbar {
     font-size: 18px;
     background: content-box;
     /* border: 1px solid rgba(0, 0, 0, 0.2); */
     padding: 10px 3%;
-  }
-  
-  .main-nav {
+}
+
+.main-nav {
     list-style-type: none;
     display: none;
-  }
-  
-  .nav-links,
-  .logo {
+}
+
+.nav-links,
+.logo {
     text-decoration: none;
     color: rgba(255, 255, 255);
-  }
-  
-  .nav-links:hover, 
-  .navbar-toggle:hover,
-  .logo:hover {
+}
+
+.nav-links:hover,
+.navbar-toggle:hover,
+.logo:hover {
     color: rgba(255, 255, 255, 0.7);
-  }
-  
-  .main-nav li {
+}
+
+.main-nav li {
     text-align: center;
     margin: 15px auto;
-  }
-  
-  .logo {
+}
+
+.logo {
     display: inline-block;
     font-size: 22px;
     margin-top: 10px;
     margin-left: 20px;
-  }
-  
-  .navbar-toggle {
+}
+
+.navbar-toggle {
     position: absolute;
     top: 10px;
     right: 20px;
     cursor: pointer;
     color: rgba(255, 255, 255, 0.9);
     font-size: 24px;
-  }
-  
-  .active {
+}
+
+.active {
     display: block;
-  }
-  
-  @media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 768px) {
     .navbar {
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 0;
-      height: 70px;
-      align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
     }
-  
+
     .main-nav {
-      display: flex;
-      margin-right: 30px;
-      flex-direction: row;
-      justify-content: flex-end;
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
     }
-  
+
     .main-nav li {
-      margin: 0;
+        margin: 0;
     }
-  
+
     .nav-links {
-      margin-left: 40px;
+        margin-left: 40px;
     }
-  
+
     .logo {
-      margin-top: 0;
+        margin-top: 0;
     }
-  
+
     .navbar-toggle {
-      display: none;
+        display: none;
     }
-  
-    .nav-links:hover, 
+
+    .nav-links:hover,
     .navbar-toggle:hover,
     .logo:hover {
-      color: rgba(255, 255, 255, 0.7);
+        color: rgba(255, 255, 255, 0.7);
     }
-  }
+}
 
-
-  
-#leftContainer{
+#leftContainer {
     display: flex;
     flex-direction: column;
     align-items: self-start;
@@ -155,7 +153,7 @@ a.explore-btn {
     color: #ffffff;
     margin: 15px 0;
     border: 2px solid rgba(255, 255, 255, 5.36);
-    padding: .7rem 3rem;
+    padding: 0.7rem 3rem;
     text-decoration: none;
     font-weight: 700;
     font-size: 1.3rem;
@@ -188,33 +186,31 @@ footer {
     max-width: 14.333333%;
     background: #fff;
 }
-.col-1
-{
-  position: relative;
-  width: 100%;
-  padding: .5rem 0 .8rem .7rem;
- /*  flex: 0 0 20%;
+.col-1 {
+    position: relative;
+    width: 100%;
+    padding: 0.5rem 0 0.8rem 0.7rem;
+    /*  flex: 0 0 20%;
   max-width: 20%; */
-  float: left;
+    float: left;
 }
-.col-1 .content
-{
-  width: 100%;
-  height: 100%;
+.col-1 .content {
+    width: 100%;
+    height: 100%;
 }
 .pRow1 {
-    color: #B1B1B1;
+    color: #b1b1b1;
     font-family: Poppins;
 }
 .pRow2 {
-    color: #0A0A0E;
+    color: #0a0a0e;
     font-family: Poppins;
     font-weight: 600;
 }
 .dateicon {
     background: url("./images/calendar.svg");
 }
-  /* nav {
+/* nav {
     height: 70px;
     z-index: 1;
     display: flex;
