@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=7">
-    <link rel="stylesheet" type="text/css" href="assets/css/headerfooter.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/contact-us.css">
     <link rel="stylesheet" href="assets/css/facilities.css">
     
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <!-- <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'> -->
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" -->
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,15 +19,23 @@
 
 </head>
 <body>
-    <header>
-        <div class="fm">
-            <div class="logo"><a href="index.html">Tiptonhotels</a></div>
-            <div class="ab"><a href="#">About us</a></div>
-            <div class="room"><a href="#">Rooms</a></div>
-            <div class="fact"><a href="facilities.html">Faclities</a></div>
-            <div class="cont"><a href="contact-us.html">Contact us</a></div>
+    <header class="rooms-header">
+        <div class="rooms-logo">
+            <h2><a href="index.html">Tiptonhotels</a></h2>
         </div>
-    
+        <nav class="rooms-nav">
+            <ul class="rooms-ul">
+                <li><a href="#">About us</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="contact-us.html">Contact us</a></li>
+            </ul>
+        </nav>
+        <div class="rooms-drawer-container">
+            <div class="rooms-drawer"></div>
+            <div class="rooms-drawer"></div>
+            <div class="rooms-drawer"></div>
+        </div>
     </header>
    <div class="facilities-wrapper">
        <h1>Facilities</h1>
@@ -68,40 +76,28 @@
      </div>
     </div>
    </div>
-    <footer>
-        <div class="main-content">
-            <div class="left">
-                <div class="topic">Tiptonhotels</div>
-                <div class="rig">&copy2020 Tiptonhotels. All rights reserved </div>
-                <div class="social">
-                    <div class="path1">
-                        <a class="icon-link" href="#"><i title="facebbok" class="fa fa-instagram"
-                                aria-hidden="true"></i></a>
-                    </div>
-                    <div class="path2">
-                        <a class="icon-link" href="#"><i title="facebbok" class="fa fa-twitter" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="path3">
-                        <a class="icon-link" href="#"><i title="facebbok" class="fa fa-facebook" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="center">
-                <div class="tom">
-                    Company
-                </div>
-                <div class="about">About</div>
-                <div class="terms">Terms and Conditions</div>
-                <div class="privacy">Privacy Policy</div>
-            </div>
-            <div class="right">
-                <div class="contact">Contact</div>
-                <div class="email">Truv@gmail.com</div>
-                <div class="phn">081808028</div>
-                <div class="address">Lagos, Nigeria</div>
-            </div>
-        </div>
-    </footer>
+<footer class="rooms-footer">
+    <div class="rooms-footerbox1">
+        <h1><a href="index.html">Tiptonhotels</a></h1>
+        <p>@2020 Triptonhotels. All rights reserved</p>
+        <p>
+            <img src="assets/images/inst1.png" />
+            <img src="assets/images/tw2.png" />
+            <img src="assets/images/fb1.png" />
+        </p>
+    </div>
+    <div class="rooms-footerbox2">
+        <h1>Company</h1>
+        <p><a href="">About</a></p>
+        <p><a href="">Terms and Conditions</a></p>
+        <p><a href="">Privacy Policy</a></p>
+    </div>
+    <div class="rooms-footerbox3">
+        <h1>Contact</h1>
+        <p>Truv@gmail.com</p>
+        <p>081808028</p>
+        <p>Lagos, Nigeria</p>
+    </div>
+</footer>
 </body>
 </html>

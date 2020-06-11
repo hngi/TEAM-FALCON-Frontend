@@ -1,4 +1,5 @@
 .facilities-wrapper{
+    margin-top: 5rem;
     width: 100%;
     height: auto;
 }
@@ -125,3 +126,219 @@ h1{
         margin-top: 1rem;
     }
 }
+
+
+
+.rooms-drawer-container{
+	display: flex;
+	flex-direction: column;
+	display: none;
+}
+.rooms-drawer{
+	background-color:#000000;
+	height: .2em;
+	width: 2.5em;
+	position: relative;
+	margin: .3em;
+	display: none;
+}
+.rooms-footerbox2 a{
+	color:#bbb;
+}
+
+.rooms-header{
+    top: 0;
+	border-bottom: 1px solid silver;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 2.1rem;
+	padding-right: 2.1rem;
+    line-height: 1.5rem;
+    position: fixed;
+    background-color: #FFFFFF;
+    width: 100%;
+    z-index: 1;
+}
+.rooms-logo{
+	margin: 1em;
+}
+.rooms-logo a{
+	text-decoration: none;
+}
+.rooms-logo h2 a{
+	color: #000000;
+}
+.rooms-ul{
+	display: flex;
+	list-style: none;
+	font-weight: bold;
+}
+.rooms-ul li{
+	margin: 1em;
+}
+.rooms-ul li a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.rooms-footer{
+	background-color: #000000;
+	color: #FAFAFA;
+	display: flex;
+	justify-content: space-around;
+	padding-top: 3em;
+	padding-bottom: 5em;
+}
+.rooms-footer h1 a{
+	color: white;
+}
+.rooms-footerbox1 img{
+	width: 2em;
+	margin: .5em;
+}
+.rooms-footerbox1 img:nth-child(1), img:nth-child(2){
+	width: 1.5em;
+}
+.rooms-footerbox1 img:nth-child(3){
+	width: 1.7em;
+}
+
+
+
+/* rule for mobile screen with small screens */
+ @media all and (min-width: 0px) { 
+ 	
+	.rooms-logo{
+		margin-left: 0em;
+	}
+	.rooms-drawer{
+		display: block;
+		margin-right: -1em;
+	}
+	
+	.rooms-nav{
+		display: none;
+	}
+	.rooms-ul{
+		list-style: none;
+		font-weight: bold;
+	}
+	.rooms-contact{
+		display: flex;
+		justify-content: space-evenly;
+	}
+	.rooms-footer{
+		display: flex;
+		flex-direction: column;
+		padding-left: 2em;
+	}
+	.rooms-footer h1{
+		color: whitesmoke;
+		margin-bottom: .3em;
+	}
+	.rooms-footer p{
+		color: #bbb;
+	}
+	.rooms-footerbox1{
+		margin: 1em;
+		line-height: 3em;	
+	}
+	.rooms-footerbox2{
+		 margin: 1em;
+		 line-height: 3em;
+	}
+	.rooms-footerbox3{
+		margin: 1em;
+		line-height: 3em;
+	}
+	.rooms-drawer-container{
+		right: 0em;
+		margin: 1em;
+		display: flex;
+		flex-direction: column;
+		display: block;
+	}
+	.rooms-box1{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}   
+
+/* rule for mobile screen with a little wider screen */
+ @media all and (min-width:560px){
+ 	
+	 .rooms-logo{
+		margin-left: 0em;
+	}
+	
+	.rooms-drawer{
+		display: block;
+		margin-right: -1em;
+	}
+	
+  }  
+
+ /* ----rule for tablet screen */
+ @media all and (min-width: 778px) { 
+ 	
+	.rooms-nav{
+		 display: block;
+	 }
+	  .rooms-drawer{
+		display: none;
+	}
+	.rooms-drawer-container{
+	display: flex;
+	flex-direction: column;
+	display: none;
+}
+.rooms-drawer{
+	background-color:#000000;
+	height: .2em;
+	width: 2.5em;
+	position: relative;
+	margin: .3em;
+	display: none;
+}
+.rooms-footer{
+		display: flex;
+		flex-direction: row;
+		padding-left: 2em;
+	}
+ } 
+
+/* -----rule for laptops with small screen */
+ @media all and (min-width: 992px) { 
+ 	
+	 .rooms-nav{
+		 display: block;
+	 }
+	 .rooms-drawer{
+		display: none;
+	}
+ }  
+
+/* ----rule for normal laptop screen */
+ @media all and (min-width: 1200px) {
+ 	
+	 .rooms-nav{
+		 display: block;
+	 }
+	  .rooms-drawer{
+		display: none;
+	}
+ }  
+
+/* ---- rule for larger screen and beyond */
+ @media all and (min-width: 1600px) {
+ 	
+	 .rooms-nav{
+		 display: block;
+	 }
+	  .rooms-drawer{
+		display: none;
+	}
+	
+ }  
