@@ -1,48 +1,54 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-section{
+section {
     padding: 20px 0;
     height: 600px;
 }
 
-body{
+body {
     font-family: "Poppins";
 }
 
-.page-topic{
+.page-topic {
     font-weight: 900;
     font-size: 36px;
     padding-left: 50px;
 }
 
-.presidential-suite-overview, .executive-suite-overview, .standard-suite-overview{
+.presidential-suite-overview,
+.executive-suite-overview,
+.standard-suite-overview {
     padding: 20px 50px;
     display: flex;
     font-family: "Poppins";
 }
 
-.presidential-suite-photo{
+.presidential-suite-photo {
     content: url("../images/presidential-suite-photo.png");
     width: 60%;
 }
-.executive-suite-photo{
+.executive-suite-photo {
     content: url("../images/executiveSuites.png");
     width: 60%;
 }
-.standard-suite-photo{
+.standard-suite-photo {
     content: url("../images/standard-suite-photo.png");
     width: 60%;
 }
-.presidential-suite-details, .executive-suite-details, .standard-suite-details{
+.presidential-suite-details,
+.executive-suite-details,
+.standard-suite-details {
     width: 40%;
     padding: 20px 30px;
     position: relative;
 }
 
-.presidential-suite-title, .executive-suite-title, .standard-suite-title{
+.presidential-suite-title,
+.executive-suite-title,
+.standard-suite-title {
     max-height: 90px;
     margin: 30px 0;
     font-size: 36px;
@@ -50,7 +56,9 @@ body{
     font-weight: bold;
 }
 
-.presidential-suite-card, .executive-suite-card, .standard-suite-card{
+.presidential-suite-card,
+.executive-suite-card,
+.standard-suite-card {
     max-height: 500px;
     background-color: #ffffff;
     border-radius: 3px;
@@ -59,45 +67,53 @@ body{
     font-size: 16px;
     position: absolute;
     left: -50px;
-} 
+}
 
-.executive-suite-card{
+.executive-suite-card {
     right: -50px;
     left: 0px;
 }
 
-.presidential-suite-heading, .executive-suite-heading, .standard-suite-heading{
+.presidential-suite-heading,
+.executive-suite-heading,
+.standard-suite-heading {
     font-size: 18px;
 }
 
-.presidential-suite-spec, .executive-suite-spec, .standard-suite-spec{
+.presidential-suite-spec,
+.executive-suite-spec,
+.standard-suite-spec {
     font-weight: 600;
     padding: 20px 0;
 }
 
-.presidential-suite-spec-list div, .executive-suite-spec-list div, .standard-suite-spec-list div{
+.presidential-suite-spec-list div,
+.executive-suite-spec-list div,
+.standard-suite-spec-list div {
     margin: 10px 0;
 }
 
 .icon {
     width: 20px;
 }
-.icon-leaf{
+.icon-leaf {
     content: url("../images/leaf.svg");
 }
-.icon-dumbbell{
+.icon-dumbbell {
     content: url("../images/dumbbell.svg");
 }
-.icon-champagne{
+.icon-champagne {
     content: url("../images/champagne.svg");
 }
 
-.presidential-suite-booking, .executive-suite-booking, .standard-suite-booking{
+.presidential-suite-booking,
+.executive-suite-booking,
+.standard-suite-booking {
     padding-top: 20px;
     text-align: center;
 }
 
-.book-now{
+.book-now {
     border: none;
     border-radius: 10px;
     padding: 15px;
@@ -106,41 +122,49 @@ body{
     width: 100%;
 }
 
-@media only screen and (max-width: 768px){
-    section{
+@media only screen and (max-width: 768px) {
+    section {
         height: 1100px;
     }
-    .presidential-suite-overview, .standard-suite-overview{
+    .presidential-suite-overview,
+    .standard-suite-overview {
         flex-direction: column;
     }
-    .executive-suite-overview{
+    .executive-suite-overview {
         flex-direction: column-reverse;
     }
-    .presidential-suite-overview > div, .executive-suite-overview > div,  .standard-suite-overview > div{
+    .presidential-suite-overview > div,
+    .executive-suite-overview > div,
+    .standard-suite-overview > div {
         width: 100%;
     }
-    .presidential-suite-details, .executive-suite-details, .standard-suite-details {
+    .presidential-suite-details,
+    .executive-suite-details,
+    .standard-suite-details {
         padding: 0;
     }
-    .presidential-suite-card, .standard-suite-card{
+    .presidential-suite-card,
+    .standard-suite-card {
         left: 0;
     }
-    .executive-suite-card{
+    .executive-suite-card {
         right: 0;
     }
 }
 
-@media only screen and (max-width: 600px){
-    section{
+@media only screen and (max-width: 600px) {
+    section {
         height: 1100px;
     }
-    .presidential-suite-title, .executive-suite-title, .standard-suite-title{
+    .presidential-suite-title,
+    .executive-suite-title,
+    .standard-suite-title {
         min-height: 80px;
     }
 }
 
-@media only screen and (max-width: 450px){
-    section{
+@media only screen and (max-width: 450px) {
+    section {
         height: 1000px;
     }
 }

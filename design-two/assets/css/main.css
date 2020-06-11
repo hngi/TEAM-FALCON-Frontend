@@ -50,142 +50,148 @@ body {
 /* Banner/Sub-banner by Ejiroghene */
 
 #__mainbanner {
-    background: url("../img/main_banner.png");
-    position: relative;
-    width: 100%;
-    height: 800px;
-    margin-bottom: 100px;
-    background-size: 100% 100%;
-    z-index: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+  background: url("../img/main_banner.png");
+  position: relative;
+  width: 100%;
+  height: 800px;
+  margin-bottom: 100px;
+  background-size: 100% 100%;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-  #__mainbanner::before,
-  #__subbanner::before {
-    background: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    content: " ";
-    height: 100%;
-    width: 100%;
-    top: 0;
+#__mainbanner::before,
+#__subbanner::before {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  content: " ";
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+ {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  content: " ";
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+
+#__bannerlabel {
+  color: #ffffff;
+  z-index: 2;
+  position: relative;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 400 !important;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: capitalize;
+  margin: 0px auto;
+  top: 50px;
+}
+
+#__subbanner {
+  width: 60%;
+  height: 360px;
+  background: url("../img/sub_banner.png");
+  margin: 0px auto;
+  background-size: 100% 100%;
+  position: relative;
+  bottom: -30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0px;
+}
+
+#__subbanner_label {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  z-index: 2;
+  color: #ffffff;
+  position: relative;
+  top: 50px;
+}
+
+#__subbanner_label h2 {
+  font-size: 2.5em;
+  font-weight: 800 !important;
+  margin: 0;
+  line-height: 2em;
+}
+
+#__subbanner_label p {
+  margin-top: 0;
+  font-weight: normal !important;
+  font-size: 1.7em;
+}
+
+#__subbanner_label .dots {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0px 2px;
+  background-color: #ffffff;
+}
+
+#__subbanner_label .dots.active {
+  background: #fd3d65;
+}
+
+@media screen and (max-width: 991px) {
+  #__subbanner {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #__mainbanner {
+    height: 400px;
   }
 
   #__bannerlabel {
-    color: #ffffff;
-    z-index: 2;
-    position: relative;
-    text-align: center;
-    font-size: 3em;
-    font-weight: 400 !important;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    text-transform: capitalize;
-    margin: 0px auto;
-    top: 50px;
+    font-size: 2em;
+    padding: 0px 15px;
   }
 
   #__subbanner {
-    width: 60%;
-    height: 360px;
-    background: url("../img/sub_banner.png");
-    margin: 0px auto;
-    background-size: 100% 100%;
-    position: relative;
+    height: 200px;
     bottom: -30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1em 0px;
   }
 
   #__subbanner_label {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    text-align: center;
-    z-index: 2;
-    color: #ffffff;
-    position: relative;
-    top: 50px;
+    padding-bottom: 30px;
   }
 
+  #__subbanner_label * {
+    font-size: x-large !important;
+  }
+}
+
+@media screen and (max-width: 520px) {
   #__subbanner_label h2 {
-    font-size: 2.5em;
-    font-weight: 800 !important;
-    margin: 0;
-    line-height: 2em;
+    font-size: 1.5em;
   }
 
   #__subbanner_label p {
-    margin-top: 0;
-    font-weight: normal !important;
-    font-size: 1.7em;
+    font-size: 1.2em !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #__bannerlabel {
+    font-size: 2em;
+    padding: 0px 15px;
   }
 
-  #__subbanner_label .dots {
-    height: 8px;
-    width: 8px;
-    border-radius: 50%;
-    display: inline-block;
-    margin: 0px 2px;
-    background-color: #ffffff;
+  #__subbanner {
+    width: 80%;
   }
-
-  #__subbanner_label .dots.active {
-    background: #fd3d65;
-  }
-  /* Banner/Sub-banner Responsivess by Ejiroghene */
-
-  @media screen and (max-width: 991px) {
-    #__subbanner {
-      height: 300px;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    #__mainbanner {
-      height: 400px;
-    }
-
-    #__bannerlabel {
-      font-size: 2em;
-      padding: 0px 15px;
-    }
-
-    #__subbanner {
-      height: 200px;
-      bottom: -30%;
-    }
-
-    #__subbanner_label {
-      padding-bottom: 30px;
-    }
-
-    #__subbanner_label * {
-      font-size: x-large !important;
-    }
-  }
-
-  @media screen and (max-width: 520px) {
-    #__subbanner_label h2 {
-      font-size: 1.5em;
-    }
-
-    #__subbanner_label p {
-      font-size: 1.2em !important;
-    }
-  }
-
-  @media screen and (max-width: 480px) {
-    #__bannerlabel {
-      font-size: 2em;
-      padding: 0px 15px;
-    }
-
-    #__subbanner {
-      width: 80%;
-    }
-  }
-
+}
   /* About us(Section below banner on home page) - @Giye */
 
   #about-us{
@@ -516,7 +522,7 @@ body {
 }
 .suite-text{
 	position: absolute;
-	top: 300px;
+	top: 330px;
 	left: 60px;
 }
 .suite-text, .suite-description{
@@ -540,6 +546,13 @@ body {
 	font-size: 15px;
 	text-transform: uppercase;
 	border: none;
+
+}
+.suite-text p{
+  margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
 }
 @media only screen and (max-width: 375px) {
   .suite-text{
@@ -975,8 +988,161 @@ body {
 
 
 /* Footer section by Oluwatosin */
+footer{
+background-color: rgba(216, 216, 216, 0.5);
+position:relative;
+bottom:0;
+width:100%;
+left:0;
+}
 
-.item {
+.footer{
+width:100%;
+
+}
+
+@media(max-width:1250px){
+.footer{
+  width:100%;
+  margin-left:0%;
+  }
+}
+
+@media(max-width:800px){
+.footer{
+  width:100%;
+  margin-left:2%;
+  }
+}
+
+.footer-row{
+display:flex;
+  width:90%;
+}
+
+@media(max-width:800px){
+.footer-row{
+  display:flex;
+    width:100%;
+  }
+}
+
+@media(max-width:1250px){
+.footer-row{
+  display:flex;
+    width:100%;
+      margin-left:1px;
+  }
+}
+
+@media(max-width:500px){
+.footer-row{
+  display:flex;
+  flex-direction:column;
+    width:50%;
+  margin-left:25%;
+  margin-right:25%;
+  }
+}
+
+.footerImg{
+height:28px;
+font-size:20px;
+font-family:"CalibanStd";
+text-align:start;
+padding-right:200px;
+padding-top:50px;
+}
+
+@media(max-width:1250px){
+.footerImg{
+height:28px;
+font-size:20px;
+font-family:"CalibanStd";
+text-align:start;
+padding-left:25px;
+padding-right:75px;
+padding-top:50px;
+}
+}
+
+
+@media(max-width:800px){
+.footerImg{
+height:28px;
+font-size:20px;
+font-family:"CalibanStd";
+text-align:start;
+padding-right:50px;
+padding-top:50px;
+}
+}
+
+.footer-button{
+background-color: #FD3D65;
+color:#ffffff;
+font-size:15px;
+height:30px;
+width:100px;
+margin:40px;
+font-family:"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+@media(max-width:800px){
+.footer-button{
+background-color: #FD3D65;
+color:#ffffff;
+font-size:10px;
+height:30px;
+width:130px;
+margin-top:50px;
+margin-bottom:50px;
+margin-right:40px;
+font-family:"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+}
+
+@media(max-width:500px){
+.footer-button{
+   background-color: #FD3D65;
+   color:#ffffff;
+   font-size:10px;
+   height:30px;
+   width:50%;
+   margin:20px 25% 20px 25%;
+   font-family:"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+}
+
+.footer-row a{
+font-size:12px;
+font-family:"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+color:#000000;
+padding:50px;
+text-decoration:none;
+}
+
+@media(max-width:800px){
+.footer-row a{
+   font-size:12px;
+   font-family:"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+   color:#000000;
+   padding:50px 30px;
+   text-decoration:none;
+  }
+}
+
+@media(max-width:500px){
+.footer-row  a{
+   font-size:12px;
+   font-family:"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+   color:#000000;
+   padding:20px 10px;
+   text-decoration:none;
+  }
+}
+
+/* .item {
     padding: 5px 15px 3px 15px;
   }
   .footer_main {
@@ -1004,4 +1170,4 @@ body {
     width: 87px;
     font-size: 11px;
     margin-left: 29px;
-  }
+  } */
