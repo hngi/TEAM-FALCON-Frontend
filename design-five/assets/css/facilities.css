@@ -45,32 +45,32 @@ h1{
     padding: 1rem;
 }
 .first-image{
-    background-image:url(./facilities-img/chelsea.png);
+    background-image:url(../images/chelsea.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
 .second-image{
-    background-image: url(./facilities-img/jared.png);
+    background-image: url(../images/jared.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
 .third-image{
-    background-image: url(./facilities-img/colorful.png);
+    background-image: url(../images/colorful.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
 .fourth-image{
-    background-image: url(./facilities-img/humphrey.png);
+    background-image: url(../images/humphrey.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
 .fifth-image{
-    background-image: url(./facilities-img/q.png);
+    background-image: url(../images/q.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
 .sixth-image{
-    background-image: url(./facilities-img/robert.png);
+    background-image: url(../images/robert.png);
     background-repeat: no-repeat;
     background-size: contain;
 }

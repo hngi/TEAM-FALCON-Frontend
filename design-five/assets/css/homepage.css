@@ -41,7 +41,7 @@ main {
     grid-template-columns: 100%;
   }
   #background{
-    background: url("./images/landingpage.png");
+    background: url("../images/landingpage.png");
     background-repeat: no-repeat;
     background-size: cover;
     grid-area: header;
