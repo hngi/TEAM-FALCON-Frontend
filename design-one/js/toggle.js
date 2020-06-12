@@ -1,6 +1,6 @@
 function toggle() {
     var active = document.getElementById('side')
-    active.classList.toggle('active')
+    active.classList.toggle('sideactive')
 }
 
 function backdrop() {
@@ -10,5 +10,5 @@ function backdrop() {
 
 function hamturn() {
     var hamturn = document.getElementById('hamturn')
-    hamturn.classList.toggle('active')
+    hamturn.classList.toggle('hamactive')
 }

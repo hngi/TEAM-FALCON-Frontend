@@ -1,13 +1,14 @@
 body {
   margin: 0;
 }
-
+#_rnr {
+  padding-bottom: 50px;
+}
 #_rnr_banner {
-  background: url("./imgs/Rectangle_86.png");
+  background: url("../img/Rectangle_86.png");
   position: relative;
   width: 100%;
   height: 500px;
-  top: 123px;
   margin-bottom: 100px;
   display: flex;
   justify-content: center;
@@ -116,6 +117,7 @@ body {
   font-size: 14px;
   border-radius: 4px;
   width: 50%;
+  cursor: pointer;
 }
 
 ._rnr_card_img img {
@@ -165,7 +167,7 @@ body {
   text-align: right;
 }
 
-#_rnr_container #more > button {
+#_rnr_container #more button {
   outline: none;
   border: none;
   background-color: #71ce47;
@@ -175,6 +177,7 @@ body {
   font-size: 14px;
   border-radius: 4px;
   min-width: 15%;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 991px) {
