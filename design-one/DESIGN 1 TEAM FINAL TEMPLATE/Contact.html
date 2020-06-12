@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/header-footer.css">
+	<link href="css/contact.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+	<title></title>
+</head>
+
+<body id="body">
+
+	<header class="toolbar">
+		<nav class="toolbar_navigation">
+			<div></div>
+			<div class="toolbar_logo"><a href="index.html"><img src="img/logo.svg" alt="logo"></a></div>
+			<div class="spacer"></div>
+			<div class="toolbar_navigation-items">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="About.html">About</a></li>
+					<li class="activenav"><a href="Contact.html">Contact Us</a></li>
+					<li><a href="Facilities.html">Facilities</a></li>
+					<li><a href="Rooms.html">Rooms</a></li>
+				</ul>
+				<div class="signup_button">
+					<a href="">Sign Up</a>
+				</div>
+			</div>
+			<button class="hamburger" id="hamturn" onclick="toggle(); backdrop(); hamturn()">
+				<div class="ham_line"></div>
+				<div class="ham_line"></div>
+				<div class="ham_line"></div>
+			</button>
+		</nav>
+	</header>
+	<div id="hidden">
+		<nav id="side">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="About.html">About</a></li>
+				<li><a href="Contact.html">Contact Us</a></li>
+				<li><a href="Facilities.html">Facilities</a></li>
+				<li><a href="Rooms.html">Rooms</a></li>
+				<div class="signup_button">
+					<a href="">Sign Up</a>
+				</div>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="form">
+		<div class="wrapper">
+			<div class="title">
+				<h1>Contact us</h1>
+				<p>You would be contacted within 24 hours of submission</p>
+			</div>
+			<div class="contact-form">
+				<form action="/action_page.php">
+					<label style="color:#606060" class="required" for="fname">Enter name</label>
+					<input style="background-color: #F5F5F5;" type="text" id="fname" name="firstname" placeholder="Your name..." required>
+
+					<label style="color:#606060" class="required" for="email">Enter email address</label>
+					<input style="background-color: #F5F5F5;" type="email" id="email" name="email" placeholder="Your email..." required>
+
+					<label style="color:#606060" class="required" for="email">Phone number</label>
+					<input style="background-color: #F5F5F5;" type="tel" id="phone_number" name="phone" pattern="+234" placeholder="+234" required>
+
+					<label style="color:#606060" class="required" for="message">Your message</label>
+					<textarea style="background-color: #F5F5F5;" placeholder="Type your message here"></textarea required>
+	
+
+					<input type="submit" value="Send message">
+					
+					<div class="lower">
+						<h1>Other Contact Details</h1>
+						<p>Locate us @ NO 23 Lanyare street, Ogun State</p>
+						<p>Or call 08098735997, 09067867234</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- FOOTER SECTION -->
+
+
+	<div class="footer">
+
+		<div class="footer_content">
+			<div class="footer_navigation-items">
+				<div class="footer_logo"><a href="index.html"><img src="img/logo.svg" alt="logo"></a></div>
+				<ul>
+					<li><a href="About.html">About us</a></li>
+					<li><a href="Contact.html">Contact us</a></li>
+					<li><a href="Rooms.html">Book a room</a></li>
+					<li><a href="index.html">Our agents</a></li>
+					<li><a href="Contact.html">Connect with us</a></li>
+				</ul>
+			</div>
+			<div class="footer_navigation-items">
+				<ul>
+					<li><a href="About.html">About us</a></li>
+					<li><a href="Contact.html">Contact us</a></li>
+					<li><a href="Rooms.html">Book a room</a></li>
+					<li><a href="index.html">Our agents</a></li>
+					<li><a href="Contact.html">Connect with us</a></li>
+				</ul>
+			</div>
+			<div class="footer_navigation-items">
+				<ul>
+					<li><a href="About.html">About us</a></li>
+					<li><a href="Contact.html">Contact us</a></li>
+					<li><a href="Rooms.html">Book a room</a></li>
+					<li><a href="index.html">Our agents</a></li>
+					<li><a href="Contact.html">Connect with us</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/toggle.js"></script>
+</body>
+
+</html>
