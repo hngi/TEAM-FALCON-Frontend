@@ -1,0 +1,302 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+	text-decoration: none;
+}
+.contact-us-drawer-container{
+	display: flex;
+	flex-direction: column;
+	display: none;
+}
+.contact-us-drawer{
+	background-color:#000000;
+	height: .2em;
+	width: 2.5em;
+	position: relative;
+	margin: .3em;
+	display: none;
+}
+.contact-us-footerbox2 a{
+	color:#bbb;
+}
+
+.contact-us-header{
+	border-bottom: 1px solid silver;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	line-height: 1.5rem;
+}
+.contact-us-logo{
+	margin: 1em;
+}
+.contact-us-logo h2 a{
+	color: #000000;
+}
+.contact-us-ul{
+	display: flex;
+	list-style: none;
+	font-weight: bold;
+}
+.contact-us-ul li{
+	margin: 1em;
+}
+.contact-us-ul li a{
+	color: #000000;
+}
+.contact-us-body{
+	margin: 3rem;
+	display: flex;
+	justify-content: space-between;
+}
+.contact-us-box1{
+	width: 100%;
+	margin: 1rem;
+}
+.contact-us-contact{
+	display: flex;
+	margin-top: 5em;
+}
+.contact-us-address{
+	margin-right:2em;
+}
+
+.contact-us-box2{
+	width: 100%;
+	margin: 1rem;
+	border-radius: 3px;
+	padding: 1.5em;
+	-webkit-box-shadow: 1px 1px 8px 0px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    1px 1px 8px 0px #ccc;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         1px 1px 8px 0px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+
+}
+
+.contact-us-input{
+	width: 100%;
+}
+.contact-us-input input, .contact-us-textarea{
+	border: 1px solid silver;
+	border-radius: 3px;
+	padding: .8em .8em .8em 1em;
+	margin-top: 1.5em;
+	width: 100%;
+}
+.contact-us-textarea{
+	height: 10em;
+}
+.contact-us-submit button{
+	width: 100%;
+	background-color: #000000;
+	border-radius: 3px;
+	color: #FFFFFF;
+	border: 0;
+	padding: 1em;
+	margin-top: 1.5em;
+}
+.contact-us-footer{
+	background-color: #000000;
+	color: #FAFAFA;
+	display: flex;
+	justify-content: space-around;
+	padding-top: 3em;
+	padding-bottom: 5em;
+}
+.contact-us-footer h1 a{
+	color: white;
+}
+.contact-us-footerbox1 img{
+	width: 2em;
+	margin: .5em;
+}
+.contact-us-footerbox1 img:nth-child(1), img:nth-child(2){
+	width: 1.5em;
+}
+.contact-us-footerbox1 img:nth-child(3){
+	width: 1.7em;
+}
+
+/* rule for mobile screen with small screens */
+ @media all and (min-width: 0px) { 
+ 	
+	.contact-us-logo{
+		margin-left: 0em;
+	}
+	.contact-us-drawer{
+		display: block;
+		margin-right: -1em;
+	}
+	
+	.contact-us-body{
+		margin: 1rem;
+		/* padding: 0; */
+		width: 85%;
+		display: flex;
+		flex-direction: column;
+	}
+	.contact-us-nav{
+		display: none;
+	}
+
+	.contact-us-nav.active{
+		display: block;
+	}
+	
+	.contact-us-ul{
+		list-style: none;
+		font-weight: bold;
+	}
+
+	.contact-us-ul.active{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		margin-top: 28px;
+	}
+
+	.contact-us-ul.active li{
+	margin: 0.5em;
+	}
+
+	.contact-us-ul.active li:hover{
+		scale: 1.1;
+		}
+
+
+	.contact-us-contact{
+		display: flex;
+		justify-content: space-evenly;
+	}
+	.contact-us-footer{
+		display: flex;
+		flex-direction: column;
+		padding-left: 2em;
+	}
+	.contact-us-footer h1{
+		color: whitesmoke;
+		margin-bottom: .3em;
+	}
+	.contact-us-footer p{
+		color: #bbb;
+	}
+	.contact-us-footerbox1{
+		margin: 1em;
+		line-height: 3em;	
+	}
+	.contact-us-footerbox2{
+		 margin: 1em;
+		 line-height: 3em;
+	}
+	.contact-us-footerbox3{
+		margin: 1em;
+		line-height: 3em;
+	}
+	.contact-us-drawer-container{
+		right: 0em;
+		margin: 1em;
+		display: flex;
+		flex-direction: column;
+		display: block;
+	}
+	.contact-us-box1{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}   
+
+/* rule for mobile screen with a little wider screen */
+ @media all and (min-width:560px){
+ 	
+	 .contact-us-logo{
+		margin-left: 0em;
+	}
+	.contact-us-body{
+		margin: 1rem;
+		/* padding: 0; */
+		width: 85%;
+		display: flex;
+		flex-direction: column;
+	}
+	.contact-us-drawer{
+		display: block;
+		margin-right: -1em;
+	}
+	
+  }  
+
+ /* ----rule for tablet screen */
+ @media all and (min-width: 778px) { 
+ 	
+	.contact-us-body{
+		margin: 1rem;
+		/* padding: 0; */
+		width: 95%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.contact-us-nav{
+		 display: block;
+	 }
+	  .contact-us-drawer{
+		display: none;
+	}
+	.contact-us-drawer-container{
+	display: flex;
+	flex-direction: column;
+	display: none;
+}
+.contact-us-drawer{
+	background-color:#000000;
+	height: .2em;
+	width: 2.5em;
+	position: relative;
+	margin: .3em;
+	display: none;
+}
+.contact-us-footer{
+		display: flex;
+		flex-direction: row;
+		padding-left: 2em;
+	}
+ } 
+
+/* -----rule for laptops with small screen */
+ @media all and (min-width: 992px) { 
+ 	
+	 .contact-us-nav{
+		 display: block;
+	 }
+	 .contact-us-drawer{
+		display: none;
+	}
+ }  
+
+/* ----rule for normal laptop screen */
+ @media all and (min-width: 1200px) {
+ 	
+	 .contact-us-nav{
+		 display: block;
+	 }
+	  .contact-us-drawer{
+		display: none;
+	}
+ }  
+
+/* ---- rule for larger screen and beyond */
+ @media all and (min-width: 1600px) {
+ 	
+	 .contact-us-nav{
+		 display: block;
+	 }
+	  .contact-us-drawer{
+		display: none;
+	}
+	
+ }  
