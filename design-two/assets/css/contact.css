@@ -1,0 +1,87 @@
+body{
+	margin:0;
+	padding:0;
+}
+
+.contactImg{
+	position:relative;
+    width: 100%;
+    height: 800px;
+    background: url('../img/contact_banner.png');
+}
+
+h2{
+    font-family: 'GillSans';
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: -0.0848766px;
+    color: #ffffff;
+		opacity:0.5;
+		font-weight: 200;
+		padding-bottom: 20px;
+
+}
+
+h4{
+    font-family: 'GillSans';
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: -0.124486px;
+    color: #ffffff;
+		margin-top:auto;
+		font-weight: 400;
+}
+
+.row{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width:100%;
+}
+
+
+@media(max-width:1250px){
+  .row{
+	display:flex;
+	width:100%;
+	margin-left:5%;
+  }
+}
+
+@media(max-width:700px){
+  .row{
+	display:flex;
+	flex-direction:column;
+	width:100%;
+	margin:20px;
+  }
+}
+
+.column{
+	display:flex;
+	flex-direction:column;
+	margin:70px;
+}
+
+@media(max-width:1250px){
+  .column{
+	display:flex;
+	flex-direction:column;
+	width:100%;
+	margin:15px;
+  }
+}
+
+.top{
+	text-align:center !important;
+	display:flex;
+	flex-direction:column;
+	margin-bottom:5%
+}
+
+.position{
+	position:absolute;
+	top:50%;
+	width:84%;
+	margin:auto 8%;
+}
