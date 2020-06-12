@@ -5,7 +5,7 @@
 }
 
 .about-topSectionImg {
-    background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("../img/Rectangle-86.png");
+    background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("../images/Rectangle-86.png");
     height: 400px;
     display: flex;
     justify-content: center;
@@ -14,7 +14,7 @@
 }
 
 .about-topSectionImg:hover {
-    background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("../img/Rectangle-86.png");
+    background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("../images/Rectangle-86.png");
     color: #52CE47;
 }
 
@@ -128,7 +128,7 @@
     border-radius: 25px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
-    background-image: url("../img/Rectangle-69.png");
+    background-image: url("../images/Rectangle-69.png");
     position: absolute;
     right: 40px;
     top: 20%;

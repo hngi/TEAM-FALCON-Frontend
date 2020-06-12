@@ -16,7 +16,7 @@
   height: 500px;
   width: 100%;
   overflow-x: hidden;
-  background-image: url('../img/Rectangle\ 85.png');
+  background-image: url('../images/Rectangle_85.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -41,7 +41,7 @@
   color: #fff;
   font-size: 2rem;
   font-weight: normal;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   word-spacing: 0.2em;
   line-height: 1.2;

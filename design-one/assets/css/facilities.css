@@ -14,7 +14,7 @@
   }
   .container .facilities-main .banner {
     min-height: 500px;
-    background: #71ce47 url("../img/Rectangle_85.png");
+    background: #71ce47 url("../images/Rectangle_85.png");
     color: #fefdfb;
     background-position: 100% 100%;
     background-repeat: no-repeat;
@@ -27,7 +27,7 @@
   }
   .container .facilities-main .banner h2 {
     font-size: calc(30px + 2vmin);
-    font-family: "Trebuchet MS";
+    font-family: "Poppins";
   }
   .container .facilities-main .banner h3 {
     font-size: calc(10px + 2vmin);
@@ -49,7 +49,7 @@
     }
     .container .facilities-main .banner {
       min-height: 400px;
-      background: #71ce47 url("../img/Rectangle_85.png");
+      background: #71ce47 url("../images/Rectangle_85.png");
       color: #fefdfb;
       background-position: 100% 100%;
       background-repeat: no-repeat;
