@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.slider-title,
+.slider-title1 {
+    position: relative;
+    font-family: Montserrat;
+    color: #606060;
+    width: 100%;
+    padding: 30px 0 30px 0;
+    font-size: 1.5em;
+}
+
+.slider-title:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0px;
+    top: 0;
+    padding: 30px;
+    border-bottom: 3px solid #52CE47;
+}
+
+.slider-title1:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10px;
+    top: 0;
+    padding: 30px;
+    border-bottom: 3px solid #52CE47;
+}
+
+.post-slider {
+    position: relative;
+}
+
+.facilities-slider {
+    position: relative;
+}
+
+.facilities-slider .fnext {
+    position: absolute;
+    top: 7.5%;
+    right: 60px;
+    font-size: 2.5em;
+    color: #52CE47;
+    cursor: pointer;
+    z-index: 100;
+}
+.facilities-slider .fprev {
+    position: absolute;
+    top: 7.5%;
+    right: 60px;
+    font-size: 2.5em;
+    color: #52CE47;
+    cursor: pointer;
+    z-index: 100;
+}
+
+@media only screen and (max-width: 1000px) {
+    .facilities-slider .fnext {
+        position: absolute;
+        top: 5%;
+        right: 10px;
+        font-size: 2em;
+        cursor: pointer;
+    }
+}
+
+.post-slider .next {
+    position: absolute;
+    top: 55%;
+    right: 60px;
+    font-size: 3em;
+    color: #52CE47;
+    cursor: pointer;
+    z-index: 100;
+}
+
+@media only screen and (max-width: 400px) {
+    .post-slider .next {
+        position: absolute;
+        top: 50%;
+        right: 60px;
+        font-size: 3em;
+        cursor: pointer;
+    }
+}
+
+.post-slider .prev {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    font-size: 3em;
+    color: #52CE47;
+    cursor: pointer;
+    z-index: 100;
+}
+
+@media only screen and (max-width: 400px) {
+    .post-slider .prev {
+        position: absolute;
+        top: 50%;
+        left: 30px;
+        font-size: 3em;
+        cursor: pointer;
+    }
+}
+
+.facilities-slider .fprev {
+    position: absolute;
+    top: 7.5%;
+    left: 60px;
+    font-size: 2.5em;
+    color: #52CE47;
+    cursor: pointer;
+    z-index: 100;
+}
+
+@media only screen and (max-width: 1000px) {
+    .facilities-slider .fprev {
+        position: absolute;
+        top: 5%;
+        left: 10px;
+        font-size: 2em;
+        cursor: pointer;
+    }
+}
+
+.post-slider .post-wrapper {
+    width: 80%;
+    height: 330px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 10px 0px 10px 0px;
+}
+
+.facilities-slider .facilities-wrapper {
+    width: 80%;
+    height: 170px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 10px 0px 10px 0px;
+}
+
+.post-slider .post-wrapper .post {
+    width: 350px !important;
+    height: 320px !important;
+    margin: 0px 10px;
+    display: inline-block;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 1rem 1rem 1rem -1rem gray;
+    position: relative;
+}
+
+.facilities-post {
+    width: 250px !important;
+    height: 160px !important;
+    margin: 0px 10px;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 1rem 1rem 1rem -1rem gray;
+    position: relative;
+}
+
+@media only screen and (max-width:400px) {
+    .facilities-slider .facilities-wrapper .facilities-post {
+        width: 200px !important;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .post-slider .post-wrapper .post {
+        width: 270px !important;
+    }
+}
+
+.post-slider .post-wrapper .post button {
+    position: absolute;
+    top: 30%;
+    left: 27%;
+    padding: 15px 20px;
+    background-color: #52CE47;
+    font-size: 1.2em;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+    opacity: 0;
+    transition: transform 1s ease;
+    cursor: pointer;
+}
+
+.post-slider .post-wrapper .post button:hover {
+    opacity: 1;
+}
+
+.post-slider .post-wrapper .post .slider-image {
+    width: 100%;
+    height: 220px;
+}
+
+.post-slider .post-wrapper .post .post-info {
+    height: 100px;
+    padding: 10px;
+}
+
+.post-slider .post-wrapper .post .post-info span {
+    margin-left: 55px;
+    color: #52CE47;
+}
+
+.post-slider .post-wrapper .post .post-info .post-info-title {
+    padding: 4px;
+    color: white;
+}
+
+.more-rooms {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.more-rooms img {
+    width: 310px;
+    height: 300px;
+    margin-top: 20px;
+}
+
+.more-rooms-images {
+    position: relative;
+    width: 310px;
+    height: 300px;
+    margin-top: 20px;
+}
+
+.image-info {
+    position: absolute;
+    width: 310px;
+    height: 300px;
+    top: 40%;
+    text-align: center;
+    color: white;
+}
+
+@media only screen and (max-width:800px) {
+    .image-info {
+        left: -5%;
+    }
+    .image-info h2 {
+        padding: 3px;
+        color: white;
+    }
+    .image-info p {
+        padding: 3px;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .more-rooms img {
+        width: 270px;
+        height: 260px;
+    }
+    .more-rooms-images {
+        width: 270px;
+        height: 260px;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width:780px) {
+    .more-rooms {
+        justify-content: center;
+    }
+}
+
+.image-info h2 {
+    padding: 10px;
+    color: white;
+}
+
+.image-info p {
+    padding: 10px;
+    color: white;
+}
+
+.image-info button {
+    padding: 7px 15px;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+.more-rooms-images:hover {
+    opacity: 0.80;
+}
+
+.image-info button:hover {
+    background-color: #52CE47;
+}
+
+.facilities-info {
+    width: 100%;
+    height: 100%;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.facilities-info{
+	text-align: center;
+}
+
+.fas {
+    color: #52CE47;
+    font-size: 2.5em;
+    margin:auto;
+    text-align: center;
+    width: 2em;
+    border: 1px solid gray;
+    display: block;
+    padding: 20px;
+    border-radius: 50%;
+}
+@media screen and (max-width:768px) {
+	.fas {
+		color: #52CE47;
+		font-size: 1.6em;
+		margin: auto;
+		text-align: center;
+		width: 2em;
+		border: 1px solid gray;
+		display: block;
+		padding: 20px;
+		border-radius: 50%;
+	}
+}
+
+.facilities-info>p {
+    text-align: center;
+    padding: 30px 0 5px 0;
+}
+.facilities-info>i {
+    text-align: center;
+    padding: 0 0 5px 0;
+}
+
+.facilities-info a {
+    text-decoration: none;
+    color: #52CE47;
+    text-align: center;
+    display: block;
+}

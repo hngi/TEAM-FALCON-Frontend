@@ -1,0 +1,243 @@
+body {
+  margin: 0;
+}
+#_rnr {
+  padding-bottom: 50px;
+}
+#_rnr_banner {
+  background: url("../img/Rectangle_86.png");
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  z-index: 0;
+}
+
+#_rnr_banner::before {
+  background: rgba(96, 96, 96, 0.72);
+  position: absolute;
+  content: " ";
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+
+#_rnr_bannertext {
+  position: relative;
+  top: -20px;
+  padding: 0px 5px;
+  text-align: center;
+  z-index: 3;
+  font-family: Poppins;
+  color: #ffffff;
+}
+
+#_rnr_bannertext h4 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 55px;
+  margin: 0 0 8px 0;
+}
+
+#_rnr_bannertext p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  margin: 0;
+}
+
+#_rnr_container {
+  top: 50px;
+  padding: 0px 15px;
+  margin: 0px 70px 100px;
+  position: relative;
+}
+
+#_rnr_container .rows {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  column-gap: 40px;
+}
+
+._rnr_cards {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  box-shadow: 0px 0px 10px rgb(201, 198, 198);
+  border-radius: 5px;
+}
+
+._rnr_card_img {
+  height: 250px;
+  width: 100%;
+  position: relative;
+}
+
+._rnr_card_img .book_room {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+  color: white;
+  width: 100%;
+  opacity: 0;
+  transition: opacity .5s 0s ease-in-out;
+}
+
+._rnr_card_img .book_room::before {
+  position: absolute;
+  background-color: rgba(96, 96, 96, 0.69);
+  height: 100%;
+  width: 100%;
+  content: "";
+  z-index: -1;
+}
+
+._rnr_card_img .book_room button {
+  outline: none;
+  border: none;
+  background-color: #71ce47;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 15px;
+  font-size: 14px;
+  border-radius: 4px;
+  width: 50%;
+  cursor: pointer;
+}
+
+._rnr_card_img img {
+  height: 100%;
+  width: 100%;
+  display: block; /* remove extra space below image */
+}
+
+._rnr_card_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  padding: 10px 15px;
+}
+
+._rnr_card_text label[for="room_info"] {
+  width: 100%;
+  display: flex;
+}
+
+._rnr_card_text .room_type {
+  color: #333333;
+  font-weight: 700;
+}
+
+._rnr_card_text .room_price {
+  color: #71ce47;
+  font-weight: 400;
+  margin-left: auto;
+}
+._rnr_card_text .room_desc {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: #828282;
+}
+
+._rnr_card_text .room_desc p {
+  margin: 0px;
+}
+
+#_rnr_container #more {
+  margin: 50px 0px;
+  text-align: right;
+}
+
+#_rnr_container #more button {
+  outline: none;
+  border: none;
+  background-color: #71ce47;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 15px;
+  font-size: 14px;
+  border-radius: 4px;
+  min-width: 15%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 991px) {
+  #_rnr_container {
+    margin: 0px 10px;
+  }
+
+  #_rnr_container .rows {
+    grid-template-columns: 47% 47%;
+    column-gap: 6%;
+  }
+}
+
+/* responsiveness for screen size of max- width 768px. This is for tabs */
+@media screen and (max-width: 768px) {
+  #_rnr_banner {
+    height: 400px;
+  }
+
+  #_rnr_bannertext {
+    position: relative;
+    top: 0px;
+  }
+
+  #_rnr_container .rows {
+    grid-template-columns: 48% 48%;
+    column-gap: 4%;
+  }
+
+  #_rnr_bannertext h4 {
+    font-size: 2.5em;
+  }
+
+  #_rnr_bannertext p {
+    font-size: 1.7em;
+  }
+}
+
+/* responsiveness for screen size of max- width 520px. This is for small devices */
+@media screen and (max-width: 520px) {
+  #_rnr_container .rows {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: auto;
+  }
+
+  ._rnr_cards {
+    margin-top: 50px;
+  }
+
+  #_rnr_container #more {
+    text-align: center;
+  }
+
+  #_rnr_container #more > button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  ._rnr_card_img {
+    height: 200px;
+  }
+}

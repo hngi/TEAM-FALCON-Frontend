@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/header-footer.css">
+	<link rel="stylesheet" type="text/css" href="css/design1-banner.css">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/about.css">
+	<link rel='stylesheet' type='text/css' media='screen' href='css/facilities_home.css'>
+	<link rel="stylesheet" type="text/css" href="css/room-rents_homepage.css">
+	<link rel='stylesheet' type='text/css' media='screen' href='css/services_homepage.css'>
+
+
+	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+	<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="css/room-rents_homepage.css">
+
+	<title></title>
+</head>
+
+<body id="body">
+	<header class="toolbar">
+		<nav class="toolbar_navigation">
+			<div></div>
+			<div class="toolbar_logo"><a href="index.html"><img src="img/logo.svg" alt="logo"></a></div>
+			<div class="spacer"></div>
+			<div class="toolbar_navigation-items">
+				<ul>
+					<li class="activenav"><a href="index.html">Home</a></li>
+					<li><a href="About.html">About</a></li>
+					<li><a href="Contact.html">Contact Us</a></li>
+					<li><a href="Facilities.html">Facilities</a></li>
+					<li><a href="Rooms.html">Rooms</a></li>
+				</ul>
+				<div class="signup_button">
+					<a href="">Sign Up</a>
+				</div>
+			</div>
+			<button class="hamburger" id="hamturn" onclick="toggle(); backdrop(); hamturn()">
+				<div class="ham_line"></div>
+				<div class="ham_line"></div>
+				<div class="ham_line"></div>
+			</button>
+		</nav>
+	</header>
+	<div id="hidden">
+		<nav id="side">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="About.html">About</a></li>
+				<li><a href="Contact.html">Contact Us</a></li>
+				<li><a href="Facilities.html">Facilities</a></li>
+				<li><a href="Rooms.html">Rooms</a></li>
+				<div class="signup_button">
+					<a href="">Sign Up</a>
+				</div>
+			</ul>
+		</nav>
+	</div>
+
+	<section>
+		<div class="home-page-banner">
+
+			<div class="intro-text-box">
+				<h1>
+					<span class="text-green">Your </span>Comfort,<br />Our
+					<span class="text-green">Priority.</span>
+				</h1>
+				<p>
+					Welcome to MySuite Search through our variety of exotic rooms to
+					find one that matches your style and preference.
+				</p>
+				<!-- explore services -->
+				<a href="#" class="explore-services">
+					<button>Explore Services</button>
+				</a>
+
+			</div>
+			<!-- top sky view -->
+			<div class="banner-pic">
+				<div class="banner-bord">
+
+				</div>
+				<div class="banner-img">
+				</div>
+			</div>
+			​
+
+		</div>
+		<!-- check in and reservations  -->
+		<div class="reservation">
+			<div class="reservation-order">
+				<form>
+					<span>
+						<label for="checkin-date">Check In</label><br />
+						<input type="date" name="checkin-date" id="checkin-date" />
+					</span>
+					<span>
+						<label for="checkout-date">Check Out</label><br />
+						<input type="date" name="checkout-date" id="checkout-date" />
+					</span>
+					<span>
+						<label for="adult">Adult</label><br />
+						<input type="number" name="adult" id="adult" min="0" max="100" value="0" />
+					</span>
+					<span>
+						<label for="children">Children</label><br />
+						<input type="number" name="children" id="children" min="0" max="100" value="0" />
+					</span>
+					<span>
+						<label style="visibility: hidden;">Submit</label><br />
+						<button type="submit" onclick="return false">Confirm</button>
+					</span>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<section class="about-bottomSection">
+		<h2 id="about-mySuite">About MySuite
+			<div class="about-bottomStyle"></div>
+		</h2>
+		<div class="about_body">
+			<div class="about-details">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, ducimus?
+				Praesentium beatae magnam tenetur corporis dignissimos nobis quibusdam, aspernatur vitae repellat
+				voluptatibus laudantium quas animi magni maxime quaerat illum molestias.</div>
+			<div class="about_sideimgs">
+				<div class="about-sideImg"></div>
+				<div class="about-sideDeco"></div>
+			</div>
+		</div>
+		<button id="about-readMore">Read More</button>
+	</section>
+
+	<!-- Facilities Section -->
+	<div class="page-wrapper">
+		<div class="facilities-slider">
+			<div class="container">
+				<h1 class="slider-title">Facilities</h1>
+			</div>
+			<i class="fa fa-chevron-left fprev" aria-hidden="true"></i>
+			<i class="fa fa-chevron-right fnext" aria-hidden="true"></i>
+			<div class="container facilities-wrapper">
+				<div class="facilities-post">
+					<div class="facilities-info ">
+						<i class="fas fa-dumbbell" aria-hidden="true"></i>
+						<p>Fully Equipped Gym</p>
+						<a href="#">Explore Now</a>
+					</div>
+				</div>
+				<div class="facilities-post">
+					<div class="facilities-info ">
+						<i class="fas fa-car" aria-hidden="true"></i>
+						<p>Airport Transfers</p>
+						<a href="#">Explore Now</a>
+					</div>
+				</div>
+				<div class="facilities-post">
+					<div class="facilities-info ">
+						<i class="fas fa-wifi" aria-hidden="true"></i>
+						<p>Complementary Wifi</p>
+						<a href="#">Explore Now</a>
+					</div>
+				</div>
+				<div class="facilities-post">
+					<div class="facilities-info ">
+						<i class="fas fa-spa" aria-hidden="true"></i>
+						<p>Beauty Spa</p>
+						<a href="#">Explore Now</a>
+					</div>
+				</div>
+				<div class="facilities-post">
+					<div class="facilities-info ">
+						<i class="fas fa-utensils" aria-hidden="true"></i>
+						<p>Exotic Cuisines</p>
+						<a href="#">Explore Now</a>
+					</div>
+				</div>
+				<div class="facilities-post">
+					<div class="facilities-info ">
+						<i class="fas fa-dumbbell" aria-hidden="true"></i>
+						<p>Fully Equipped Gym</p>
+						<a href="#">Explore Now</a>
+					</div>
+				</div>
+				<div class="facilities-post">
+					<div class="facilities-info ">
+						<i class="fas fa-car" aria-hidden="true"></i>
+						<p>Airport Transfers</p>
+						<a href="#">Explore Now</a>
+					</div>
+				</div>
+				<div class="facilities-post">
+					<div class="facilities-info ">
+						<i class="fas fa-wifi" aria-hidden="true"></i>
+						<p>Complementary Wifi</p>
+						<a href="#">Explore Now</a>
+					</div>
+				</div>
+
+			</div>
+
+
+			<div class="page-wrapper">
+				<div class="post-slider">
+					<div class="container">
+						<h1 class="slider-title1">Room Rates</h1>
+					</div>
+					<i class="fa fa-chevron-circle-left prev" aria-hidden="true"></i>
+					<i class="fa fa-chevron-circle-right next" aria-hidden="true"></i>
+					<div class="post-wrapper">
+						<div class="post"><img src="img/Rectangle 50.png" class="slider-image"><button>Book Now</button>
+							<div class="post-info">
+								<div class="post-info-title">
+									<p>Blackberry Room<span>$456.00</span></p><br>
+								</div>
+								<p>56m wide</p><br>
+								<p>Double bed type</p>
+							</div>
+						</div>
+						<div class="post"><img src="img/Rectangle 51.png" class="slider-image">
+							<button>Book Now</button>
+							<div class="post-info">
+								<div class="post-info-title">
+									<p>Blackberry Room<span>$456.00</span></p><br>
+								</div>
+								<p>56m wide</p><br>
+								<p>Double bed type</p>
+							</div>
+						</div>
+						<div class="post"><img src="img/Rectangle 52.png" class="slider-image">
+							<button>Book Now</button>
+							<div class="post-info">
+								<div class="post-info-title">
+									<p>Blackberry Room<span>$456.00</span></p><br>
+								</div>
+								<p>56m wide</p><br>
+								<p>Double bed type</p>
+							</div>
+						</div>
+						<div class="post"><img src="img/Rectangle 53.png" class="slider-image">
+							<button>Book Now</button>
+							<div class="post-info">
+								<div class="post-info-title">
+									<p>Blackberry Room<span>$456.00</span></p><br>
+								</div>
+								<p>56m wide</p><br>
+								<p>Double bed type</p>
+							</div>
+						</div>
+						<div class="post"><img src="img/Rectangle 53.png" class="slider-image">
+							<button>Book Now</button>
+							<div class="post-info">
+								<div class="post-info-title">
+									<p>Blackberry Room<span>$456.00</span></p><br>
+								</div>
+								<p>56m wide</p><br>
+								<p>Double bed type</p>
+							</div>
+						</div>
+						<div class="post"><img src="img/Rectangle 55.png" class="slider-image">
+							<button>Book Now</button>
+							<div class="post-info">
+								<div class="post-info-title">
+									<p>Blackberry Room<span>$456.00</span></p><br>
+								</div>
+								<p>56m wide</p><br>
+								<p>Double bed type</p>
+							</div>
+						</div>
+						<div class="post"><img src="img/Rectangle 57.png" class="slider-image">
+							<button>Book Now</button>
+							<div class="post-info">
+								<div class="post-info-title">
+									<p>Blackberry Room<span>$456.00</span></p><br>
+								</div>
+								<p>56m wide</p><br>
+								<p>Double bed type</p>
+							</div>
+						</div>
+						<div class="post"><img src="img/Rectangle 21.png" class="slider-image">
+							<button>Book Now</button>
+							<div class="post-info">
+								<div class="post-info-title">
+									<p>Blackberry Room<span>$456.00</span></p><br>
+								</div>
+								<p>56m wide</p><br>
+								<p>Double bed type</p>
+							</div><img src="img/Rectangle 49.png" class="slider-image">
+							<div class="post-info">
+								<button>Book Now</button>
+								<div class="post-info-title">
+									<p>Blackberry Room<span>$456.00</span></p><br>
+								</div>
+								<p>56m wide</p><br>
+								<p>Double bed type</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<h1 class="slider-title1">More Rooms</h1>
+				</div>
+			</div>
+			<div class="container">
+				<div class="more-rooms">
+					<div class="more-rooms-images">
+						<img src="img/Rectangle 21.png">
+						<div class="image-info">
+							<h2>Blackberry Room</h2>
+							<p>3 beds</p>
+							<button>Book Now</button>
+						</div>
+					</div>
+					<div class="more-rooms-images">
+						<img src="img/Rectangle 49.png">
+						<div class="image-info">
+							<h2>Blackberry Room</h2>
+							<p>3 beds</p>
+							<button>Book Now</button>
+						</div>
+					</div>
+					<div class="more-rooms-images">
+						<img src="img/Rectangle 50.png">
+						<div class="image-info">
+							<h2>Blackberry Room</h2>
+							<p>3 beds</p>
+							<button>Book Now</button>
+						</div>
+					</div>
+					<div class="more-rooms-images">
+						<img src="img/Rectangle 52.png">
+						<div class="image-info">
+							<h2>Blackberry Room</h2>
+							<p>3 beds</p>
+							<button>Book Now</button>
+						</div>
+					</div>
+					<div class="more-rooms-images">
+						<img src="img/Rectangle 53.png">
+						<div class="image-info">
+							<h2>Blackberry Room</h2>
+							<p>3 beds</p>
+							<button>Book Now</button>
+						</div>
+					</div>
+					<div class="more-rooms-images">
+						<img src="img/Rectangle 55.png">
+						<div class="image-info">
+							<h2>Blackberry Room</h2>
+							<p>3 beds</p>
+							<button>Book Now</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="awar">
+				<div class="aware">
+					<h1 class="war">Get Updated Immediately On Availability Of rooms</h1>
+					<p>Be the First to learn about rooms availabity looking in your inbox</p>
+					<form class="war-form">
+						<input type="email" name="email" placeholder="Enter your email address" class="war-email">
+						<input type="submit" name="submit" value="Subscribe" class="war-submit">
+					</form>
+				</div>
+			</section>
+
+			<div class="footer">
+
+				<div class="footer_content">
+					<div class="footer_navigation-items">
+						<div class="footer_logo"><a href="index.html"><img src="img/logo.svg" alt="logo"></a></div>
+						<ul>
+							<li><a href="About.html">About us</a></li>
+							<li><a href="Contact.html">Contact us</a></li>
+							<li><a href="Rooms.html">Book a room</a></li>
+							<li><a href="index.html">Our agents</a></li>
+							<li><a href="Contact.html">Connect with us</a></li>
+						</ul>
+					</div>
+					<div class="footer_navigation-items">
+						<ul>
+							<li><a href="About.html">About us</a></li>
+							<li><a href="Contact.html">Contact us</a></li>
+							<li><a href="Rooms.html">Book a room</a></li>
+							<li><a href="index.html">Our agents</a></li>
+							<li><a href="Contact.html">Connect with us</a></li>
+						</ul>
+					</div>
+					<div class="footer_navigation-items">
+						<ul>
+							<li><a href="About.html">About us</a></li>
+							<li><a href="Contact.html">Contact us</a></li>
+							<li><a href="Rooms.html">Book a room</a></li>
+							<li><a href="index.html">Our agents</a></li>
+							<li><a href="Contact.html">Connect with us</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<script src="js/toggle.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script type="text/javascript"
+				src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+			<script src="js/room-rents_homepage.js"></script>
+			<script src='js/facilities_home.js'></script>
+			<script src="https://kit.fontawesome.com/bad7f7f5d4.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
