@@ -17,8 +17,12 @@ const page = {
       (idx === (designs.length - 1)) ? col.classList.add("center") : "";
       p.textContent = ele.title;
       designNode.appendChild(p);
-      a.href = ele.link;
+      a.href = "#";
       img.src = ele.image;
+      img.addEventListener("click", (e) => {
+        e.preventDefault();
+        window.location = ele.link;
+      });
       a.appendChild(img);
       designNode.appendChild(a);
       col.appendChild(designNode);
@@ -30,27 +34,27 @@ const page = {
     [
       {
         title: "Design One",
-        image: "",
+        image: "./src/assets/images/coming-soon.jpg",
         link: "./design-one/index.html"
       },
       {
         title: "Design Two",
-        image: "",
+        image: "./src/assets/images/coming-soon.jpg",
         link: "./design-two/index.html"
       },
       {
         title: "Design Three",
-        image: "",
+        image: "./src/assets/images/coming-soon.jpg",
         link: "./design-three/index.html"
       },
       {
         title: "Design Four",
-        image: "",
+        image: "./src/assets/images/coming-soon.jpg",
         link: "./design-four/index.html"
       },
       {
         title: "Design Five",
-        image: "",
+        image: "./src/assets/images/coming-soon.jpg",
         link: "./design-five/index.html"
       }
     ]
