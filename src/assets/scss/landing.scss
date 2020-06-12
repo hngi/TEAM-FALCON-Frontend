@@ -1,3 +1,6 @@
+@import "custom";
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
 * {
     padding: 0;
     margin: 0;
@@ -9,124 +12,64 @@ body {
 }
 h1 {
     text-align: center;
-    position: absolute;
-    width: 545px;
-    height: 78px;
-    left:688px;
+    position: relative;
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 450;
-    font-size: 60px;
+    font-size: 1.5em;
     line-height: 78px;
 }
-.theme-1 {
-    position: absolute;
-    width: 570px;
-    height: 393px;
-    left: 360px;
-    top: 200px;
-    background: linear-gradient(to bottom, #E8E8E8 80%, #951ACF 20%);
-    border-radius: 10px;
+main {
+    padding: 0.5em;
+    .center {
+        margin: 0 auto;
+    }
 }
-.theme-2 {
-    position: absolute;
-    width: 570px;
-    height: 393px;
-    left: 990px;
-    top: 200px;
+.landing-design-section {
+    position: relative;
+    height: 30vh;
+    margin: 2vh auto;
     background: linear-gradient(to bottom, #E8E8E8 80%, #951ACF 20%);
-    border-radius: 10px;
+    border-radius: 1em;
 }
-.theme-3 {
-    position: absolute;
-    width: 570px;
-    height: 393px;
-    left: 360px;
-    top: 700px;
-    background: linear-gradient(to bottom, #E8E8E8 80%, #951ACF 20%);
-    border-radius: 10px;
-}
-.theme-4 {
-    position: absolute;
-    width: 570px;
-    height: 393px;
-    left: 990px;
-    top: 700px;
-    background: linear-gradient(to bottom, #E8E8E8 80%, #951ACF 20%);
-    border-radius: 10px;
-}
-.theme-5 {
-    position: absolute;
-    width: 570px;
-    height: 393px;
-    left: 675px;
-    top: 1200px;
-    background: linear-gradient(to bottom, #E8E8E8 80%, #951ACF 20%);
-    border-radius: 10px;
-}
+
 .landing-footer{
     position: absolute;
-    width:1920px;
-    height: 400px;
-    left:0px;
-    top: 1700px;
+    width:100%;
+    height: 200px;
     background: linear-gradient(111.65deg,#a823E7 15.19%, #8D18C5 76.65%);
     text-align: center;
 
 }
-#landing-head{
-    position:absolute;
-    width: 944px;
-    height: 85px;
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 50px;
-    line-height:85px;
-    color: #FFFFFF;
-    padding-top: 50px;
-    text-align: center;
-    left:488px;
-    
-}
-#landing-para {
-    position: absolute;
-    width: 944px;
-    height: 64px;
-    left: 488px;
-    padding-top: 150px;
-    font-family: sans-serif;
-    font-style: normal;
-    font-size: 25px;
-    line-height: 32px;
-    text-align: center;
-    font-weight: normal;
-    color: #FFFFFF;
-}
-.landing-button {
-    position: absolute;
-    width: 205;
-    height:33px;
-    left: 859;
-    margin-top: 50px;
-    padding: 10px;
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 450;
-    font-size: 25px;
-    line-height:33px;
-    text-align: center;
-    color: #951ACF;
 
+footer {
+    h3 {
+        height: 85px;
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        line-height:85px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    p {
+        position: relative;
+        height: 64px;
+        margin-top: 2vh;
+        font-family: sans-serif;
+        font-style: normal;
+        font-size: 25px;
+        line-height: 32px;
+        text-align: center;
+        font-weight: normal;
+        color: #FFFFFF;
+    }
+    .landing-download-button {
+        position: relative;
+        width: 241px;
+        height:55px;
+        background: #FFFFFF;
+        border-radius: 8px;
+    }
 }
-#landing-btn {
-    position: absolute;
-    width: 241px;
-    height:55px;
-    left: 841px;
-    top: 200px;
-    background: #FFFFFF;
-    border-radius: 8px;
-}
-
 
