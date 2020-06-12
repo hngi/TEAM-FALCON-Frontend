@@ -1,4 +1,10 @@
+/* THIS IS RESPONSIVE */
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=DM+Sans&display=swap');
+
+body {
+    background-color: black;
+}
+
 ul li {
     list-style-type: none;
     font-size: 24px;
@@ -42,9 +48,10 @@ p{
 }
 #banner {
     background-repeat: no-repeat;
-    background-image: url(banner3.jpg);
+    background-image: url("/images/banner3.jpg");
     background-size: cover
 }
 h1 {
     font-weight: 500;
 }
+

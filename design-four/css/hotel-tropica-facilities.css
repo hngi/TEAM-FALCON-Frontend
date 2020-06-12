@@ -1,94 +1,11 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+/* THIS IS RESPONSIVE */
+* {
   margin: 0;
   padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+  /* border: 0; */
+  /* font-size: 100%; */
+  /* font: inherit; */
+  /* vertical-align: baseline; */
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -103,39 +20,36 @@ hgroup,
 menu,
 nav,
 section {
-  display: block;
+  /* display: block; */
 }
 
-body {
-  line-height: 1;
-}
-
-ol,
+.facilities-list ol,
 ul {
   list-style: none;
 }
 
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+/* blockquote, */
+/* q { */
+  /* quotes: none; */
+/* } */
+/*  */
+/* blockquote:before, */
+/* blockquote:after, */
+/* q:before, */
+/* q:after { */
+  /* content: ""; */
+  /* content: none; */
+/* } */
+/*  */
+/* table { */
+  /* border-collapse: collapse; */
+  /* border-spacing: 0; */
+/* } */
 
 /* Above section was added to maintain my sanity. I hope there'd a general CSS for this project like this one...*/
 /** Overwriting some element defaults **/
-a {
+
+.facilities-list a {
   color: black;
   text-decoration: none;
 }
@@ -375,6 +289,24 @@ a {
     border: 7px solid #fff;
     height: calc(100% - 14px);
   }
+
+  .facilities-list-container h1 {
+    margin-left: 140px;
+  }
+
+  .facilities-list-container .facilities-list {
+    margin-left: 190px;
+  }
+
+  .facilities-list-container .facilities-list ol {
+    margin-bottom: 25px;
+    background-color: #f5f5f5;
+    padding: 30px;
+  }
+
+  .facilities-list-container .facilities-list ol:nth-child(3) {
+    width: 235px;
+  }
 }
 
 .facilities-video-overlay .overlay-border h2 {
@@ -409,4 +341,31 @@ a {
   display: none;
   -webkit-transition: opacity all 2s ease-in;
   transition: opacity all 2s ease-in;
+}
+
+
+@media only screen and (max-width: 400px) {
+* {
+  /* display: none; */
+}
+
+.facilities-list-container h1 {
+  margin-left: -10px;
+  width: 400px;
+}
+
+.facilities-list-container .facilities-list {
+  margin-left: 40px;
+}
+
+.facilities-list-container .facilities-list ol {
+  margin-bottom: 25px;
+  background-color: #f5f5f5;
+  padding: 30px;
+  width: 400px;
+}
+
+.facilities-list-container .facilities-list ol:nth-child(3) {
+  width: 180px;
+}
 }
