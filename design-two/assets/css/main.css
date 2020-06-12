@@ -71,14 +71,14 @@ body {
   width: 100%;
   top: 0;
 }
- {
+ /* {
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
   content: " ";
   height: 100%;
   width: 100%;
   top: 0;
-}
+} */
 
 #__bannerlabel {
   color: #ffffff;
@@ -194,15 +194,109 @@ body {
 }
   /* About us(Section below banner on home page) - @Giye */
 
-  #about-us{
-    background-color:#ffffff; ;
+  #about-us-intro{
+    background-color: rgba(238, 238, 238, 0.5);
+    height: 100%;
+    width: 100%;
 }
 
-#about-us-intro{
-    background-color: rgba(238, 238, 238, 0.5);
-    height: 1126px;
-    width: 100%;
+#dining{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
 
+#dining > div:nth-child(1){
+  width: 720px;
+  height: 563px;
+  background: url("../img/aboutus/about-dinning.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#conferencess{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#conferencess > div:nth-child(2){
+  width: 720px;
+  height: 563px;
+  background: url("../img/aboutus/about-conference.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.about-us-intro-des{
+  margin: auto;
+}
+
+.about-us-small{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.090535px;
+}
+
+.about-us-subcaption{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 33px;
+  line-height: 39px;
+  letter-spacing: -0.186728px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  display: block;
+}
+.about-us-description{
+  
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -0.101852px;
+  width: 374px;
+  height: 54;
+}
+
+/* responsiveness by prewsh */
+
+@media screen and (max-width: 1095px) {
+
+  #conferencess > div:nth-child(2){
+    margin: 0px auto;
+  }
+
+  #dining > div:nth-child(1){
+    margin: 0px auto;
+  }
+
+  #dining{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+/* @media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 520px) {
+
+}
+
+@media screen and (max-width: 480px) {
+
+} */
+
+
+
+  /* #about-us{
+    background-color:#ffffff; ;
 }
 
 .about-us-intro-row{
@@ -219,32 +313,6 @@ body {
 
 .about-us-intro-des{
     margin: auto;
-}
-
-.about-us-small{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: -0.090535px;
-}
-
-.about-us-subcaption{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 33px;
-    line-height: 39px;
-    letter-spacing: -0.186728px;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    display: block;
-}
-.about-us-description{
-
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 18px;
-    line-height: 21px;
-    letter-spacing: -0.101852px;
-    width: 374px;
-    height: 54;
 }
 
 
@@ -333,7 +401,8 @@ body {
     margin-bottom: 16px;
 
 
-}
+} */
+
 #book-now-button{
     background-color: #FD3D65;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -345,6 +414,14 @@ body {
     line-height: 18px;
 
     letter-spacing: -0.0578704px;
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 414px) {
+
 }
 
 /* Resorts and spa section(Home page) by @Deola*/
@@ -441,7 +518,8 @@ body {
 	grid-area: boxlet-four;
 	background-image: url('../img/resort/5.png');
 	background-repeat: no-repeat;
-	background-size: cover;
+  background-size: cover;
+  
 }
 
 /* Resorts and spa section(Home page) Responsivess by @Deola*/
