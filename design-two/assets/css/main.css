@@ -1,8 +1,27 @@
-/* This selector can be founded in facilities.html */
-.seperationfoot{
-  height: 100vh;
+@font-face {
+  font-family: GillSans;
+  src: url(../fonts/Gill Sans.otf);
 }
-/*Made to temporarily move the footer downwards on facilities page*/
+/* @font-face {
+  font-family: GillSans;
+  src: url(../fonts/Gill Sans Bold.otf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: GillSans;
+  src: url(../fonts/Gill Sans Medium.otf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: GillSans;
+  src: url(../fonts/Gill Sans Italic.otf);
+  font-weight: italic;
+}
+@font-face {
+  font-family: GillSans;
+  src: url(../fonts/Gill Sans Light.otf);
+  font-weight: 200;
+} */
 a{
   color: inherit;
   text-decoration: none;
@@ -12,42 +31,12 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-.header_main {
-  background: #ffffff;
-  position: relative;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  height: 80px;
-  font-size: 14px;
-}
-.header_logo,
-.footer_logo {
-  float: left;
-  margin-left: 130px;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  height: 15px;
-  width: 65px;
-}
-.header_navigation,
-.footer_navigation {
-  margin-top: 22px;
-  margin-bottom: 22px;
-  float: right;
-  margin-right: 150px;
-}
-.header_nav-area,
-.footer_nav-area {
-  list-style-type: none;
-  display: inline;
-}
-.item {
-  padding: 5px 15px 3px 15px;
+    font-family: 'GillSans';
+
 }
 
-/* Banner/Sub-banner by Ejiroghene */
+
+/* Banner/Sub-banner*/
 
 #__mainbanner {
   background: url("../img/main_banner.png");
@@ -71,14 +60,6 @@ body {
   width: 100%;
   top: 0;
 }
- /* {
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  content: " ";
-  height: 100%;
-  width: 100%;
-  top: 0;
-} */
 
 #__bannerlabel {
   color: #ffffff;
@@ -87,7 +68,7 @@ body {
   text-align: center;
   font-size: 3em;
   font-weight: 400 !important;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Gill Sans";
   text-transform: capitalize;
   margin: 0px auto;
   top: 50px;
@@ -108,8 +89,9 @@ body {
 }
 
 #__subbanner_label {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: 'GillSans',sans-serif;
   text-align: center;
+  font-style: normal;
   z-index: 2;
   color: #ffffff;
   position: relative;
@@ -118,15 +100,15 @@ body {
 
 #__subbanner_label h2 {
   font-size: 2.5em;
-  font-weight: 800 !important;
+  font-weight: 200 !important;
   margin: 0;
   line-height: 2em;
 }
 
 #__subbanner_label p {
   margin-top: 0;
-  font-weight: normal !important;
-  font-size: 1.7em;
+  font-weight: 100 !important;
+  font-size: 1.7em
 }
 
 #__subbanner_label .dots {
@@ -192,246 +174,95 @@ body {
     width: 80%;
   }
 }
-  /* About us(Section below banner on home page) - @Giye */
 
-  #about-us-intro{
-    background-color: rgba(238, 238, 238, 0.5);
-    height: 100%;
-    width: 100%;
+
+/*==Services==*/
+
+.services{
+  background: rgba(238, 238, 238, 0.9);
+  display: relative;
 }
-
+.services-row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.services-col{
+  width: 50%;
+  float: left;
+}
 #dining{
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+  padding: 20px 200px 0 120px;
+  margin-top: 5%;
 }
-
-#dining > div:nth-child(1){
-  width: 720px;
-  height: 563px;
-  background: url("../img/aboutus/about-dinning.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-#conferencess{
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-#conferencess > div:nth-child(2){
-  width: 720px;
-  height: 563px;
-  background: url("../img/aboutus/about-conference.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.about-us-intro-des{
-  margin: auto;
-}
-
-.about-us-small{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+#dining p,#conference p{
+  margin: 20px 0;
   font-size: 16px;
-  line-height: 19px;
-  letter-spacing: -0.090535px;
 }
-
-.about-us-subcaption{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+#conference{
+  padding: 20px 200px 0 100px;
+  margin-top: 5%;
+}
+#conference h4,#dining h4{
   font-size: 33px;
-  line-height: 39px;
-  letter-spacing: -0.186728px;
-  margin-bottom: 20px;
-  margin-top: 10px;
-  display: block;
+  font-weight: 400;
 }
-.about-us-description{
-  
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 18px;
-  line-height: 21px;
-  letter-spacing: -0.101852px;
-  width: 374px;
-  height: 54;
-}
-
-/* responsiveness by prewsh */
-
-@media screen and (max-width: 1095px) {
-
-  #conferencess > div:nth-child(2){
-    margin: 0px auto;
-  }
-
-  #dining > div:nth-child(1){
-    margin: 0px auto;
-  }
-
+@media(max-width:985px){
   #dining{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    padding: 20px 200px 0 120px;
+    margin-top: 0;
+  }
+  #conference{
+    padding: 20px 200px 0 100px;
+    margin-top: 5%;
+  }
+}
+@media(max-width:500px){
+  #dining p,#conference p{
+    margin: 0;
+    font-size: 16px;
+  }
+  #conference{
+    padding-right: 0;
+  }
+}
+@media(min-width:320px) and (max-width:800px){
+  #dining{
+    padding: 0px 20px;
+    margin-top: 0;
+  }
+  #conference{
+    padding:  0px 10px;
+    margin-top: 0;
+  }
+  #dining p,#conference p{
+    font-size: 16px;
+  }
+  #conference h4,#dining h4{
+    font-size: 20px;
+    font-weight: 400;
   }
 }
 
-/* @media screen and (max-width: 768px) {
-
+.services img{
+  width:100%;
 }
-
-@media screen and (max-width: 520px) {
-
-}
-
-@media screen and (max-width: 480px) {
-
-} */
-
-
-
-  /* #about-us{
-    background-color:#ffffff; ;
-}
-
-.about-us-intro-row{
-    display: flex;
-    flex-wrap: wrap;
-    height: 1126px;
-    width: 100%;
-}
-
-.about-us-intro-img{
-    width: 50%;
-    height: 563px;
-}
-
-.about-us-intro-des{
-    margin: auto;
+.services-col::after{
+  content: "";
+  clear: both;
+  display: table;
 }
 
 
-#about-us-mid{
-    padding-top: 160px;
-    margin-bottom: 160px;
-    background-color: #FFFFFF;
-}
-.about-us-cap{
 
-    margin: 0 auto;
-    text-align: center;
-
-}
-#about-us-resort{
-    padding-top: 40px;
-    margin: auto;
-    width: 1160px;
-    height: 578px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-}
-
-.about-us-resort-img-row1{
-    height: 275px;
-    width: 380px;
-
-}
-.about-us-resort-img-row2{
-    height: 283px;
-    width: 380px;
-
-}
-#about-us-suite{
-    background-color:#FFFFFF;
-    padding-bottom: 260px;
-}
-#about-us-suite-frame{
-    padding-top: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#about-us-suite-side-left{
-    height: 446px;
-}
-
-#about-us-suite-main{
-    width: 822px;
-    height: 573px;
-    background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2) ),url("./Images/suite-main.png") center no-repeat;
-    background-size: cover;
-    position: relative;
-    z-index:0;
-}
-#cont{
-   position:absolute;
-   top:292px;
-   left: 55px;;
-}
-#about-us-suite-main-p{
-    width: 393px;
-    height: 94px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 40px;
-    line-height: 47px;
-    letter-spacing: -0.226338px;
-    color: #FFFFFF;
-    margin-bottom: 12px;
-
-}
-
-#about-us-suite-main-span{
-    width: 226px;
-    height: 23px;
-    font-style: oblique;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    line-height: 23px;
-    letter-spacing: -0.113169px;
-    display:block;
-    color: #FFFFFF;
-    margin-bottom: 16px;
-
-
-} */
-
-#book-now-button{
-    background-color: #FD3D65;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: lighter;
-    border: none;
-    color: #FFFFFF;
-    height: 18px;
-    font-size: 15px;
-    line-height: 18px;
-
-    letter-spacing: -0.0578704px;
-}
-
-@media (max-width: 768px) {
-
-}
-
-@media (max-width: 414px) {
-
-}
-
-/* Resorts and spa section(Home page) by @Deola*/
-
+/*==Resorts==*/
 .resort-main {
 	padding-left: 82px;
 	padding-right: 82px;
 	margin: 0 auto;
-	padding-top: 15px;
-	padding-bottom: 15px;
+  margin-top:100px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+
 }
 
 .resort-header {
@@ -440,25 +271,28 @@ body {
 }
 
 .resort-header .subheader {
-	font-family: GillSans;
+	font-family: 'GillSans';
 	font-size: 16px;
+  font-weight: 200;
 	line-height: 19px;
 	margin: 0;
 	padding: 0;
 	letter-spacing: -0.090535px;
 	color: #000000;
+  text-transform: capitalize;
 
 }
 
 .resort-header .header {
 	font-family: GillSans;
 	font-size: 33px;
+  font-weight: 200;
 	line-height: 39px;
 	margin: 0;
 	padding: 0;
 	letter-spacing: -0.186728px;
 	color: #000000;
-        text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 .resort-body {
@@ -519,16 +353,14 @@ body {
 	background-image: url('../img/resort/5.png');
 	background-repeat: no-repeat;
   background-size: cover;
-  
+
 }
-
-/* Resorts and spa section(Home page) Responsivess by @Deola*/
-
-
+/* responsive designs */
 @media only screen and (max-width: 950px) {
 	.resort-main {
 		padding-right: 0;
 		padding-left: 0;
+
 	}
 	.resort-body {
 		height: 100%;
@@ -566,18 +398,51 @@ body {
 		height: 200px;
 	}
 }
-/*Suite section redone by babscode*/
+
+
+/*==Suite section==*/
+.suites-heading{
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 80px;
+  padding-bottom: 50px;
+}
+.suites-heading h6{
+  font-family: 'GillSans';
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 19px;
+    margin: 0;
+    padding: 0;
+    letter-spacing: -0.090535px;
+    color: #000000;
+}
+.suites-heading h3{
+  font-family: 'GillSans';
+    font-size: 33px;
+    font-weight: 200;
+    line-height: 39px;
+    margin: 0;
+    padding: 0;
+    letter-spacing: -0.186728px;
+    color: #000000;
+    text-transform: capitalize;
+}
+
+
 .suites{
 	position: relative;
 	width: 100%;
 	padding: 20px 0;
 	color: white;
+  margin-bottom: 100px;
 }
 
 .suites-row img{
 	height: 573px;
-	opacity: 0.9;
+	opacity: 0.8;
 	width: 100%
+  background-blend-mode: darken;
 }
 .row-img{
 
@@ -585,6 +450,7 @@ body {
 .suites-row .owl-dots{
 	text-align: center;
 }
+
 
 .suites-row .owl-dot{
 	display: inline-block;
@@ -653,11 +519,10 @@ body {
     height:600px;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .banner-title{
-    position: absolute;
+    position: relative;
     margin: auto;
     z-index: 2;
 
@@ -667,7 +532,8 @@ body {
 .banner-title h1{
     font-size:3rem;
     color:#ffffff;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'GillSans';
+    font-weight: 200;
 }
 
 .banner-overlay{
@@ -679,12 +545,12 @@ body {
     left:0;
     z-index: 1;
 }
-/* Rooms and Rates Banner Responsiveness by Devgrachy  */
 
-
+/* Rooms and Rates Banner */
 @media only screen and (max-width: 1020px){
     .banner-title h1{
         font-size:35px;
+        font-weight: 400;
     }
 
     .banner{
@@ -741,6 +607,7 @@ body {
 	margin-left:5%;
 	margin-right:5%;
 	margin-bottom:30px;
+  position: relative;
 }
 
 @media(max-width:700px){
@@ -761,13 +628,13 @@ body {
 	margin:25px 5% 50px 5%;
 }
 
-/* Reviews section by Babscode */
+/*==Reviews & featured in==*/
 .reviews{
 	padding: 40px 0;
 	background: #fff;
 	color: #434343;
     text-align: center;
-    font-family: 'montserrat', sans-serif;
+    font-family: 'GillSans';
 }
 .reviews-header{
 	max-width: 1200px;
@@ -844,11 +711,7 @@ body {
  .review img{
     height: 160px;
 }
-/*===Reviews Ends===*/
 
-/* Feature-in section by Babscode */
-
-/*===Featured===*/
 .featured{
 	padding: 20px 0;
 	background: #fff;
@@ -889,11 +752,9 @@ body {
 	}
 }
 
-/*===Featured Ends===*/
 
 
-/* Facilities Page */
-
+/*==Facilities Page==*/
 .facilities_container {
     position: relative;
     top: 0;
@@ -913,12 +774,13 @@ body {
   }
 
   .facilities_big {
-    color: #ffffff;
-    font-size: 38px;
-    text-align: center;
     position: absolute;
     left: 27%;
     top: 39%;
+    color: #ffffff;
+    font-size: 38px;
+    text-align: center;
+
   }
   .facilities_services {
     position: absolute;
@@ -928,7 +790,7 @@ body {
     width: 80vw;
     justify-content: space-between;
     flex-flow: column wrap;
-    z-index: 10;
+    z-index: 1;
     background-color: #ffff;
     border: 1px solid #ffffff;
   }
@@ -1064,188 +926,134 @@ body {
     }
   }
 
-
-/* Footer section by Oluwatosin */
+/*==footer ==*/
 footer{
-background-color: rgba(216, 216, 216, 0.5);
-position:relative;
-bottom:0;
-width:100%;
-left:0;
-}
-
-.footer{
-width:100%;
+     background-color: rgba(216, 216, 216, 0.5);
 
 }
-
-@media(max-width:1250px){
 .footer{
+  position: relative;
+  bottom:0;
   width:100%;
-  margin-left:0%;
+  left:0;
+}
+
+  .footer-row{
+     display:flex;
+     width:90%;
+     margin-left:10%;
+     padding-top: 140px;
   }
-}
 
-@media(max-width:800px){
-.footer{
-  width:100%;
-  margin-left:2%;
+  @media(max-width:800px){
+     .footer-row{
+         display:flex;
+         width:100%;
+    }
   }
-}
 
-.footer-row{
-display:flex;
-  width:90%;
-}
-
-@media(max-width:800px){
-.footer-row{
-  display:flex;
-    width:100%;
+  @media(max-width:1250px){
+     .footer-row{
+         display:flex;
+         width:100%;
+         margin-left:1px;
+    }
   }
-}
 
-@media(max-width:1250px){
-.footer-row{
-  display:flex;
-    width:100%;
-      margin-left:1px;
+  @media(max-width:500px){
+    .footer-row{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        width:50%;
+        margin-left:25%;
+        margin-right:25%;
+    }
   }
-}
 
-@media(max-width:500px){
-.footer-row{
-  display:flex;
-  flex-direction:column;
-    width:50%;
-  margin-left:25%;
-  margin-right:25%;
+  .footerImg{
+      padding:50px 200px 30px 0;
   }
-}
 
-.footerImg{
-height:28px;
-font-size:20px;
-font-family:"CalibanStd";
-text-align:start;
-padding-right:200px;
-padding-top:50px;
-}
-
-@media(max-width:1250px){
-.footerImg{
-height:28px;
-font-size:20px;
-font-family:"CalibanStd";
-text-align:start;
-padding-left:25px;
-padding-right:75px;
-padding-top:50px;
-}
-}
-
-
-@media(max-width:800px){
-.footerImg{
-height:28px;
-font-size:20px;
-font-family:"CalibanStd";
-text-align:start;
-padding-right:50px;
-padding-top:50px;
-}
-}
-
-.footer-button{
-background-color: #FD3D65;
-color:#ffffff;
-font-size:15px;
-height:30px;
-width:100px;
-margin:40px;
-font-family:"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-@media(max-width:800px){
-.footer-button{
-background-color: #FD3D65;
-color:#ffffff;
-font-size:10px;
-height:30px;
-width:130px;
-margin-top:50px;
-margin-bottom:50px;
-margin-right:40px;
-font-family:"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-}
-
-@media(max-width:500px){
-.footer-button{
-   background-color: #FD3D65;
-   color:#ffffff;
-   font-size:10px;
-   height:30px;
-   width:50%;
-   margin:20px 25% 20px 25%;
-   font-family:"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  @media(max-width:1250px){
+     .footerImg{
+         padding-left:25px;
+         padding-right:75px;
+         padding-top:30px;
+      }
   }
-}
 
-.footer-row a{
-font-size:12px;
-font-family:"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-color:#000000;
-padding:50px;
-text-decoration:none;
-}
 
-@media(max-width:800px){
-.footer-row a{
-   font-size:12px;
-   font-family:"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-   color:#000000;
-   padding:50px 30px;
-   text-decoration:none;
+  @media(max-width:800px){
+     .footerImg{
+        padding:50px 50px 50px 0;
+     }
   }
-}
 
-@media(max-width:500px){
-.footer-row  a{
-   font-size:12px;
-   font-family:"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-   color:#000000;
-   padding:20px 10px;
-   text-decoration:none;
+  @media(max-width:500px){
+    .footerImg{
+       padding:50px;
+    }
   }
-}
 
-/* .item {
-    padding: 5px 15px 3px 15px;
+  .footer-button{
+      background-color: #FD3D65;
+      text-align: center;
+      padding: 11px;
+      color: #ffffff;
+      font-size:15px;
+      white-space: nowrap;
+      margin:40px;
+      border: none;
+      text-transform: uppercase;
   }
-  .footer_main {
-    background: rgba(216, 216, 216, 0.5);
-    background-size: cover;
-    height: 325px;
-  }
-  .footer_logo,
-  .footer_navigation {
-    margin: 210px 0px 5px 0px;
-  }
-  .footer_logo {
-    margin-left: 130px;
 
+  @media(max-width:800px){
+     .footer-button{
+        background-color: #FD3D65;
+        color:#ffffff;
+        font-size:15px;
+        margin-top:50px;
+        margin-bottom:50px;
+        margin-right:40px;
+
+      }
   }
-  .footer_navigation {
-    margin-right: 150px;
+
+  @media(max-width:500px){
+     .footer-button{
+        background-color: #FD3D65;
+        color:#ffffff;
+        font-size:15px;
+        margin:20px 25% 20px 25%;
+      }
   }
-  .btn {
-    color: #ffffff;
-    background: #fd3d65;
-    text-transform: uppercase;
-    border: 1px solid #fd3d65;
-    height: 33px;
-    width: 87px;
-    font-size: 11px;
-    margin-left: 29px;
-  } */
+
+  .footer-row a{
+     font-size:12px;
+     color:#000000;
+     padding:50px;
+     text-decoration:none;
+  }
+
+  @media(max-width:800px){
+     .footer-row a{
+        font-size:12px;
+        color:#000000;
+        padding:60px 30px;
+        text-decoration:none;
+    }
+  }
+
+  @media(max-width:500px){
+     .footer-row  a{
+        font-size:12px;
+        color:#000000;
+        padding:20px 10px;
+        text-decoration:none;
+      }
+  }
+  /* This selector can be founded in facilities.html */
+.seperationfoot{
+    height: 100vh;
+  }

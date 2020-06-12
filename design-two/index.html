@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <!-- Mobile Specific Meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!--Main css file-->
@@ -11,31 +12,32 @@
   <!--Owl carousel files-->
   <link rel="stylesheet" type="text/css" href="./assets/css/owl.theme.default.css">
   <link rel="stylesheet" type="text/css" href="./assets/css/owl.carousel.css">
-  <script src="https://use.fontawesome.com/c40733cf62.js"></script>
+  <!--Font awesome icons-->
+  <link rel="stylesheet" href="./assets/css/all.css">
   <title>Furen Hotels</title>
 </head>
 
 <body>
   <!--Header section-->
   <header>
-		<nav>
-			<input type="checkbox" id="check">
-			<label for="check" class="checkbtn">
-				<i class="fa fa-bars"></i>
-			</label>
-			<label class="logo"><a href="index.html"><img src="./assets/img/furen.svg"></a></label>
-			<ul>
-				<li><a href="facilities.html">Offers</a></li>
-				<li><a href="rooms.html">Rooms</a></li>
-				<li><a href="index.html#dining">Dining</a></li>
-				<li><a href="index.html#conferencess">Conference</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<button class="headbutton">Book now</button>
-			</ul>
-		</nav>
-	</header>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fa fa-bars"></i>
+      </label>
+      <label class="logo"><a href="index.html"><img src="./assets/img/furen.svg"></a></label>
+      <ul>
+        <li><a href="facilities.html">Offers</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="index.html#dining">Dining</a></li>
+        <li><a href="index.html#conference">Conference</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <button class="headbutton">Book now</button>
+      </ul>
+    </nav>
+  </header>
   <!--Header ends-->
-  <!--Header ends-->
+
   <!--Banner/sub banner section-->
   <div id="__mainbanner">
     <h2 id="__bannerlabel">The best place to be <br> for rest and comfort.</h2>
@@ -52,30 +54,35 @@
       </div>
     </section>
   </div>
+
   <!--Banner/sub banner ends-->
+
   <!--Dining/conference(aboutus)section-->
-  <section id="about-us-intro">
-    <div id="dining" class="about-us-intro-row">
-       <div>
-        <!-- The image in this div is added with css -->
-      </div> 
-      <div class="about-us-intro-des">
-          <small class="about-us-small">Exquisite</small>
-          <span class="about-us-subcaption">Dinning</span>
-          <p class="about-us-description">The finest diner that serves you dishes in the most delicious way</p>
+  <div class="services">
+    <div class="services-row">
+      <div class="services-col">
+        <img class="about-us-intro-img" src="./assets/img/aboutus/about-dinning.png" alt="services1">
+      </div>
+      <div class="services-col" id="dining">
+        <p>Exquisite</p>
+        <h4>Dinning</h4>
+          <p>The finest dinner that serves, your dishes in the most delicious ways</p>
       </div>
     </div>
-      <div id="conferencess" >
-        <div class="about-us-intro-des">
-          <small class="about-us-small">Modern</small>
-          <span class="about-us-subcaption">Conference<span>
-            <p class="about-us-description">For your events, meetings, shows and conferences the best place to be.</p>
-        </div>
-        <div>
-          <!-- The image in this div is added with css -->
-        </div>
-  </section>
+    <div class="services-row">
+      <div class="services-col" id="conference">
+        <p>Modern</p>
+        <h4>Conference</h4>
+          <p>For your events,meetings,shows and conferences the best place to be.</p>
+      </div>
+      <div class="services-col">
+        <img class="about-us-intro-img" src="./assets/img/aboutus/about-conference.png" alt="services2">
+      </div>
+    </div>
+  </div>
+
   <!--Dining/conference(aboutus)section ends-->
+
   <!--Resort section-->
   <section class="resort-main">
     <div class="resort-header">
@@ -104,7 +111,12 @@
     </div>
   </section>
   <!--Resort section ends-->
-  <!--Suites-->
+
+  <!--Suites section-->
+  <div class="suites-heading">
+    <h6>Comfortable, unforgetable</h6>
+    <h3> suite</h3>
+  </div>
   <div class="suites">
     <div class="suites-row owl-carousel">
       <div>
@@ -137,36 +149,20 @@
     </div>
   </div>
 
-
+  <!--footer section-->
   <footer>
-        <div class="footer">
-          <div class="footer-row">
-  	      <img class="footerImg" src="./assets/img/footerImg.png" alt="FUREN"/>
-  	      <a href="#">Offers</a>
-  	      <a href="#">Rooms</a>
-  	      <a href="#">Dining</a>
-  	      <a href="#">Conferences</a>
-  	      <a href="#">Contacts</a>
-  	      <button class="footer-button">Book Now</button>
-  	    </div>
-  	  </div>
-  	</footer>
-
-  <!-- <footer class="footer_main">
-    <div class="footer_logo">
-      <img src="./assets/img/furen.svg" alt="Company logo" class="responsive-logo">
+    <div class="footer">
+      <div class="footer-row">
+        <img class="footerImg" src="./assets/img/furen.svg" alt="FUREN" />
+        <a href="facilities.html">Offers</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="index.html#dining">Dining</a>
+        <a href="index.html#conference">Conferences</a>
+        <a href="contact.html">Contacts</a>
+        <button class="footer-button">Book Now</button>
+      </div>
     </div>
-    <nav class="footer_navigation">
-      <ul class="footer_nav-area">
-        <li class="footer_nav-area item"><a href="">Offers</a></li>
-        <li class="footer_nav-area item"><a href="rooms.html">Rooms</a></li>
-        <li class="footer_nav-area item"><a href="index.html#dining">Dinning</a></li>
-        <li class="footer_nav-area item"><a href="index.html#conferences">Conferences</a></li>
-        <li class="footer_nav-area item"><a href="contact.html">Contact</a></li>
-      </ul>
-      <button type="submit" class="btn">book now</button>
-  </footer> -->
-  <!--footer ends-->
+  </footer>
 
 
   <!--Scripts files-->
@@ -177,4 +173,5 @@
   <!--Main js file-->
   <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
