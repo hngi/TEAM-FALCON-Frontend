@@ -14,7 +14,11 @@ body {
 }
 
 .bg-light {
-    background: #f8f6f6;
+    background: rgba(248, 246, 246, 0.5);
+}
+
+.opaque {
+    background: rgb(248, 246, 246);
 }
 
 .bg-transparent {
@@ -153,16 +157,25 @@ small,
 .card--amend {
     margin: 0 10px 20px 10px;
     padding-bottom: 20px;
+    background-color: #fff;
+}
+
+.card--amend a {
+    display: block;
 }
 
 .deluxe--card {
-    padding: 10px;
-    margin-left: 5px;
+    padding: 10px 10px 20px 10px;
+    margin: 0px 20px 20px 20px;
     background-color: #fff;
 }
 
 .deluxe--card img {
-    width: 95%;
+    width: 100%;
+}
+
+.deluxe-details {
+    padding-top: 10px;
 }
 
 .deluxe-details h5 {
@@ -176,9 +189,11 @@ small,
     justify-content: space-between;
 }
 
-.__header button {
+.__header a {
     height: 100%;
     width: initial;
+    text-decoration: none;
+    font-size: 0.6em;
 }
 
 .__body {
@@ -217,7 +232,10 @@ small,
 }
 
 .btn--details {
-    width: 100%;
+    width: initial;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.8em;
     border: 0;
     border-radius: 5px;
     color: #fff;
@@ -333,6 +351,43 @@ small,
     margin: 0 3px;
 }
 
+.contact {
+    margin-left: 20px;
+}
+
+.form-group {
+    width: 90%;
+    margin: 10px auto;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 90%;
+    border: 1px solid #d8d8df;
+    border-radius: 10px;
+    padding: 15px 20px;
+    color: #2a3a64;
+    outline: none;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #2a3a64;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border: 1px solid #2a3a64;
+}
+
+.form-group button {
+    width: 40%;
+    padding: 20px;
+    display: block;
+    font-weight: bold;
+    margin-left: auto;
+}
+
 @media screen and (min-width: 768px) {
     html,
     body {
@@ -351,8 +406,17 @@ small,
     .facilities-card small {
         font-size: 0.4em;
     }
+    .deluxe--card {
+        padding-bottom: 5px;
+    }
+    .deluxe--card img {
+        width: 95%;
+    }
     .deluxe-details {
-        padding-top: 50px;
+        padding-top: 10px;
+    }
+    .btn--details {
+        font-size: 0.7em;
     }
     .__body {
         font-size: 1.2em;
@@ -411,6 +475,17 @@ small,
     .smallnav div img {
         width: 120px;
     }
+    .contact {
+        margin-left: 15%;
+    }
+    .form-group {
+        width: 70%;
+        margin: 10px auto;
+    }
+    .form-group input,
+    .form-group textarea {
+        padding: 20px 20px;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -422,8 +497,23 @@ small,
         width: 83.333%;
         margin-left: 8.333%;
     }
+    .col-lg-5 {
+        max-width: 100%;
+        flex: 0 0 41.667%;
+    }
+
+    .col-lg-7 {
+        max-width: 100%;
+        flex: 0 0 58.333%;
+    }
     .page-number {
         margin: 0 5px;
+    }
+    .btn--details {
+        font-size: 0.5em;
+    }
+    .__header a {
+        font-size: 0.5em;
     }
     .__body small {
         margin-right: 50px;
@@ -512,6 +602,17 @@ small,
     }
     #video {
         height: 30px;
+    }
+    .contact {
+        margin-left: 0;
+    }
+    .form-group {
+        width: 85%;
+        margin: 20px 0;
+    }
+    .form-group input,
+    .form-group textarea {
+        padding: 25px 30px;
     }
 }
 
