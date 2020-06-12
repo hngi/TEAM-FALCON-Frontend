@@ -29,13 +29,16 @@
 }
 @media screen and (min-width: 100px) and (max-width: 860px) {
   .home-page-banner{
-    background: rgba(96, 96, 96, 0.72) url("../img/campus.png");
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url( ../img/campus.png); 
     background-size: cover;
     height: 400px
   }
   .home-page-banner .intro-text-box {
     padding-bottom: 50px;
     height:100%;
+  }
+  .lawal{
+    color: white;
   }
 
 }
@@ -71,6 +74,7 @@
 @media screen and (min-width: 280px) and (max-width: 600px) {
   .home-page-banner .intro-text-box h1 {
     font-size: 30px;
+    color: white;
   }
 }
 .home-page-banner .intro-text-box p {
@@ -253,37 +257,37 @@
 
 
 .banner-pic{
-	float: right;
-	position: absolute;
-	top: 0px;
-	right: 0px;
+  float: right;
+  position: absolute;
+  top: 0px;
+  right: 0px;
 
 }
 
 .banner-img{
 
-	background-image:url(../img/homecampus.png);
-	background-position: center;
-	background-size:cover;
-	width: 356px;
-	float:right;
-	right: 100px;
-	position: absolute;
-	border-radius: 100%;
-	height: 356px;
-	border:7px solid #99ff66;
-	top:35px;
+  background-image:url(../img/homecampus.png);
+  background-position: center;
+  background-size:cover;
+  width: 356px;
+  float:right;
+  right: 100px;
+  position: absolute;
+  border-radius: 100%;
+  height: 356px;
+  border:7px solid #99ff66;
+  top:35px;
 
 }
 .banner-bord{
-	border:180px solid #71ce47;
-	background-color: #71ce47;
-	border-radius: 100%;
-	width: 20px;
-	float: right;
-	position: absolute;
-	right:0px;
-	top: 0px;
+  border:180px solid #71ce47;
+  background-color: #71ce47;
+  border-radius: 100%;
+  width: 20px;
+  float: right;
+  position: absolute;
+  right:0px;
+  top: 0px;
 }
 
 @media screen and (max-width: 700px) {
@@ -291,4 +295,11 @@
     display: none;
   
   }
+  
+
+.home-page-banner .intro-text-box p{
+  color: #fff;
+}
+.home-page-banner .intro-text-box{
+  color: white;
 }
