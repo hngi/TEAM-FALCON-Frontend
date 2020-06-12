@@ -5,3 +5,21 @@ node_modules
 .cache/*
 **/**.scss
 **/**/facilities.css.map
+# Editor Dependencies
+.vscode/
+
+# Os Dependencies
+.DS_Store
+
+# Others
+.idea/
+
+/.idea
+
+.history/
+/.history
+
+.history/**
+.idea
+
+/scripts/**.ts
