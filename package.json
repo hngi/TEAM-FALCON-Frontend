@@ -9,10 +9,10 @@
    "scripts": {
     "dev": "rm -rf dist/* && parcel index.html",
     "build": "rm -rf dist/* && parcel build index.html",
-    "start": "node dist/bundle.js"
+    "start": "node dist/src.4a6b1ad0.js"
   },
   "engines": {
-    "node": "12.10"
+    "node": "12.13"
   },
   "devDependencies": {
     "airbnb": "^0.0.2",
@@ -29,5 +29,8 @@
     "fontawesome": "^5.6.3",
     "jquery": "3.5.0",
     "popper.js": "^1.16.0"
-  }
+  },
+  "browserslist": [
+    "last 1 Chrome versions"
+  ]
 }

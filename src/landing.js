@@ -1,10 +1,58 @@
 const page = {
-  header: document.querySelector('header[data-header]'),
-  display: (html) => page.mainNode.innerHTML = `${html}`,
-  html: `<h1>Discover our Demos</h1>`,
-  render: function() {
-    this.header.classList.add("header");
-    this.display(this.html)
-  }
+  display: async (node, html) => node.innerHTML = `${html}`,
+  render: async function() {
+    const designs = await this.designs();
+    const main = document.querySelector("main");
+    const row = document.createElement("div");
+    main.classList.add("container");
+    row.classList.add("row");
+    designs.forEach((ele, idx) => {
+      const col = document.createElement("div");
+      const designNode = document.createElement("div");
+      const p = document.createElement("p");
+      const a = document.createElement("a");
+      const img = document.createElement("img");
+      designNode.classList.add("landing-design-section");
+      col.classList.add("col-md-6");
+      (idx === (designs.length - 1)) ? col.classList.add("center") : "";
+      p.textContent = ele.title;
+      designNode.appendChild(p);
+      a.href = ele.link;
+      img.src = ele.image;
+      a.appendChild(img);
+      designNode.appendChild(a);
+      col.appendChild(designNode);
+      row.appendChild(col);
+    });
+    main.appendChild(row);
+  },
+  designs: async () =>
+    [
+      {
+        title: "Design One",
+        image: "",
+        link: "./design-one/index.html"
+      },
+      {
+        title: "Design Two",
+        image: "",
+        link: "./design-two/index.html"
+      },
+      {
+        title: "Design Three",
+        image: "",
+        link: "./design-three/index.html"
+      },
+      {
+        title: "Design Four",
+        image: "",
+        link: "./design-four/index.html"
+      },
+      {
+        title: "Design Five",
+        image: "",
+        link: "./design-five/index.html"
+      }
+    ]
 };
 export default page;

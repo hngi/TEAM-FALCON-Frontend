@@ -1,0 +1,100 @@
+#basic {
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 5.26%;
+	bottom: 0%;
+	background: rgba(221, 221, 221, 0.07);
+}
+
+#about {
+	position: absolute;
+	left: 7.39%;
+	right: 76.38%;
+	top: 17.65%;
+	bottom: 77.36%;
+
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 37px;
+
+	color: #606060;
+}
+
+#vector {
+	position: absolute;
+	left: 7.46%;
+	right: 88.71%;
+	top: 23.32%;
+	bottom: 76.42%;
+
+	border: 3px solid #71CE47;
+}
+
+#text {
+	position: absolute;
+	left: 7.39%;
+	right: 41.53%;
+	top: 32.88%;
+	bottom: 37.47%;
+
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 22px;
+
+	color: #606060;
+}
+
+#pic {
+	position: absolute;
+	left: 70.1%;
+	right: 6.69%;
+	top: 24.6%;
+	bottom: 30.53%;
+
+	background: url(pic.png);
+	background-repeat: no-repeat;
+	background-size: inherit;
+	border-radius: 30px;
+}
+
+#vector2 {
+	position: absolute;
+	left: 91.75%;
+	right: -1.56%;
+	top: 29.51%;
+	bottom: 37.47%;
+
+	background: #71CE47;
+	border-radius: 12px;
+}
+
+.read{
+	position: absolute;
+	left: 7.39%;
+	right: 78.12%;
+	top: 69.54%;
+	bottom: 21.83%;
+	
+	background: #71CE47;
+	border-radius: 0px 8px 8px 0px;
+
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 109.4%;
+	/* or 18px */
+	padding: 15px 52px;
+	cursor: pointer;
+
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	color: #FFFFFF;
+}
