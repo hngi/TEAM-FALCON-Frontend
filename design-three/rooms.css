@@ -1,0 +1,245 @@
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fafbfc;
+  font-family: "DM Sans", sans-serif;
+}
+@media only screen and (max-width: 529px) {
+  body {
+    padding: 30px 30px;
+  }
+}
+@media only screen and (min-width: 530px) and (max-width: 687px) {
+  body {
+    padding: 40px 60px;
+  }
+}
+@media only screen and (min-width: 688px) and (max-width: 949px) {
+  body {
+    padding: 50px 120px;
+  }
+}
+@media only screen and (min-width: 949px) {
+  body {
+    padding: 70px 160px;
+    max-width: 1330px;
+  }
+}
+
+h1,
+h2,
+h3,
+p {
+  color: #191e51;
+}
+h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 39px;
+}
+h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+}
+h4 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 25px;
+
+  color: rgba(25, 30, 81, 0.7);
+}
+p {
+  color: rgba(25, 30, 81, 0.7);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: justify;
+}
+.rooms-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.rooms-heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.rooms-heading h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 687px) {
+  .rooms-heading {
+    flex-direction: column;
+    margin-top: 25px;
+  }
+}
+
+.roomnextpages-pagination {
+  display: inline-block;
+}
+.roomnextpages-pagination a {
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  color: rgba(25, 30, 81, 0.6);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+}
+.roomnextpages-pagination a.active {
+  color: #fff;
+  background-color: #f55573;
+  border-radius: 3px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.roomnextpages-pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+.roomnextpages-pagination a.roomnextpages-pagination-nav {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 22px;
+
+  color: #191e51;
+}
+.roomnextpages-pagination a.roomnextpages-pagination-nav:hover:not(.active) {
+  background-color: inherit;
+}
+
+.selected {
+  background: #f55573;
+  border-radius: 3px;
+  width: 27px;
+  height: 27px;
+  text-align: center;
+  color: white;
+  padding: 3px 5px;
+}
+
+.room-name {
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 30px;
+  color: rgba(25, 30, 81, 0.7);
+}
+.room-column {
+  display: flex;
+  flex-direction: column;
+}
+.rooms-list {
+  display: flex;
+  background: #ffffff;
+  box-shadow: 4px 4px 14px rgba(65, 82, 118, 0.1);
+  border-radius: 6px;
+  margin-bottom: 30px;
+  padding: 10px;
+  max-width: 1330px !important;
+}
+@media only screen and (max-width: 956px) {
+  .rooms-list {
+    flex-direction: column;
+  }
+}
+.rooms-list img {
+  border-radius: 6px;
+}
+@media only screen and (max-width: 956px) {
+  ..rooms-list img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.other-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.rate-icons i {
+  margin-right: 5px;
+  width: 17.07px;
+  height: 18.34px;
+  color: #ff7b01;
+}
+
+.rate-icons p {
+  display: inline-block;
+  margin-top: 0px;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 22px;
+  color: rgba(25, 30, 81, 0.7);
+}
+
+.other-icons i {
+  padding: 5px;
+  background: rgba(241, 48, 84, 0.2);
+  border-radius: 5px;
+  color: #f13054;
+  margin-right: 5px;
+}
+
+.other-icons p {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(25, 30, 81, 0.75);
+}
+.descr {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: rgba(25, 30, 81, 0.7);
+}
+.rooms-details-block {
+  display: flex;
+}
+@media only screen and (max-width: 956px) {
+  .rooms-details-block {
+    flex-direction: column;
+  }
+}
+.room-detail {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 15px 15px 20px;
+  line-height: 10px;
+}
+
+.view-details {
+  border: none;
+  background-color: #f55573;
+  color: #ffffff;
+  width: 20%;
+  padding: 14px 28px;
+  align-self: flex-start;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 5px;
+  margin: 20px;
+}
+@media only screen and (max-width: 956px) {
+  .view-details {
+    display: block;
+    width: 100%;
+    align-self: center;
+  }
+}
