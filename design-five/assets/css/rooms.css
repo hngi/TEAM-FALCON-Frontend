@@ -3,6 +3,32 @@
     padding: 0;
 }
 
+/* Footer css */
+.rooms-footer{
+	background-color: #000000;
+	color: #FAFAFA;
+	display: flex;
+	justify-content: space-around;
+	padding-top: 3em;
+	padding-bottom: 5em;
+}
+.rooms-footer h1 a{
+	color: white;
+}
+.rooms-footerbox1 img{
+	width: 2em;
+	margin: .5em;
+}
+.rooms-footerbox1 img:nth-child(1), img:nth-child(2){
+	width: 1.5em;
+}
+.rooms-footerbox1 img:nth-child(3){
+	width: 1.7em;
+}
+/* End of Footer */
+
+
+
 section {
     padding: 20px 0;
     height: 600px;

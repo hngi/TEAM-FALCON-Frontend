@@ -19,7 +19,7 @@ navigation {
 }
 
 .main-nav,
-main-navbar {
+.main-navbar {
     list-style-type: none;
     padding: 10px 20px;
     transition: all 0.8s ease-out;
