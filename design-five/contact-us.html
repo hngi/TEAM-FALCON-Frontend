@@ -1,51 +1,56 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<title>Contact Us</title>
+	<link rel="stylesheet" type="text/css" href="./assets/css/headerfooter.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/contact-us.css">
 	<link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 </head>
-
 <body>
-	<header class="contact-us-header">
-		<div class="contact-us-logo">
-			<h2><a href="index.html">Tiptonhotels</a></h2>
+
+	<nav>
+		<div class="nav-main">
+			<div>
+				<h1 class="hotel-name">Tiptonhotels</h1>
+			</div>
+			<div class="nav-wrapper">
+				<div id="menu" onclick="toggleMe(this)">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</div>
+				<div>
+					<ul class="nav-ul">
+						<li><a href="about-us.html"> About us</a></li>
+						<li><a href="rooms.html"> Rooms</a></li>
+						<li><a href="facilities.html">Facilities</a></li>
+						<li><a href="contact-us.html"> Contact us</a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
-		<nav class="contact-us-nav" id="contact-us-nav">
-			<ul class="contact-us-ul" id="contact-us-ul">
-				<li><a href="#">About us</a></li>
-				<li><a href="#">Rooms</a></li>
-				<li><a href="facilities.html">Facilities</a></li>
-				<li><a href="con">Contact us</a></li>
-			</ul>
-		</nav>
-		<div class="contact-us-drawer-container" id="hamburger">
-			<div class="contact-us-drawer"></div>
-			<div class="contact-us-drawer"></div>
-			<div class="contact-us-drawer"></div>
-		</div>
-	</header>
+	</nav>
+
 	<main class="contact-us-main">
 		<div class="contact-us-body">
 			<div class="contact-us-box1">
 				<h1 class="contact-us-large-text">
-					We'd love to hear from you
-				</h1>
+				   We'd love to hear from you
+			    </h1>  
 
-				<div class="contact-us-contact">
-					<div class="contact-us-address">
-						<h3>Our address</h3>
-						<p>No. 3 portharcout road,</p>
-						<p>umutoguma, rivers state</p>
-					</div>
-					<div class="contact-us-support">
-						<h3>Support</h3>
-						<p>hello@tiptonhotels.com</p>
-						<p>+234 567 88790</p>
-					</div>
-				</div>
+			    <div class="contact-us-contact">
+				    <div class="contact-us-address">
+				    	<h3>Our address</h3>
+				    	<p>No. 3 portharcout road,</p>
+				    	<p>umutoguma, rivers state</p>
+				    </div>
+				    <div class="contact-us-support">
+				    	<h3>Support</h3>
+				    	<p>hello@tiptonhotels.com</p>
+				    	<p>+234 567 88790</p>
+				    </div>
+			    </div>
 			</div>
 			<div class="contact-us-box2">
 				<h2>Send us a message</h2>
@@ -64,31 +69,44 @@
 			</div>
 		</div>
 	</main>
-	<footer class="contact-us-footer">
-		<div class="contact-us-footerbox1">
-			<h1><a href="index.html">Tiptonhotels</a></h1>
-			<p>@2020 Triptonhotels. All rights reserved</p>
-			<p>
-				<img src="src/contact-us-img/inst1.png" />
-				<img src="src/contact-us-img/tw2.png" />
-				<img src="src/contact-us-img/fb1.png" />
-			</p>
-		</div>
-		<div class="contact-us-footerbox2">
-			<h1>Company</h1>
-			<p><a href="">About</a></p>
-			<p><a href="">Terms and Conditions</a></p>
-			<p><a href="">Privacy Policy</a></p>
-		</div>
-		<div class="contact-us-footerbox3">
-			<h1>Contact</h1>
-			<p>Truv@gmail.com</p>
-			<p>081808028</p>
-			<p>Lagos, Nigeria</p>
-		</div>
-	</footer>
 
-	<script src="./assets/js/toggle.js"></script>
+	
+<footer>
+    <div>
+        <div class="footer-title-1">
+            Triptonhotels
+        </div>
+        <div>
+            <div>&copy; 2020 Triptonhotels. All rights reserved</div>
+            <div>
+                <span class="icon icon-instagram"></span>
+                <span class="icon icon-twitter"></span>
+                <span class="icon icon-facebook"></span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="footer-title-2">
+            Company
+        </div>
+        <div>
+            <div>About</div>
+            <div>Terms and Conditions</div>
+            <div>Privacy Policy</div>
+        </div>
+    </div>
+    <div>
+        <div class="footer-title-3">
+            Contact
+        </div>
+        <div>
+            <div>truv@gmail.com</div>
+            <div>+2348039074929</div>
+            <div>Lagos, Nigeria</div>
+        </div>
+    </div>
+</footer>
+
+<script src="./assets/js/toggle.js"></script>
 </body>
-
 </html>
