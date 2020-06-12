@@ -1,10 +1,12 @@
-body{
+#homepageBody{
     background-color:#F5F5F5;
+    /* rotate: 30deg; */
     width: 100%;
     margin: 0;
     padding: 0;
     height: 100vh;
     font-family: sans-serif;
+    /* display: none; */
 }
 .headerBG-image{
     position: absolute;

@@ -1,0 +1,115 @@
+ body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /* height: 100vh; */
+}
+
+.item1 { grid-area: header;
+    padding: 0px;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/images/image1.png");
+    width: 660px;
+    height: 600px;
+}
+.item2 { grid-area: menu;
+    padding: 10px 80px 10px 20px;
+    margin: 0px;
+    background-color:#F5F5F5;
+    width: fit-content;
+    height: fit-content;
+    
+ }
+.item3 { grid-area: main;
+    padding: 0px;
+    margin: 0px;
+    background-image: url("/images/image4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+   
+   
+ }
+.item4 { grid-area: right;
+    padding-left: 10px;
+    padding-right: 20px;
+    margin-left: 20px;
+    padding-top: 0px;
+    background-image: url("/images/image2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 380px;
+    margin-top: -180px;
+    
+   
+ }
+.item5 { grid-area: footer; 
+    padding: 0px;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/images/image3.png");
+    width: 440px;
+    height: 200px;
+   
+    
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'menu menu header header header header'
+    'menu menu header header header header'
+    'right right main main footer footer'
+    'right right main main footer footer';
+    
+  grid-gap: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  height: 100vh;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* padding: 20px 0; */
+  /* font-size: 30px; */
+  
+}
+
+.p-2{
+padding: 10px;
+font-family: sans-serif;
+font-size: 25px;
+font-weight: lighter;
+margin: 0px;
+}
+.p-1{
+    font-size: 40px;
+    padding: 10px;
+    font-family: sans-serif;
+    margin: 0px;
+    font-style: normal;
+    font-weight: bold;
+   
+   
+}
+.discover-btn{
+    background-color: #611760;
+    height: 60px;
+    width: 400px;
+    margin: 0px;
+    padding: 0px;
+    
+}
+.btn-txt{
+    color: #ffffff;
+    padding-top: 10px;
+    padding-left: 15px;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
