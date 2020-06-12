@@ -11,21 +11,25 @@ body{
 }
 
 h2{
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-size: 14px;
+    font-family: 'GillSans';
+    font-size: 16px;
     line-height: 18px;
     letter-spacing: -0.0848766px;
     color: #ffffff;
-	opacity:0.5;
+		opacity:0.5;
+		font-weight: 200;
+		padding-bottom: 20px;
+
 }
 
 h4{
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-size: 20px;
-    line-height: 16px;
+    font-family: 'GillSans';
+    font-size: 28px;
+    line-height: 33px;
     letter-spacing: -0.124486px;
-    color: #FFFFFF;
-	margin-top:auto;
+    color: #ffffff;
+		margin-top:auto;
+		font-weight: 400;
 }
 
 .row{

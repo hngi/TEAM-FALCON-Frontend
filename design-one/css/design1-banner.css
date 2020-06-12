@@ -1,18 +1,8 @@
-*{
-	margin: 0px;
-	padding: 0px;
-	box-sizing:border-box;
-}
-html{
-	color:#555;
-	font-family:"Arial","sans-serif"
-	font-size:20px;
-	font-weight: 300;
-	text-rendering: optimizeLegibility;
-}
-	.row{
-	max-width: 1240px;
+
+.row{
+	max-width: 100%;
 	margin:0 auto 0 auto;
+	padding-bottom: 100px;
 }
 .banner-text{
 	font-family: "Arial";
@@ -24,7 +14,8 @@ html{
 }
 .banner-main{
 	margin-top: 120px;
-	margin-left:60px;}
+	margin-left:60px;
+}
 
 .banner-head{
 	color: #71ce47;
@@ -71,6 +62,7 @@ html{
 	margin-right: auto;
 	margin-left: auto;
 	padding: 0px;
+	text-align: center;
 }
 .banner-date{
 	height: 50px;
@@ -87,14 +79,13 @@ html{
 	border: 1px solid #ddd;
 }
 .banner-number{
-	margin-left: 0px;
+	margin: auto;
 	height: 50px;
 	width:100%;
 background-color: #ddd;
 border: 1px solid #ddd;
-
-
 }
+
 .banner-check{
 	width: auto;
 	margin: auto;
@@ -102,16 +93,14 @@ border: 1px solid #ddd;
 	color: black;
 }
 .banner-submit{
-	margin-top: 17px;
-	margin-left:4px;
+	margin-top: 26px;
+	margin-left: 5px;
    background-color: #71ce47;
-   padding: 17px;
+   height: 50px;
    color: white;
-   text-align: center;
    border: 1px solid #71ce47;
-   width: 120px;
+   width: 100%;
    border-radius: 2px;
-   transition: border 0.2s;
 }
 .banner-submit:hover,
 .banner-submit:active{
@@ -126,13 +115,13 @@ border: 1px solid #ddd;
 .banner-pic{
 	float: right;
 	position: absolute;
-	top: 20px;
+	top: 118px;
 	right: 0px;
 
 }
 .banner-img{
 
-	background-image:url(campus.png);
+	background-image:url(../img/campus.png);
 	background-position: center;
 	background-size:cover;
 	width: 480px;
@@ -167,9 +156,6 @@ border: 1px solid #ddd;
 .col:first-child { margin-left: 0; }
 
 
-
-
-
 @media only screen and (max-width: 1200px){
 
 
@@ -179,8 +165,6 @@ border: 1px solid #ddd;
 	right: 30px;
 	top:20px;
 }
-
-
 
 
 @media only screen and (max-width: 1023px){
@@ -235,11 +219,9 @@ border: 1px solid #ddd;
 
 }
 .banner-date{
-		width: 100%
-		margin:auto;
-		padding-left:  10%;
-
-
+	width: 100%;
+	margin:auto;
+	padding-left:  10%;
 
 }
 .banner-submit{
@@ -268,7 +250,6 @@ border: 1px solid #ddd;
 
 }
 
-
 .banner-img{
 	height: 250px;
 	width:250px;
@@ -281,23 +262,19 @@ border: 1px solid #ddd;
 
 @media only screen and (max-width: 480px) {
 	.col { 
-		    margin: 0;
-
-	}
+	margin: 0;
+}
+}
 .banner-img{
 	height: 10px;
 	width: 100px;
-
 }
-
 
 .banner-img{
 	height: 250px;
 	width:250px;
 	right: 100px;
 	top:360px;
-
-
 }
 .banner-bord{
 	border:120px solid #71ce47;
@@ -315,18 +292,11 @@ width: 80%;
 margin-left: 0px;
 
 }
-.banner-date{
-
-	
-	
-		width: 50px;
-		margin-left:5px;
-		padding-left:  10%;
-		flex: wrap;
-
-
-
-
+.banner-date{	
+	width: 50px;
+	margin-left:5px;
+	padding-left:  10%;
+	flex: wrap;
 }
 .banner-no{
 	width: 50px;

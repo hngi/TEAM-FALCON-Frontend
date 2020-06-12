@@ -1,8 +1,5 @@
 .cache
-dist
 node_modules
 node_modules
 .cache/*
-**/**.scss
-**/**/facilities.css.map
-**/**.css.map
+package-lock.json
