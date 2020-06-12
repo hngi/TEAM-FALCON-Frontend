@@ -2,7 +2,7 @@
   font-family: GillSans;
   src: url(../fonts/Gill Sans.otf);
 }
-@font-face {
+/* @font-face {
   font-family: GillSans;
   src: url(../fonts/Gill Sans Bold.otf);
   font-weight: bold;
@@ -21,7 +21,7 @@
   font-family: GillSans;
   src: url(../fonts/Gill Sans Light.otf);
   font-weight: 200;
-}
+} */
 a{
   color: inherit;
   text-decoration: none;
@@ -31,45 +31,12 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: GillSans;
+    font-family: 'GillSans';
 
 }
 
-.header_main {
-  background: #ffffff;
-  position: relative;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  height: 80px;
-  font-size: 14px;
-}
-.header_logo,
-.footer_logo {
-  float: left;
-  margin-left: 130px;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  height: 15px;
-  width: 65px;
-}
-.header_navigation,
-.footer_navigation {
-  margin-top: 22px;
-  margin-bottom: 22px;
-  float: right;
-  margin-right: 150px;
-}
-.header_nav-area,
-.footer_nav-area {
-  list-style-type: none;
-  display: inline;
-}
-.item {
-  padding: 5px 15px 3px 15px;
-}
 
-/* Banner/Sub-banner by Ejiroghene */
+/* Banner/Sub-banner*/
 
 #__mainbanner {
   background: url("../img/main_banner.png");
@@ -93,14 +60,6 @@ body {
   width: 100%;
   top: 0;
 }
- /* {
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  content: " ";
-  height: 100%;
-  width: 100%;
-  top: 0;
-} */
 
 #__bannerlabel {
   color: #ffffff;
@@ -132,6 +91,7 @@ body {
 #__subbanner_label {
   font-family: 'GillSans',sans-serif;
   text-align: center;
+  font-style: normal;
   z-index: 2;
   color: #ffffff;
   position: relative;
@@ -147,7 +107,7 @@ body {
 
 #__subbanner_label p {
   margin-top: 0;
-  font-weight: 200 !important;
+  font-weight: 100 !important;
   font-size: 1.7em
 }
 
@@ -216,11 +176,85 @@ body {
 }
 
 
+/*==Services==*/
+
+.services{
+  background: rgba(238, 238, 238, 0.9);
+  display: relative;
+}
+.services-row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.services-col{
+  width: 50%;
+  float: left;
+}
+#dining{
+  padding: 20px 200px 0 120px;
+  margin-top: 5%;
+}
+#dining p,#conference p{
+  margin: 20px 0;
+  font-size: 16px;
+}
+#conference{
+  padding: 20px 200px 0 100px;
+  margin-top: 5%;
+}
+#conference h4,#dining h4{
+  font-size: 33px;
+  font-weight: 400;
+}
+@media(max-width:985px){
+  #dining{
+    padding: 20px 200px 0 120px;
+    margin-top: 0;
+  }
+  #conference{
+    padding: 20px 200px 0 100px;
+    margin-top: 5%;
+  }
+}
+@media(max-width:500px){
+  #dining p,#conference p{
+    margin: 0;
+    font-size: 16px;
+  }
+  #conference{
+    padding-right: 0;
+  }
+}
+@media(min-width:320px) and (max-width:800px){
+  #dining{
+    padding: 0px 20px;
+    margin-top: 0;
+  }
+  #conference{
+    padding:  0px 10px;
+    margin-top: 0;
+  }
+  #dining p,#conference p{
+    font-size: 16px;
+  }
+  #conference h4,#dining h4{
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+
+.services img{
+  width:100%;
+}
+.services-col::after{
+  content: "";
+  clear: both;
+  display: table;
+}
 
 
 
-/*section(Home page) by @Deola*/
-
+/*==Resorts==*/
 .resort-main {
 	padding-left: 82px;
 	padding-right: 82px;
@@ -319,12 +353,9 @@ body {
 	background-image: url('../img/resort/5.png');
 	background-repeat: no-repeat;
   background-size: cover;
-  
+
 }
-
-/* Resorts and spa section(Home page) Responsivess by @Deola*/
-
-
+/* responsive designs */
 @media only screen and (max-width: 950px) {
 	.resort-main {
 		padding-right: 0;
@@ -367,7 +398,9 @@ body {
 		height: 200px;
 	}
 }
-/*Suite section redone by babscode*/
+
+
+/*==Suite section==*/
 .suites-heading{
   text-align: center;
   padding-top: 20px;
@@ -512,9 +545,8 @@ body {
     left:0;
     z-index: 1;
 }
-/* Rooms and Rates Banner Responsiveness by Devgrachy  */
 
-
+/* Rooms and Rates Banner */
 @media only screen and (max-width: 1020px){
     .banner-title h1{
         font-size:35px;
@@ -575,6 +607,7 @@ body {
 	margin-left:5%;
 	margin-right:5%;
 	margin-bottom:30px;
+  position: relative;
 }
 
 @media(max-width:700px){
@@ -595,7 +628,7 @@ body {
 	margin:25px 5% 50px 5%;
 }
 
-/* Reviews section by Babscode */
+/*==Reviews & featured in==*/
 .reviews{
 	padding: 40px 0;
 	background: #fff;
@@ -678,11 +711,7 @@ body {
  .review img{
     height: 160px;
 }
-/*===Reviews Ends===*/
 
-/* Feature-in section by Babscode */
-
-/*===Featured===*/
 .featured{
 	padding: 20px 0;
 	background: #fff;
@@ -723,11 +752,9 @@ body {
 	}
 }
 
-/*===Featured Ends===*/
 
 
-/* Facilities Page */
-
+/*==Facilities Page==*/
 .facilities_container {
     position: relative;
     top: 0;
@@ -899,7 +926,7 @@ body {
     }
   }
 
-
+/*==footer ==*/
 footer{
      background-color: rgba(216, 216, 216, 0.5);
 
