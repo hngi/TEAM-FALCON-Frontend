@@ -86,11 +86,11 @@
     z-index: 100;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 800px) {
     .post-slider .next {
         position: absolute;
         top: 50%;
-        right: 60px;
+        right: 20px;
         font-size: 3em;
         cursor: pointer;
     }
@@ -99,18 +99,18 @@
 .post-slider .prev {
     position: absolute;
     top: 55%;
-    left: 30px;
+    left: 50px;
     font-size: 3em;
     color: #52CE47;
     cursor: pointer;
     z-index: 100;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 800px) {
     .post-slider .prev {
         position: absolute;
         top: 50%;
-        left: 30px;
+        left: 20px;
         font-size: 3em;
         cursor: pointer;
     }
