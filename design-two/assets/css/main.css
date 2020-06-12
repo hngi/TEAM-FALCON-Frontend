@@ -93,14 +93,14 @@ body {
   width: 100%;
   top: 0;
 }
- {
+ /* {
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
   content: " ";
   height: 100%;
   width: 100%;
   top: 0;
-}
+} */
 
 #__bannerlabel {
   color: #ffffff;
@@ -216,57 +216,10 @@ body {
 }
 
 
-/* About us(Section below banner on home page) - @Giye remade by prewsh */
-
-.services{
-  background: rgba(238, 238, 238, 0.9);
-  display: relative;
-}
-.services-row{
-  display: flex;
-  flex-wrap: wrap;
-}
-.services-col{
-  width: 50%;
-  float: left;
-}
-#conference{
-  padding: 20px 5px 0 20px;
-}
-#dining{
-  padding: 20px 10px 0 20px;
-}
-.services img{
-  width:100%;
-}
-.services-col::after{
-  content: "";
-  clear: both;
-  display: table;
-}
 
 
 
-
-
-/*
-#book-now-button{
-    background-color: #FD3D65;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: lighter;
-    border: none;
-    color: #FFFFFF;
-    height: 18px;
-    font-size: 15px;
-    line-height: 18px;
-
-    letter-spacing: -0.0578704px;
-} */
-
-
-
-
-/* Resorts and spa section(Home page) by @Deola*/
+/*section(Home page) by @Deola*/
 
 .resort-main {
 	padding-left: 82px;
@@ -365,7 +318,8 @@ body {
 	grid-area: boxlet-four;
 	background-image: url('../img/resort/5.png');
 	background-repeat: no-repeat;
-	background-size: cover;
+  background-size: cover;
+  
 }
 
 /* Resorts and spa section(Home page) Responsivess by @Deola*/

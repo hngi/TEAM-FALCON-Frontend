@@ -1,0 +1,294 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+  font-family: "Poppins";
+  color: #333;
+}
+
+.home-page-banner {
+  height: 80vmin;
+  display: flex;
+  padding: 30px;
+  font-family: "Poppins";
+  position: relative;
+}
+@media screen and (min-width: 280px) and (max-width: 600px) {
+  .home-page-banner {
+    height: auto;
+    display: block;
+    background-color: #efefef;
+    padding: 50px 10px;
+  }
+}
+.home-page-banner .intro-text-box {
+  z-index: 9999999;
+  width: 40%;
+  float: left;
+}
+@media screen and (min-width: 100px) and (max-width: 860px) {
+  .home-page-banner{
+    background: rgba(96, 96, 96, 0.72) url("../img/campus.png");
+    background-size: cover;
+    height: 400px
+  }
+  .home-page-banner .intro-text-box {
+    padding-bottom: 50px;
+    height:100%;
+  }
+
+}
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .home-page-banner .intro-text-box {
+    width: 58%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1600px) {
+  .home-page-banner .intro-text-box {
+    text-align: left;
+  }
+  .home-page-banner .intro-text-box p {
+    font-size: 18px;
+    margin: 20px 0 0;
+    color: #333;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 600px) {
+  .home-page-banner .intro-text-box {
+    width: 100%;
+    height:100%;
+    text-align: center;
+    margin: auto;
+  }
+}
+.home-page-banner .intro-text-box h1 {
+  font-size: 40px;
+}
+.home-page-banner .intro-text-box h1 .text-green {
+  color: #71ce47;
+}
+@media screen and (min-width: 280px) and (max-width: 600px) {
+  .home-page-banner .intro-text-box h1 {
+    font-size: 30px;
+  }
+}
+.home-page-banner .intro-text-box p {
+  font-size: 18px;
+  margin: 40px 0 0;
+  color: #333;
+}
+@media screen and (min-width: 280px) and (max-width: 600px) {
+  .home-page-banner .intro-text-box p {
+    color: black;
+    font-weight: 600;
+    padding: 10px;
+  }
+}
+.home-page-banner .intro-text-box a.explore-services button {
+  padding: 3%;
+  background-color: #71ce47;
+  border: 0;
+  border-radius: 0px 8px 8px 0px;
+  margin: 20px 0 0;
+  cursor: pointer;
+  color: #eee;
+  font-size: 18px;
+}
+@media screen and (min-width: 280px) and (max-width: 600px) {
+  .home-page-banner .intro-text-box a.explore-services button {
+    border-radius: 3px;
+    font-size: 14px;
+  }
+}
+.home-page-banner .top-sky-view {
+  width: 765px;
+  height: 100%;
+  position: relative;
+}
+@media screen and (min-width: 280px) and (max-width: 600px) {
+  .home-page-banner .top-sky-view {
+    display: none;
+  }
+}
+.home-page-banner .top-sky-view .hotel-view {
+  width: 480px;
+  height: 480px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  z-index: 999999;
+}
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .home-page-banner .top-sky-view .hotel-view {
+    height: 380px;
+    width: 380px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 600px) {
+  .home-page-banner .top-sky-view .hotel-view {
+    width: 380px;
+    height: 380px;
+  }
+}
+.home-page-banner .top-sky-view .hotel-view img {
+  height: 100%;
+  width: 100%;
+}
+.home-page-banner .top-sky-view .backdrop-shadow-1 {
+  background-color: #ceeec0;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  z-index: 999;
+}
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .home-page-banner .top-sky-view .backdrop-shadow-1 {
+    height: 500px;
+    width: 500px;
+  }
+}
+.home-page-banner .top-sky-view .backdrop-shadow-2 {
+  z-index: 9999;
+  background-color: #71ce47;
+  height: 600px;
+  width: 600px;
+  border-radius: 50%;
+  position: absolute;
+  right: -27px;
+  top: -20px;
+}
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .home-page-banner .top-sky-view .backdrop-shadow-2 {
+    height: 400px;
+    width: 400px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .home-page-banner .top-sky-view .backdrop-shadow-2 {
+    width: 350px;
+    height: 350px;
+  }
+}
+​
+.reservation {
+  z-index: 9999999;
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+}
+.reservation-order {
+  width: 65%;
+}
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .reservation-order {
+    width: 98%;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 600px) {
+  .reservation-order {
+    width: 100%;
+  }
+}
+.reservation-order form {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 280px) and (max-width: 600px) {
+  .reservation-order form {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 10px;
+  }
+}
+.reservation-order form span {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 19%;
+}
+@media screen and (min-width: 280px) and (max-width: 600px) {
+  .reservation-order form span {
+    width: 48.5%;
+  }
+}
+.reservation-order form span label {
+  font-weight: 500;
+}
+@media screen and (min-width: 280px) and (max-width: 600px) {
+  .reservation-order form span label {
+    font-weight: normal;
+  }
+}
+.reservation-order form span input[type=date],
+.reservation-order form span input[type=number],
+.reservation-order form span button {
+  background-color: #efefef;
+  padding: 20px 7px;
+  margin: -20px 0 0;
+  border-radius: 6px;
+  border: 0;
+}
+@media screen and (min-width: 280px) and (max-width: 600px) {
+  .reservation-order form span input[type=date],
+.reservation-order form span input[type=number],
+.reservation-order form span button {
+    padding: 6%;
+    margin-bottom: 20px;
+  }
+}
+.reservation-order form span button {
+  background-color: #71ce47 !important;
+  color: #eee;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+.banner-pic{
+	float: right;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+
+}
+
+.banner-img{
+
+	background-image:url(../img/homecampus.png);
+	background-position: center;
+	background-size:cover;
+	width: 356px;
+	float:right;
+	right: 100px;
+	position: absolute;
+	border-radius: 100%;
+	height: 356px;
+	border:7px solid #99ff66;
+	top:35px;
+
+}
+.banner-bord{
+	border:180px solid #71ce47;
+	background-color: #71ce47;
+	border-radius: 100%;
+	width: 20px;
+	float: right;
+	position: absolute;
+	right:0px;
+	top: 0px;
+}
+
+@media screen and (max-width: 700px) {
+  .banner-pic{
+    display: none;
+  
+  }
+}

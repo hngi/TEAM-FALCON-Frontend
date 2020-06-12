@@ -1,0 +1,312 @@
+
+.row{
+	max-width: 100%;
+	margin:0 auto 0 auto;
+	padding-bottom: 100px;
+}
+.banner-text{
+	font-family: "Arial";
+	font-size:240%;
+	font-weight: bold;
+	color: #333333;
+	letter-spacing: 2px;
+	word-spacing: 2px;
+}
+.banner-main{
+	margin-top: 120px;
+	margin-left:60px;
+}
+
+.banner-head{
+	color: #71ce47;
+	text-decoration: none;
+
+}
+.banner-par{
+
+	font-size: 95%;
+	font-family: "Arial";
+	margin-top: 50px;
+	letter-spacing: 1px;
+	word-spacing: 1px;
+	margin-right: auto;
+	margin-left: auto
+}
+.banner-start:link,
+.banner-start:visited{
+	text-decoration: none;
+	border:2px solid #71ce47;
+	color:white;
+	background-color: #71ce47;
+	font-family: "Arial";
+    margin-top: 50px;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: border-radius 0.2s , border-color 0.2s;
+}
+.banner-start:hover,
+.banner-start:active{
+	border-radius: 5px;
+	border-color:black;
+}
+.banner-form{
+	width:55%;
+	margin-top: 100px;
+	margin-right: 0px;
+	margin-left: 60px;
+	display: block;
+
+}
+.banner-list{
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0px;
+	text-align: center;
+}
+.banner-date{
+	height: 50px;
+	width: 100%;
+	background-color: #ddd;
+	border: 1px solid #ddd;
+	margin: auto;
+}
+.banner-no{
+	width:100%;
+	height: 50px;
+	margin: auto;
+	background-color: #ddd;
+	border: 1px solid #ddd;
+}
+.banner-number{
+	margin: auto;
+	height: 50px;
+	width:100%;
+background-color: #ddd;
+border: 1px solid #ddd;
+}
+
+.banner-check{
+	width: auto;
+	margin: auto;
+	font-size:90%; 
+	color: black;
+}
+.banner-submit{
+	margin-top: 26px;
+	margin-left: 5px;
+   background-color: #71ce47;
+   height: 50px;
+   color: white;
+   border: 1px solid #71ce47;
+   width: 100%;
+   border-radius: 2px;
+}
+.banner-submit:hover,
+.banner-submit:active{
+	border:1px solid black;
+}
+
+.box form{
+	width: 100%;
+	height: auto;
+	margin-bottom: 15px;
+}
+.banner-pic{
+	float: right;
+	position: absolute;
+	top: 118px;
+	right: 0px;
+
+}
+.banner-img{
+
+	background-image:url(../img/campus.png);
+	background-position: center;
+	background-size:cover;
+	width: 480px;
+	float:right;
+	right: 100px;
+	position: absolute;
+	border-radius: 100%;
+	height: 480px;
+	border:7px solid #99ff66;
+	top:35px;
+
+}
+.banner-bord{
+	border:200px solid #71ce47;
+	background-color: #71ce47;
+	border-radius: 100%;
+	width: 20px;
+	float: right;
+	position: absolute;
+	right:0px;
+	top: 0px;
+}
+.span-1-of-5 {
+  	width: 18.72%;
+}
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child { margin-left: 0; }
+
+
+@media only screen and (max-width: 1200px){
+
+
+.banner-img{
+	height: 480px;
+	width:480px;
+	right: 30px;
+	top:20px;
+}
+
+
+@media only screen and (max-width: 1023px){
+
+
+.banner-img{
+	height: 400px;
+	width:400px;
+	right: 30px;
+	top:11px;
+
+}
+.banner-bord{
+	border:150px solid #71ce47;
+	width: 20px;
+	float: right;
+	right:0px;
+	top: 0px;
+}
+.banner-par{
+	font-size: 90%;
+}
+.banner-form{
+	width:90%;
+}
+}
+@media only screen and (max-width: 767px){
+
+.banner-text{
+	font-size: 200%;
+}
+.banner-main{
+	margin-top: 80px;
+}
+
+.banner-img{
+	height: 240px;
+	width:240px;
+	position: absolute;
+	right: 210px;
+	top:350px;
+
+}
+.banner-bord{
+	border:100px solid #71ce47;
+	width: 20px;
+	right:180px;
+	top:340px;
+}
+.banner-check{
+	font-size: 70%;
+
+}
+.banner-date{
+	width: 100%;
+	margin:auto;
+	padding-left:  10%;
+
+}
+.banner-submit{
+	margin-top:10px;
+	width: 70px;
+	text-align: center;
+	padding-left: 10px;
+}
+.banner-form{
+	width:80%;
+	margin-top: 300px;
+}
+.banner-par{
+	font-size: 80%;
+	word-break: all;
+}
+
+}
+
+@media only screen and (max-width: 400px){
+
+.banner-img{
+	height: 10px;
+	width: 100px;
+	position: relative;
+
+}
+
+.banner-img{
+	height: 250px;
+	width:250px;
+	right: 80px;
+	top:360px;}
+}
+.banner-par{
+	word-break: all;
+}
+
+@media only screen and (max-width: 480px) {
+	.col { 
+	margin: 0;
+}
+}
+.banner-img{
+	height: 10px;
+	width: 100px;
+}
+
+.banner-img{
+	height: 250px;
+	width:250px;
+	right: 100px;
+	top:360px;
+}
+.banner-bord{
+	border:120px solid #71ce47;
+	right:55px;
+	top: 355px;
+}
+.banner-form{
+	width:80%;
+	margin-top: 300px;
+}
+.banner-par{
+
+word-break: all;
+width: 80%;
+margin-left: 0px;
+
+}
+.banner-date{	
+	width: 50px;
+	margin-left:5px;
+	padding-left:  10%;
+	flex: wrap;
+}
+.banner-no{
+	width: 50px;
+	margin-left: 5px;
+}
+.banner-number{
+	width: 50px;
+	margin-left: 5px;
+}
+.banner-check{
+	text-align:center;
+}
+}

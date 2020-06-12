@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.about-topSectionImg {
+    background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("../img/Rectangle-86.png");
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2000ms;
+}
+
+.about-topSectionImg:hover {
+    background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("../img/Rectangle-86.png");
+    color: #52CE47;
+}
+
+.about_body {
+    display: flex;
+    height: 100%;
+
+}
+.about-topSectionImg h1 {
+    font-size: 40px;
+    color: rgba(221, 221, 221, 1);
+}
+
+.about-bottomSection {
+    background: rgba(221, 221, 221, 0.1);
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.about-bottomSection h2 {
+    padding: .5%;
+    margin-top: 40px;
+    margin-left: 10%;
+    font-family: 'Poppins';
+    color: #606060;
+}
+
+.about-bottomStyle {
+    margin-top: 2px;
+    height: 7px;
+    width: 60px;
+    background-color: #52CE47;
+}
+
+.about-bottomSection .about-details {
+    padding: 3% 2%;
+    margin-top: 20px;
+    margin-left: 10%;
+    width: 70%;
+    float: left;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    color: #606060;
+}
+@media screen and (max-width:768px) {
+    .about-bottomSection .about-details {
+        padding: 3% 5%;
+        margin-top: 20px;
+        margin-left: 2%;
+        width: 50%;
+        float: left;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        color: #606060;
+    }
+    .about_sideimgs{
+        float: right;
+    }
+}
+.about-bottomSection button {
+    margin: 14px 5%;
+    margin-left: 10%;
+    height: 60px;
+    width: 200px;
+    border: none;
+    border-radius: 6px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    /* background-color: #71ce47; */
+    /* background-color: rgba(76, 209, 55,1.0); */
+    /* background: #71CE47; */
+    background: #52CE47;
+    /* background-color: #99ff66; */
+    color: white;
+    font-family: 'Poppins';
+    cursor: pointer;
+}
+
+.about-bottomSection button:hover {
+    background-color: white;
+    border: #52CE47 2px solid;
+    color: #52CE47;
+}
+
+.about-sideDeco {
+    height: 220px;
+    width: 60px;
+    border: none;
+    border-radius: 12px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    background-color: rgba(76, 209, 55,1.0);
+    position: absolute;
+    right: 0;
+    top: 25%;
+    float: right;
+    margin:auto;
+}
+
+.about-sideImg {
+    height: 260px;
+    width: 150px;
+    border: none;
+    border-top-left-radius: 0;
+    border-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-image: url("../img/Rectangle-69.png");
+    position: absolute;
+    right: 40px;
+    top: 20%;
+    float: right;
+    z-index: 1;
+    margin:auto;
+}
+
+
+@media only screen and (max-width:365px) {
+    .about-sideDeco {
+        display: none;
+    }
+    
+    .about-sideImg {
+        height: 260px;
+        width: 30px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        right: 3px;
+        top: 6.5%;
+    }   
+
+.about-bottomSection .about-details {
+    width: 83%;
+}
+}
