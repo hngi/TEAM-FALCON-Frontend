@@ -147,11 +147,13 @@ small,
 }
 
 .facilities-card {
-    box-shadow: 2px 4px 14px rgba(65, 82, 118, 0.1);
+    box-shadow: 2px 4px 14px rgba(45, 57, 85, 0.1);
     border-radius: 10px;
     padding: 10px 10px 30px 10px;
     margin-right: 10px;
     margin-bottom: 10px;
+    background-color: #fff;
+    border: 0.5px solid rgb(247, 243, 243);
 }
 
 .card--amend {
@@ -272,11 +274,6 @@ small,
 }
 
 .video-play {
-    background-image: url("../images/image1.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 250px;
-    margin-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -331,7 +328,7 @@ small,
 }
 
 .smallnav div {
-    padding: 5px 5px 2px 5px;
+    padding: 5px;
     background: rgba(255, 255, 255, 0.4);
     margin: 0 5px;
     box-shadow: 2px 4px 14px rgba(65, 82, 118, 0.5);
@@ -341,6 +338,7 @@ small,
 
 .smallnav div img {
     width: 80px;
+    height: 100%;
     border-radius: 6px;
     opacity: 1;
 }
@@ -393,6 +391,11 @@ small,
     body {
         font-size: 20px;
     }
+    .bg-small {
+        background-image: url("../images/video.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
     .hero-description {
         width: 80%;
     }
@@ -425,8 +428,7 @@ small,
         margin-right: 30px;
     }
     .video-play {
-        height: 60vh;
-        margin-top: 50px;
+        height: 65vh;
         width: 30%;
         position: absolute;
         right: 0;
@@ -470,7 +472,7 @@ small,
         margin-bottom: -150px;
     }
     .smallnav div {
-        padding: 10px 10px 2px 10px;
+        padding: 7px;
     }
     .smallnav div img {
         width: 120px;
@@ -621,6 +623,13 @@ small,
     body {
         font-size: 28px;
     }
+    .bg-small {
+        background-image: none;
+    }
+    .bg-large {
+        background-image: url("../images/video.svg");
+        background-size: cover;
+    }
     .btn--details {
         padding: 15px;
     }
@@ -628,7 +637,7 @@ small,
         margin-top: 50px;
     }
     .smallnav {
-        top: -250px;
+        top: -200px;
     }
     .smallnav div img {
         width: 150px;

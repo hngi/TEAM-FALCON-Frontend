@@ -17,6 +17,7 @@ main {
     grid-template-areas: "header";
     grid-template-columns: 100%;
   }
+
   #background{
     background: url("../images/landingpage.png");
     background-repeat: no-repeat;
@@ -25,28 +26,29 @@ main {
     display: flex;
     flex-direction: column;
   }
+
   .navbar {
     font-size: 18px;
     background: content-box;
-    /* border: 1px solid rgba(0, 0, 0, 0.2); */
-    padding: 10px 3%;
+    padding: 13px 3%;
   }
   
   .main-nav {
     display: none;
   }
-  
+
+  .navbar-toggle,
   .nav-links,
   .logo {
     color: rgba(255, 255, 255);
   }
-  
+
   .nav-links:hover, 
   .navbar-toggle:hover,
   .logo:hover {
     color: rgba(255, 255, 255, 0.7);
   }
-  
+
   .main-nav li {
     text-align: center;
     margin: 15px auto;
@@ -55,11 +57,11 @@ main {
   .logo {
     display: inline-block;
     font-size: 1.7625rem;
-    margin-top: 10px;
     margin-left: 20px;
     font-family: 'Playfair Display', serif;
     font-weight: 600;
   } 
+
   .nav-links {
     font-size: 1.2rem;
     font-family: 'Poppins', sans-serif;
@@ -71,53 +73,12 @@ main {
     top: 10px;
     right: 20px;
     cursor: pointer;
-    color: rgba(255, 255, 255, 0.9);
     font-size: 24px;
   }
   
   .active {
     display: block;
   }
-  
-  @media screen and (min-width: 768px) {
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 0;
-      height: 70px;
-      align-items: center;
-    }
-  
-    .main-nav {
-      display: flex;
-      margin-right: 30px;
-      flex-direction: row;
-      justify-content: flex-end;
-    }
-  
-    .main-nav li {
-      margin: 0;
-    }
-  
-    .nav-links {
-      margin-left: 40px;
-    }
-  
-    .logo {
-      margin-top: 0;
-    }
-  
-    .navbar-toggle {
-      display: none;
-    }
-  
-    .nav-links:hover, 
-    .navbar-toggle:hover,
-    .logo:hover {
-      color: rgba(255, 255, 255, 0.7);
-    }
-  }
-
 
   
 #leftContainer{
@@ -132,11 +93,13 @@ main {
     padding: 0 3.7rem;
     font-family: 'Playfair Display', serif;
 }
+
 #idH3 {
     color: #fff;
     font-size: 2.7rem;
     font-weight: bold;
 }
+
 a.explore-btn {
     color: #ffffff;
     margin: 1.5rem 0;
@@ -146,12 +109,14 @@ a.explore-btn {
     font-size: 1.2rem;
     font-weight: bold;
 }
+
 a.explore-btn:hover {
     background-color: #ffffff;
     color: #145374;
     text-decoration: none;
     border: 1px solid #145374;
 }
+
 footer {
   width: 100%;
   padding-right: 15px;
@@ -161,8 +126,8 @@ footer {
   position: absolute;
   bottom: 0;
 }
-#row .col-1 .content
-{
+
+#row .col-1 .content {
   width: 100%;
   height: 100%;
   background: #fff;
@@ -173,6 +138,7 @@ footer {
   float: left;
   border-right: 3px solid #D9D8D8;
 }
+
 .col-1 {
   -ms-flex: 0 0 16.666667%;
   flex: 0 0 16.666667%;
@@ -182,11 +148,13 @@ footer {
   padding-left: 15px;
   display: contents;
 }
+
 .content.col-half, .black-col {
   flex: 0 0 14% !important;
   max-width: 14% !important;
   border-right: unset !important;
 }
+
 #row {
   display: -ms-flexbox;
   display: flex;
@@ -196,18 +164,22 @@ footer {
   margin-left: -15px;
   height: 5.9rem;
 }
+
 .ml5 {
   margin-left: 4rem;
 }
+
 .pRow1 {
     color: #B1B1B1;
     font-size: 1.075rem;
 }
+
 .pRow2 {
     color: #0A0A0E;
     font-size: 1.7rem;
     font-weight: 600;
 }
+
 .col-half.black-col
 {
   width: 100%;
@@ -218,10 +190,12 @@ footer {
   height: 5.9rem;
   float: left;
 }
+
 #row .col-1 .col-half.black-col:hover
 {
   background: #000;
 }
+
 .pRow-last {
   color: #fff;
   font-size: 1.2rem;
@@ -230,90 +204,160 @@ footer {
   text-align: center;
   width: fit-content;
 }
+
 .dateicon {
   position: absolute;
   left: 80%;
+}
+
+
+
+  
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
+
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .main-nav li {
+    margin: 0;
+  }
+
+  .nav-links {
+    margin-left: 40px;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .nav-links:hover, 
+  .navbar-toggle:hover,
+  .logo:hover {
+    color: rgba(255, 255, 255, 0.7);
+  }
 }
   
 
 @media screen and (max-width: 992px) {
   .fas.fa-bars {
-    margin-top: 10px;
+    padding-bottom: 10px;
   }
+
   .nav-links {
       margin-left: 20px;
       font-size: 1rem;
   }
+
   .logo {
     font-size: 1.5625rem;
   }
+
   #idH3 {
       max-width: 30.7rem;
   }
+
   #leftContainer {
     top: 35%;
   }
+
   a.explore-btn {
     margin: 1.7rem 0;
   }
+
   .pRow1 {
     font-size: 0.875rem;
   }
+
   .pRow2 {
     font-size: 1.5rem;
   }
+
   .pRow-last {
     font-size: .95rem;
   }
+
   #row .col-1 .content {
     padding: .5rem 0 .5% .5rem;
     border-right: 1.8px solid #D9D8D8;
   }
+
   .col-half.black-col {
     padding: .5rem 0 .1rem .5rem;
   }
+
 }
 
 
 @media screen and (max-width: 768px) {
+  .navbar {
+    background: radial-gradient(black, transparent);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
   .nav-links {
       font-size: .95rem;
   }
+
   .logo {
     font-size: 1.4625rem;
   }
+
   #idH3 {
       max-width: 23rem;
       font-size: 2.2rem;
   }
+
   #leftContainer {
     top: 30%;
   }
+
   a.explore-btn {
     border: 1px solid rgba(255, 255, 255, 5.36);
   }
+
   .pRow1 {
     font-size: 0.675rem;
   }
+
   .pRow2 {
     font-size: 1rem;
     padding-top: .5rem;
   }
+
   .pRow-last {
     font-size: .85rem;
     max-width: 4.5rem;
   }
+
   #row .col-1 .content {
     padding: .5rem 0 0 .5rem;
     border-right: 1.8px solid #D9D8D8;
   }
+
   .col-half.black-col {
     padding: .5rem 0 .1rem .3rem;
   }
+
   .dateicon {
     position: absolute;
     left: 70%;
   }
+
 }
 
 @media screen and (max-width: 577px) {
@@ -322,10 +366,12 @@ footer {
     padding-top: .3rem;
     display: block;
   }
+
   .pRow-last {
     left: 1vw !important;
     right: 1vw !important;
   }
+
 }
 
 @media screen and (max-width: 400px) {
@@ -333,17 +379,21 @@ footer {
     left: 10%;
     padding-top: .2rem;
   }
+
   .pRow-last {
     left: .2vw !important;
     right: .2vw !important;
     font-size: .7rem;
   }
+
   .pRow1 {
     font-size: 0.58rem;
   }
+
   .pRow2 {
     font-size: .8rem;
     padding-top: .5rem;
   }
+
 }
  

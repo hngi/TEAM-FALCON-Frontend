@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="assets/css/header-footer.css">
+	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/room-and-rates.css">
+
+	<title></title>
+</head>
+
+<body id="body">
+	<header class="toolbar">
+		<nav class="toolbar_navigation">
+			<div></div>
+			<div class="toolbar_logo"><a href="index.html"><img src="assets/images/logo.svg" alt="logo"></a></div>
+			<div class="spacer"></div>
+			<div class="toolbar_navigation-items">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="facilities.html">Facilities</a></li>
+					<li class="activenav"><a href="rooms.html">Rooms</a></li>
+				</ul>
+				<div class="signup_button">
+					<a href="">Sign Up</a>
+				</div>
+			</div>
+			<button class="hamburger" id="hamturn" onclick="toggle(); backdrop(); hamturn()">
+				<div class="ham_line"></div>
+				<div class="ham_line"></div>
+				<div class="ham_line"></div>
+			</button>
+		</nav>
+	</header>
+	<div id="hidden">
+		<nav id="side">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+				<li><a href="facilities.html">Facilities</a></li>
+				<li><a href="rooms.html">Rooms</a></li>
+				<div class="signup_button">
+					<a href="">Sign Up</a>
+				</div>
+			</ul>
+		</nav>
+	</div>
+	<main id="_rnr">
+		<div style="position: relative;">
+			<div id="_rnr_banner">
+				<div id="_rnr_bannertext">
+					<h4>Rooms and Rates</h4>
+					<p>Below are all our rooms, Start your booking.</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="_rnr_container">
+			<div class="rows">
+
+				<div class="_rnr_cards">
+					<div class="_rnr_card_img">
+						<img src="assets/images/blackberry.png" alt="" />
+						<div class="book_room">
+							<button>Book Room</button>
+						</div>
+					</div>
+					<div class="_rnr_card_text">
+						<label for="room_info">
+							<p class="room_type">BlackBerry Room</p>
+							<p class="room_price">$456.00 </p>
+						</label>
+						<div class="room_desc">
+							<p> 56m Wide</p>
+							<p>Double Bed Type</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="_rnr_cards">
+					<div class="_rnr_card_img">
+						<img src="assets/images/mini.png" alt="" />
+						<div class="book_room">
+							<button>Book Room</button>
+						</div>
+					</div>
+					<div class="_rnr_card_text">
+						<label for="room_info">
+							<p class="room_type">Mini Cooper Room</p>
+							<p class="room_price">$456.00 </p>
+						</label>
+						<div class="room_desc">
+							<p> 56m Wide</p>
+							<p>Double Bed Type</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="_rnr_cards">
+					<div class="_rnr_card_img">
+						<img src="assets/images/king.png" alt="" />
+						<div class="book_room">
+							<button>Book Room</button>
+						</div>
+					</div>
+					<div class="_rnr_card_text">
+						<label for="room_info">
+							<p class="room_type">King's Room</p>
+							<p class="room_price">$456.00 </p>
+						</label>
+						<div class="room_desc">
+							<p> 56m Wide</p>
+							<p>Double Bed Type</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="_rnr_cards">
+					<div class="_rnr_card_img">
+						<img src="assets/images/blackberry.png" alt="" />
+						<div class="book_room">
+							<button>Book Room</button>
+						</div>
+					</div>
+					<div class="_rnr_card_text">
+						<label for="room_info">
+							<p class="room_type">BlackBerry Room</p>
+							<p class="room_price">$456.00 </p>
+						</label>
+						<div class="room_desc">
+							<p> 56m Wide</p>
+							<p>Double Bed Type</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="_rnr_cards">
+					<div class="_rnr_card_img">
+						<img src="assets/images/mini.png" alt="" />
+						<div class="book_room">
+							<button>Book Room</button>
+						</div>
+					</div>
+					<div class="_rnr_card_text">
+						<label for="room_info">
+							<p class="room_type">Mini Cooper Room</p>
+							<p class="room_price">$456.00 </p>
+						</label>
+						<div class="room_desc">
+							<p> 56m Wide</p>
+							<p>Double Bed Type</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="_rnr_cards">
+					<div class="_rnr_card_img">
+						<img src="assets/images/king.png" alt="" />
+						<div class="book_room">
+							<button>Book Room</button>
+						</div>
+					</div>
+					<div class="_rnr_card_text">
+						<label for="room_info">
+							<p class="room_type">King's Room</p>
+							<p class="room_price">$456.00 </p>
+						</label>
+						<div class="room_desc">
+							<p> 56m Wide</p>
+							<p>Double Bed Type</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="_rnr_cards">
+					<div class="_rnr_card_img">
+						<img src="assets/images/blackberry.png" alt="" />
+						<div class="book_room">
+							<button>Book Room</button>
+						</div>
+					</div>
+					<div class="_rnr_card_text">
+						<label for="room_info">
+							<p class="room_type">BlackBerry Room</p>
+							<p class="room_price">$456.00 </p>
+						</label>
+						<div class="room_desc">
+							<p> 56m Wide</p>
+							<p>Double Bed Type</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="_rnr_cards">
+					<div class="_rnr_card_img">
+						<img src="assets/images/mini.png" alt="" />
+						<div class="book_room">
+							<button>Book Room</button>
+						</div>
+					</div>
+					<div class="_rnr_card_text">
+						<label for="room_info">
+							<p class="room_type">Mini Cooper Room</p>
+							<p class="room_price">$456.00 </p>
+						</label>
+						<div class="room_desc">
+							<p> 56m Wide</p>
+							<p>Double Bed Type</p>
+						</div>
+					</div>
+				</div>
+				<div class="_rnr_cards">
+					<div class="_rnr_card_img">
+						<img src="assets/images/king.png" alt="" />
+						<div class="book_room">
+							<button>Book Room</button>
+						</div>
+					</div>
+					<div class="_rnr_card_text">
+						<label for="room_info">
+							<p class="room_type">King's Room</p>
+							<p class="room_price">$456.00 </p>
+						</label>
+						<div class="room_desc">
+							<p> 56m Wide</p>
+							<p>Double Bed Type</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div id="more">
+				<button>See More</button>
+			</div>
+
+		</div>
+
+	</main>
+	<!-- FOOTER SECTION -->
+
+
+	<div class="footer">
+
+		<div class="footer_content">
+			<div class="footer_navigation-items">
+				<div class="footer_logo"><a href="index.html"><img src="assets/images/logo.svg" alt="logo"></a></div>
+				<ul>
+					<li><a href="about.html">About us</a></li>
+					<li><a href="contact.html">Contact us</a></li>
+					<li><a href="rooms.html">Book a room</a></li>
+					<li><a href="index.html">Our agents</a></li>
+					<li><a href="contact.html">Connect with us</a></li>
+				</ul>
+			</div>
+			<div class="footer_navigation-items">
+				<ul>
+					<li><a href="about.html">About us</a></li>
+					<li><a href="contact.html">Contact us</a></li>
+					<li><a href="rooms.html">Book a room</a></li>
+					<li><a href="index.html">Our agents</a></li>
+					<li><a href="contact.html">Connect with us</a></li>
+				</ul>
+			</div>
+			<div class="footer_navigation-items">
+				<ul>
+					<li><a href="about.html">About us</a></li>
+					<li><a href="contact.html">Contact us</a></li>
+					<li><a href="rooms.html">Book a room</a></li>
+					<li><a href="index.html">Our agents</a></li>
+					<li><a href="contact.html">Connect with us</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<script src="assets/js/toggle.js"></script>
+	<script>
+		let elem = document.querySelectorAll(".book_room");
+		elem.forEach(el => {
+			el.addEventListener("mouseover", (e) => e.target.style.opacity = 1);
+			el.addEventListener("mouseleave", (e) => e.target.style.opacity = 0);
+		})
+	</script>
+</body>
+
+</html>
