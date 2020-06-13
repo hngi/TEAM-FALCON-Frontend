@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=DM+Sans&display=swap');
-body{
-background: #F5F5F5;
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=DM+Sans&display=swap");
+body {
+    background: #f5f5f5;
 }
 
 .container {
@@ -20,79 +20,77 @@ background: #F5F5F5;
     left: 200px;
     /* top: 1373px; */
 }
-.hotel_attr{
+.hotel_attr {
     position: absolute;
     width: 289px;
     height: 96px;
     left: 200px;
     top: 1373px;
-    
+
     font-family: Bree Serif;
     font-style: normal;
     font-weight: normal;
     font-size: 48px;
     line-height: 48px;
     /* or 100% */
-    
+
     display: flex;
     align-items: center;
-    
+
     color: #333333;
 }
 
-.text-atr{
+.text-atr {
     position: absolute;
     width: 333px;
     /* height: 168px; */
     /* left: 200px; */
     margin: 136px 0 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
     color: #333333;
 }
-.btn_attr{
+.btn_attr {
     position: absolute;
     width: 333px;
     height: 60px;
-    margin: 251px -5px; 
+    margin: 251px -5px;
     background: #611760;
     border-radius: 5px;
-    transition:1s;
-
+    transition: 1s;
 }
 
-.btn_attr:hover{
-    background:#1f061f;
-    border: 2px solid #fff;  
-    transform: scale(1.1);      
+.btn_attr:hover {
+    background: #1f061f;
+    border: 2px solid #fff;
+    transform: scale(1.1);
 }
-.btn_text_attr{
+.btn_text_attr {
     position: absolute;
-width: 217px;
-height: 24px;
-margin: -11px 29px;
-text-align: center;
-/* font-family: DM Sans; */
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 24px;
-/* identical to box height, or 100% */
+    width: 217px;
+    height: 24px;
+    margin: -11px 29px;
+    text-align: center;
+    /* font-family: DM Sans; */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    /* identical to box height, or 100% */
 
-display: flex;
-align-items: center;
+    display: flex;
+    align-items: center;
 
-color: #FFFFFF;
-
+    color: #ffffff;
 }
 
-.btn_text_attr:hover{
+.btn_text_attr:hover {
     color: #fff;
 }
-.arrow_atrr{
+.arrow_atrr {
     position: absolute;
     width: 24px;
     height: 24px;
@@ -102,37 +100,37 @@ color: #FFFFFF;
     font-size: 20px;
     border: 2px solid #fff;
 }
-.arrow_atrr:hover{
-    color:#611760;
+.arrow_atrr:hover {
+    color: #611760;
 }
 
-.atr_grea{
-position: absolute;
-left: 50%;
-right: 20.83%;
-top: 28.83%;
-bottom: 20.83%;
-/* border: 2px solid #000 */
-margin: -6px 0 0;
-color: #fff;
-}
-.atr_grea:hover{
-    color:#611760;
-}
-
-.atr_lin{
+.atr_grea {
     position: absolute;
-    left: 20.83%;    
+    left: 50%;
+    right: 20.83%;
+    top: 28.83%;
+    bottom: 20.83%;
+    /* border: 2px solid #000 */
+    margin: -6px 0 0;
+    color: #fff;
+}
+.atr_grea:hover {
+    color: #611760;
+}
+
+.atr_lin {
+    position: absolute;
+    left: 20.83%;
     bottom: 50%;
     font-size: 28px;
     color: #fff;
     margin: -2px 0;
     /* border: 2px solid #FFFFFF;*/
 }
-.atr_lin:hover{
-    color:#611760;
+.atr_lin:hover {
+    color: #611760;
 }
-.box_atrr{
+.box_atrr {
     position: absolute;
     width: 265px;
     height: 394px;
@@ -142,10 +140,9 @@ color: #fff;
     background: url(695aadccecce4068a9667f0ef6743b00.jpg);
     background-size: cover;
     background-position: center;
-   
 }
 
-.box_text_attr{
+.box_text_attr {
     margin: 7px 4px;
     font-family: Bree Serif;
     font-style: normal;
@@ -157,37 +154,34 @@ color: #fff;
     color: #333333;
 }
 
-.box_text2_attr{
+.box_text2_attr {
     margin: -7px 5px;
     font-family: DM Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 24px;
-/* identical to box height, or 133% */
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
 
-display: flex;
-align-items: center;
+    display: flex;
+    align-items: center;
 
-color: #333333;
+    color: #333333;
 }
 
-.box_atrr2{
+.box_atrr2 {
     position: absolute;
     width: 265px;
     height: 394px;
     left: 690px;
     /* top: 1373px; */
     margin: 134px 0 0 0;
-background: url(abb61116038d1c557c6abaadaac2439a.jpg);
-background-size: cover;
-background-position: center;
-}
-.contain_box{
-
+    background: url(abb61116038d1c557c6abaadaac2439a.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
-.box_text_attr2{
+.box_text_attr2 {
     margin: 7px 4px;
     font-family: Bree Serif;
     font-style: normal;
@@ -199,22 +193,22 @@ background-position: center;
     color: #333333;
 }
 
-.box_text2_attr2{
+.box_text2_attr2 {
     margin: -7px 5px;
     font-family: DM Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 17px;
-line-height: 24px;
-/* identical to box height, or 133% */
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
 
-display: flex;
-align-items: center;
+    display: flex;
+    align-items: center;
 
-color: #333333;
+    color: #333333;
 }
 
-.sec_box_attr{
+.sec_box_attr {
     position: absolute;
     width: 238px;
     height: 62px;
@@ -225,10 +219,10 @@ color: #333333;
     border-radius: 2px;
     transition: 0.8s;
 }
-.sec_box_attr:hover{
-    transform: scale(1.1);   
+.sec_box_attr:hover {
+    transform: scale(1.1);
 }
-.box_sec_attr{
+.box_sec_attr {
     position: absolute;
     width: 238px;
     height: 62px;
@@ -236,13 +230,13 @@ color: #333333;
     margin: 320px 0 0 12px;
     /* top: 1705px; */
     background: #fff;
-    border-radius: 2px ;
+    border-radius: 2px;
     transition: 0.8s;
 }
-.box_sec_attr:hover{
-    transform: scale(1.1);   
+.box_sec_attr:hover {
+    transform: scale(1.1);
 }
-.hotel_text{
+.hotel_text {
     position: absolute;
     width: 289px;
     height: 96px;
@@ -259,7 +253,7 @@ color: #333333;
     color: #333333;
 }
 
-.overlay_atr{
+.overlay_atr {
     position: absolute;
     width: 541px;
     height: 196px;
@@ -267,65 +261,65 @@ color: #333333;
     margin: 146px 0;
     /* top: 1461px; */
     background: #fff;
-    border-radius:5px;
-    border: 0.5px solid #E5E5E5;;
+    border-radius: 5px;
+    border: 0.5px solid #e5e5e5;
 }
 
 @media only screen and (max-width: 815px) {
     /* For mobile phones: */
-    .container{
-    position: absolute;
-    width: 1354px;
-    max-height: 150%;
-    margin: auto;
-    left: 0px;
-    top: 0px;
-    background: rgba(255, 160, 59, 0.9);    
-}
-.attractions {
-    position: absolute;
-    width: 1040px;
-    height: 416px;
-    left: 200px;
-    display: block;
-}
-.hotel_attr{
- width:49.99%;   
- left: -17%;
-}
-.box_atrr{
-    width: 64%;
-    margin: 522px -80%;
-
-}
-.box_atrr2{
-    width: 64%;
-    margin: 980px -133%;
-}
-.overlay_atr{
-    margin: 0;
-    padding: 0;
-}
-
+    .container {
+        position: absolute;
+        width: 1354px;
+        max-height: 150%;
+        margin: auto;
+        left: 0px;
+        top: 0px;
+        background: rgba(255, 160, 59, 0.9);
+    }
+    .attractions {
+        position: absolute;
+        width: 1040px;
+        height: 416px;
+        left: 200px;
+        display: block;
+    }
+    .hotel_attr {
+        width: 49.99%;
+        left: -17%;
+    }
+    .box_atrr {
+        width: 64%;
+        margin: 522px -80%;
+    }
+    .box_atrr2 {
+        width: 64%;
+        margin: 980px -133%;
+    }
+    .overlay_atr {
+        margin: 0;
+        padding: 0;
+    }
 }
 
-@media only screen and (max-width: 400px){
-.box_atrr, .box_atrr2{
-    width:59%;
-}
-.sec_box_attr, .box_sec_attr{
-width: 90%;
-}
- 
-.btn_attr{
-    width: 59%
-}
-.arrow_atrr{
-    margin-left: -22px;
-}
-.text-atr{
-    width: 60%;
-}
+@media only screen and (max-width: 400px) {
+    .box_atrr,
+    .box_atrr2 {
+        width: 59%;
+    }
+    .sec_box_attr,
+    .box_sec_attr {
+        width: 90%;
+    }
+
+    .btn_attr {
+        width: 59%;
+    }
+    .arrow_atrr {
+        margin-left: -22px;
+    }
+    .text-atr {
+        width: 60%;
+    }
 }
 /* margin-left: auto;
     margin-right: auto;
