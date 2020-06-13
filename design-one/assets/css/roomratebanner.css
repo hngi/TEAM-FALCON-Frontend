@@ -16,7 +16,7 @@
   height: 500px;
   width: 100%;
   overflow-x: hidden;
-  background-image: url('../img/Rectangle\ 86.png');
+  background-image: url('../images/Rectangle_86.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -40,7 +40,7 @@
 .roomrate__hero--item p {
   color: #fff;
   font-size: 2rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   line-height: 1.2;
 }
