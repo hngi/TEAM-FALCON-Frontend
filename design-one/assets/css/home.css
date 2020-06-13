@@ -29,7 +29,7 @@
 }
 @media screen and (min-width: 100px) and (max-width: 860px) {
   .home-page-banner{
-    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url( ../img/campus.png); 
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url( ../images/campus.png); 
     background-size: cover;
     height: 400px
   }
@@ -266,7 +266,7 @@
 
 .banner-img{
 
-  background-image:url(../img/homecampus.png);
+  background-image:url(../images/homecampus.png);
   background-position: center;
   background-size:cover;
   width: 356px;

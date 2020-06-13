@@ -1,0 +1,262 @@
+body{
+    font-size: 17px;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+ 
+ /*showcase header*/
+#showcase_image {
+    background: url(contact_showcase.png) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+height: 1329px;
+left: 0px;
+top: -609px;
+ }
+ #text { 
+   /*position: absolute;
+   width: 586px;
+   height: 48px;
+   left: 654px;
+   top: 240px;
+   */
+ }
+ /*.row {
+    display: flex;
+ }*/
+ #questions{position: absolute;
+   width: 586px;
+   height: 48px;
+   left: 654px;
+   top: 240px;
+   
+   font-family: Bree Serif;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 64px;
+   line-height: 48px;
+   /* identical to box height, or 75% */
+   
+   
+   color: #FFFFFF;
+ }
+ #customer{
+   position: absolute;
+   width: 442px;
+   height: 52px;
+   left: 730px;
+   top: 360px;
+   
+   font-family: DM Sans;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 26px;
+   /* or 144% */
+   
+   text-align: right;
+   
+   color: #FFFFFF;
+ }
+ #contact_form{
+   position: absolute;
+   width: 542px;
+   height: 662px;
+   left: 200px;
+   top: 1100px;
+   
+   background: #FFFFFF;
+   border: 0.5px solid #E5E5E5;
+
+ }
+ #call {
+  position: absolute;
+  width: 296px;
+  height: 26px;
+  left: 818px;
+  top: 88rem;
+  
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+ }
+ #mail{
+  position: absolute;
+  width: 369px;
+  height: 26px;
+  left: 818px;
+  top: 91rem;
+  
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+ }
+ #visit{
+   
+position: absolute;
+width: 151px;
+height: 26px;
+left: 818px;
+top: 94rem;
+
+font-family: DM Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 26px;
+ }
+ #direction{
+  position: absolute;
+  width: 272px;
+  height: 60px;
+  left: 842px;
+  top: 97rem;
+  border: 2px solid #611760;
+  text-align: left;
+  background-color: white;
+  color: #611760;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+ }
+ #contact-us{
+  
+position: absolute;
+left: 15px;
+  /*
+  position: absolute;
+  width: 218px;
+  height: 24px;
+  left: 232px;
+  top: 650px;
+  */
+  font-family: 'Bree serif';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 24px;
+  /* identical to box height, or 67% */
+  
+ }
+ #under{
+  position: absolute;
+  width: 475px;
+  left: 19px;
+  top: 90px;
+  border: 1px solid #E5E5E5;
+ }
+  
+ #fname{
+  position: absolute;
+  width: 49px;
+  height: 18px;
+  left: 19px;
+  top: 140px;
+  
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 18px;
+  /* identical to box height, or 100% */
+  
+  display: flex;
+  align-items: center;
+  
+  color: #666666;
+ }
+ #text-holder{
+  position: absolute;
+  width: 478px;
+  height: 50px;
+  left: 19px;
+  top: 170px;
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  box-sizing: border-box;
+ }
+ #email{
+  position: absolute;
+  width: 121px;
+  height: 18px;
+  left: 19px;
+  top: 240px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 18px;
+  /* identical to box height, or 100% */
+  
+  display: flex;
+  align-items: center;
+  
+  color: #666666;
+  
+ }
+ #email-holder{
+  position: absolute;
+  width: 478px;
+  height: 50px;
+  left: 19px;
+  top: 270px;
+  
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  box-sizing: border-box;
+ }
+ #Text{
+  position: absolute;
+  width: 115px;
+  height: 18px;
+  left: 19px;
+  top: 340px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 18px;
+  /* identical to box height, or 100% */
+  
+  display: flex;
+  align-items: center;
+  
+  color: #666666;
+ }
+ #Write{
+   /* Rectangle 34 */
+
+
+position: absolute;
+width: 478px;
+height: 200px;
+left: 19px;
+top: 370px;
+
+background: #FFFFFF;
+border: 1px solid #E5E5E5;
+box-sizing: border-box;
+ }
+ .button{
+  
+position: absolute;
+width: 272px;
+height: 60px;
+left: 19px;
+top: 600px;
+background: #611760;
+color: white; 
+ }
+ /* responsiveness */
+
+@media all and (max-width:500px) {
+  body {
+    color: blue;
+  }
+}

@@ -4,6 +4,11 @@
   text-decoration: none;
 }
 
+a:hover, a:focus{
+	text-decoration: none!important;
+	color: black!important;
+}
+
 nav{
   background-color: #fdfdfd;
   padding: 10px 50px;
@@ -25,6 +30,7 @@ nav{
 .hotel-name{
   padding: 10px 0;
   font-size: 30px;
+  font-family: "Playfair Display";
 }
 
 ul{
@@ -37,6 +43,7 @@ ul{
   padding: 0 20px;
   font-size: 18px;
   font-weight: bold;
+  font-family: "Poppins";
 }
 
 
@@ -44,7 +51,6 @@ ul{
   #menu{
     display: inline-block;
     cursor: pointer;
-    padding: 0 20px;
   }
 
   .bar1, .bar2, .bar3{
