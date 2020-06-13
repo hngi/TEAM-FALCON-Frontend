@@ -27,7 +27,7 @@ body{
     height: 19%;
     padding: 0px;
     margin-top: 0px;
-    border: 1px solid red;
+   
 }
 .H-Txt1{
     height: 50px;
@@ -198,19 +198,17 @@ body{
 @media only screen and (max-width: 767px) {
     .H-Txt2{
         margin: 18px 10px 25px 5px;
-        border: 1px solid red;
         padding: 0px;
      }
      .H-Txt1{
         margin: 15px 25px 25px 10px;
-        border: 1px solid red;
+        
         padding: 0px;
      }
      .H-Txt3{
          position: absolute;
          margin: 18px 25px 25px 150px;
          padding: 0px;
-        border: 1px solid red;   
      }
      .logo{
         left: 15px;
@@ -219,7 +217,6 @@ body{
         right: 40px;
         font-size: 14px;
         top: 55%;
-        border: 1px solid red;
     }#tour-video{
         left: 57px;
         overflow: hidden;
